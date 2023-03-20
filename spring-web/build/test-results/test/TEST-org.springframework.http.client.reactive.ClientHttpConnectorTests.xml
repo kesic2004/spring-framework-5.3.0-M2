@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.client.reactive.ClientHttpConnectorTests" tests="30" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:31" hostname="DESKTOP-VGJP1PJ" time="1.685">
+  <properties/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[1]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.425"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[2]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.031"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[3]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.018"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[4]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.013"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[5]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.025"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[6]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.051"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[7]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.013"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[8]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.012"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[9]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.423"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[10]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.032"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[11]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.04"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[12]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.028"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[13]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.035"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[14]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.015"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[15]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.012"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[16]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.012"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[17]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.156"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[18]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.016"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[19]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.023"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[20]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.009"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[21]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.011"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[22]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.016"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[23]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.009"/>
+  <testcase name="basic(ClientHttpConnector, HttpMethod)[24]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.011"/>
+  <testcase name="cancelResponseBody(ClientHttpConnector)[1]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.057"/>
+  <testcase name="cancelResponseBody(ClientHttpConnector)[2]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.022"/>
+  <testcase name="cancelResponseBody(ClientHttpConnector)[3]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.014"/>
+  <testcase name="errorInRequestBody(ClientHttpConnector)[1]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.039"/>
+  <testcase name="errorInRequestBody(ClientHttpConnector)[2]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.046"/>
+  <testcase name="errorInRequestBody(ClientHttpConnector)[3]" classname="org.springframework.http.client.reactive.ClientHttpConnectorTests" time="0.007"/>
+  <system-out><![CDATA[02:58:31.555 [reactor-http-nio-2] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.http.DefaultHttpContent.release(DefaultHttpContent.java:92)
+	io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:90)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.order(AdvancedLeakAwareByteBuf.java:70)
+	io.netty.buffer.CompositeByteBuf.newComponent(CompositeByteBuf.java:346)
+	io.netty.buffer.CompositeByteBuf.addComponent0(CompositeByteBuf.java:287)
+	io.netty.buffer.CompositeByteBuf.addComponent(CompositeByteBuf.java:265)
+	io.netty.buffer.CompositeByteBuf.addComponent(CompositeByteBuf.java:222)
+	io.netty.buffer.WrappedCompositeByteBuf.addComponent(WrappedCompositeByteBuf.java:534)
+	io.netty.buffer.AdvancedLeakAwareCompositeByteBuf.addComponent(AdvancedLeakAwareCompositeByteBuf.java:921)
+	io.netty.handler.codec.MessageAggregator.appendPartialContent(MessageAggregator.java:333)
+	io.netty.handler.codec.MessageAggregator.decode(MessageAggregator.java:298)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	io.netty.handler.codec.MessageAggregator.appendPartialContent(MessageAggregator.java:333)
+	io.netty.handler.codec.MessageAggregator.decode(MessageAggregator.java:298)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'HttpObjectAggregator#0' will handle the message from this point.
+	io.netty.handler.codec.http.DefaultHttpContent.touch(DefaultHttpContent.java:86)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:88)
+	io.netty.handler.codec.http.DefaultLastHttpContent.touch(DefaultLastHttpContent.java:28)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.SimpleLeakAwareByteBuf.unwrappedDerived(SimpleLeakAwareByteBuf.java:143)
+	io.netty.buffer.SimpleLeakAwareByteBuf.readRetainedSlice(SimpleLeakAwareByteBuf.java:67)
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:107)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:336)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+02:58:31.567 [reactor-http-nio-2] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:285)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.readRetainedSlice(AdvancedLeakAwareByteBuf.java:106)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:336)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.forEachByte(AdvancedLeakAwareByteBuf.java:670)
+	io.netty.handler.codec.http.HttpObjectDecoder$HeaderParser.parse(HttpObjectDecoder.java:940)
+	io.netty.handler.codec.http.HttpObjectDecoder$LineParser.parse(HttpObjectDecoder.java:996)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:239)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'HttpClientCodec#0' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#5:
+	Hint: 'DefaultChannelPipeline$HeadContext#0' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#6:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:634)
+	io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:363)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:178)
+	io.netty.buffer.AbstractByteBufAllocator.ioBuffer(AbstractByteBufAllocator.java:139)
+	io.netty.channel.DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle.allocate(DefaultMaxMessagesRecvByteBufAllocator.java:114)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:147)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+: 4 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+02:58:31.572 [reactor-http-nio-2] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage.release(HttpObjectAggregator.java:379)
+	io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:106)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareCompositeByteBuf.retain(AdvancedLeakAwareCompositeByteBuf.java:36)
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage.retain(HttpObjectAggregator.java:355)
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse.retain(HttpObjectAggregator.java:554)
+	org.springframework.http.client.Netty4ClientHttpResponse.<init>(Netty4ClientHttpResponse.java:58)
+	org.springframework.http.client.Netty4ClientHttpRequest$RequestExecuteHandler.channelRead0(Netty4ClientHttpRequest.java:178)
+	org.springframework.http.client.Netty4ClientHttpRequest$RequestExecuteHandler.channelRead0(Netty4ClientHttpRequest.java:168)
+	io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	Hint: 'Netty4ClientHttpRequest$RequestExecuteHandler#0' will handle the message from this point.
+	io.netty.buffer.AdvancedLeakAwareCompositeByteBuf.touch(AdvancedLeakAwareCompositeByteBuf.java:36)
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage.touch(HttpObjectAggregator.java:367)
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse.touch(HttpObjectAggregator.java:560)
+	io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse.touch(HttpObjectAggregator.java:494)
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	io.netty.buffer.AdvancedLeakAwareCompositeByteBuf.addComponent(AdvancedLeakAwareCompositeByteBuf.java:920)
+	io.netty.handler.codec.MessageAggregator.appendPartialContent(MessageAggregator.java:333)
+	io.netty.handler.codec.MessageAggregator.decode(MessageAggregator.java:298)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.AbstractByteBufAllocator.compositeDirectBuffer(AbstractByteBufAllocator.java:223)
+	io.netty.buffer.AbstractByteBufAllocator.compositeBuffer(AbstractByteBufAllocator.java:201)
+	io.netty.handler.codec.MessageAggregator.decode(MessageAggregator.java:271)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:311)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:425)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+]]></system-out>
+  <system-err><![CDATA[Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58692] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58692] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58692] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58694] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58694] received request: HEAD / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58694] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58696] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58696] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58696] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58698] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58698] received request: PUT / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58698] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58700] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58700] received request: PATCH / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58700] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58702] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58702] received request: DELETE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58702] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58704] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58704] received request: OPTIONS / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58704] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58706] starting to accept connections
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58706] received request: TRACE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58706] done accepting connections: socket closed
+Mar 20, 2023 2:58:31 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58708] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58708] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58708] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58715] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58715] received request: HEAD / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58715] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58717] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58717] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58717] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58719] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58719] received request: PUT / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58719] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58721] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58721] received request: PATCH / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58721] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58723] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58723] received request: DELETE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58723] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58725] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58725] received request: OPTIONS / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58725] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58727] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58727] received request: TRACE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58727] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58729] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58729] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58729] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58731] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58731] received request: HEAD / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58731] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58733] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58733] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58733] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58735] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58735] received request: PUT / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58735] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58737] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58737] received request: PATCH / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58737] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58739] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58739] received request: DELETE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58739] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58741] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58741] received request: OPTIONS / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58741] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58743] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58743] received request: TRACE / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58743] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58753] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58753] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58753] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58755] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58755] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58755] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58761] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58761] received request: POST / HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58761] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58771] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58771] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[58771] connection from /127.0.0.1 failed: java.net.SocketException: Socket is closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58773] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58773] done accepting connections: socket closed
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58778] starting to accept connections
+Mar 20, 2023 2:58:32 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58778] done accepting connections: Socket is closed
+]]></system-err>
+</testsuite>

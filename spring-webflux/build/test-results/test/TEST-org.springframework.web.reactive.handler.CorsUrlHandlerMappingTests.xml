@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:08" hostname="DESKTOP-VGJP1PJ" time="0.015">
+  <properties/>
+  <testcase name="preFlightWithCorsAwareHandler()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.002"/>
+  <testcase name="preflightRequestWithoutCorsConfigurationProvider()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.002"/>
+  <testcase name="actualRequestWithGlobalPatternCorsConfig()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.004"/>
+  <testcase name="actualRequestWithoutCorsConfigurationProvider()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <testcase name="actualRequestWithCorsConfigurationSource()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <testcase name="preFlightRequestWithCorsConfigurationSource()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <testcase name="actualRequestWithCorsAwareHandler()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <testcase name="actualRequestWithGlobalCorsConfig()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <testcase name="preFlightRequestWithGlobalCorsConfig()" classname="org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests" time="0.001"/>
+  <system-out><![CDATA[03:14:08.341 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [e0bcb56] Mapped to org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests$CorsAwareHandler@7ddc8be2
+03:14:08.343 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [5eff6ee1] Mapped to java.lang.Object@290e2951
+03:14:08.346 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [54cde96f] Mapped to java.lang.Object@56eb2415
+03:14:08.349 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [48d1f7c5] Mapped to java.lang.Object@7ee9bf47
+03:14:08.350 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [1bb1838b] Mapped to java.lang.Object@53364722
+03:14:08.351 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [149efd5e] Mapped to java.lang.Object@27be7b0d
+03:14:08.353 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [308419aa] Mapped to org.springframework.web.reactive.handler.CorsUrlHandlerMappingTests$CorsAwareHandler@516a47cf
+03:14:08.354 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [327d24b1] Mapped to java.lang.Object@664f47e0
+03:14:08.355 [Test worker] DEBUG o.s.w.r.h.CorsUrlHandlerMappingTests$1 - [76165bca] Mapped to java.lang.Object@75c12ef8
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.transaction.aspectj.TransactionAspectTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:19:22" hostname="DESKTOP-VGJP1PJ" time="0.201">
+  <properties/>
+  <testcase name="commitOnAnnotatedPrivateMethod()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.007"/>
+  <testcase name="notTransactional()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.001"/>
+  <testcase name="noCommitOnImplementationOfAnnotatedInterface()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.045"/>
+  <testcase name="defaultRollbackOnAnnotatedClass()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.008"/>
+  <testcase name="commitOnAnnotatedProtectedMethod()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.027"/>
+  <testcase name="commitOnNonAnnotatedNonPublicMethodInTransactionalType()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.008"/>
+  <testcase name="defaultCommitOnSubclassOfAnnotatedClass()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.06"/>
+  <testcase name="testCommitOnAnnotatedClass()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.001"/>
+  <testcase name="commitOnAnnotatedMethod()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.001"/>
+  <testcase name="defaultCommitOnSubclassOfClassWithTransactionalMethodAnnotated()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.033"/>
+  <testcase name="defaultCommitOnAnnotatedClass()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.002"/>
+  <testcase name="noRollbackOnImplementationOfAnnotatedInterface()" classname="org.springframework.transaction.aspectj.TransactionAspectTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

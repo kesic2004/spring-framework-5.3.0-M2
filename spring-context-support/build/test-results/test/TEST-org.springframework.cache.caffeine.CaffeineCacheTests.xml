@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cache.caffeine.CaffeineCacheTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:54:55" hostname="DESKTOP-VGJP1PJ" time="0.279">
+  <properties/>
+  <testcase name="testCacheGetCallableNotInvokedWithHitNull()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.014"/>
+  <testcase name="testCacheGetSynchronized()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.077"/>
+  <testcase name="testCachePutIfAbsent()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.002"/>
+  <testcase name="testCacheClear()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.001"/>
+  <testcase name="testCacheRemove()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.002"/>
+  <testcase name="testCacheGetCallableNotInvokedWithHit()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.002"/>
+  <testcase name="testCacheName()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.005"/>
+  <testcase name="testCachePut()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.001"/>
+  <testcase name="testCacheGetCallable()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.003"/>
+  <testcase name="testNativeCache()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.001"/>
+  <testcase name="testCacheGetCallableFail()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.004"/>
+  <testcase name="testCacheGetCallableWithNull()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.004"/>
+  <testcase name="testCachePutNullValueAllowNullFalse()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.007"/>
+  <testcase name="testPutIfAbsentNullValue()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.002"/>
+  <testcase name="testLoadingCacheGet()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.008"/>
+  <testcase name="testLoadingCacheGetWithWrongType()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.125"/>
+  <testcase name="testLoadingCacheGetWithType()" classname="org.springframework.cache.caffeine.CaffeineCacheTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

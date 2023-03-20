@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:16" hostname="DESKTOP-VGJP1PJ" time="0.08">
+  <properties/>
+  <testcase name="standardWebSocketClientConfiguratorInsertsHandshakeHeaders()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.037"/>
+  <testcase name="testGetLocalAddress()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.002"/>
+  <testcase name="clientEndpointConfig()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.015"/>
+  <testcase name="handshakeHeaders()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.002"/>
+  <testcase name="testGetLocalAddressWss()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.002"/>
+  <testcase name="taskExecutor()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.001"/>
+  <testcase name="clientEndpointConfigWithUserProperties()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.009"/>
+  <testcase name="testGetLocalAddressNoScheme()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.002"/>
+  <testcase name="testGetRemoteAddress()" classname="org.springframework.web.socket.client.standard.StandardWebSocketClientTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

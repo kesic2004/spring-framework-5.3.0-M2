@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:57:23" hostname="DESKTOP-VGJP1PJ" time="4.707">
+  <properties/>
+  <testcase name="bindByIndexShouldBindNull()" classname="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" time="3.449"/>
+  <testcase name="genericExecuteSpecAwait()" classname="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" time="1.143"/>
+  <testcase name="bindByIndexShouldBindValue()" classname="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" time="0.025"/>
+  <testcase name="bindByNameShouldBindValue()" classname="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" time="0.044"/>
+  <testcase name="bindByNameShouldBindNull()" classname="org.springframework.r2dbc.core.DatabaseClientExtensionsTests" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

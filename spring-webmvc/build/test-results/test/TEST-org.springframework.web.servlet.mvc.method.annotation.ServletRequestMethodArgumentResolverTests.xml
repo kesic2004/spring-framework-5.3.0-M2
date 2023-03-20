@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:15:02" hostname="DESKTOP-VGJP1PJ" time="0.092">
+  <properties/>
+  <testcase name="timeZone()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="principal()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="timeZoneFromResolver()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.015"/>
+  <testcase name="locale()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="reader()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.0"/>
+  <testcase name="principalAsNull()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="zoneId()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="servletRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="inputStream()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="localeFromResolver()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="zoneIdFromResolver()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.034"/>
+  <testcase name="pushBuilder()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.015"/>
+  <testcase name="httpMethod()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.0"/>
+  <testcase name="webRequest()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="session()" classname="org.springframework.web.servlet.mvc.method.annotation.ServletRequestMethodArgumentResolverTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:30" hostname="DESKTOP-VGJP1PJ" time="0.156">
+  <properties/>
+  <testcase name="handleTransportRequestXhrSend()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.029"/>
+  <testcase name="handleInvalidTransportType()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.007"/>
+  <testcase name="handleTransportRequestNoSuitableHandler()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.007"/>
+  <testcase name="handleTransportRequestXhrSendWithDifferentUser()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.008"/>
+  <testcase name="handleTransportRequestIframe()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.005"/>
+  <testcase name="handleTransportRequestWebsocket()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.019"/>
+  <testcase name="handleTransportRequestXhr()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.006"/>
+  <testcase name="customizedTransportHandlerList()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.009"/>
+  <testcase name="defaultTransportHandlers()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.008"/>
+  <testcase name="handleTransportRequestXhrAllowedOriginsMatch()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.006"/>
+  <testcase name="handleTransportRequestXhrAllowedOriginsNoMatch()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.014"/>
+  <testcase name="handleTransportRequestXhrOptions()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.007"/>
+  <testcase name="invalidAllowedOrigins()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.008"/>
+  <testcase name="handleTransportRequestXhrSameOrigin()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.007"/>
+  <testcase name="defaultTransportHandlersWithOverride()" classname="org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsServiceTests" time="0.008"/>
+  <system-out><![CDATA[03:11:30.947 [Test worker] WARN  o.s.w.s.s.t.TransportHandlingSockJsService - Origin check enabled but transport 'invalid' does not support it.
+03:11:30.954 [Test worker] WARN  o.s.w.s.s.t.TransportHandlingSockJsService - No TransportHandler for http://localhost/mysockjs/server1/session1/eventsource
+03:11:31.035 [Test worker] WARN  o.s.w.s.s.t.TransportHandlingSockJsService - Origin header value 'http://mydomain3.example' not allowed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

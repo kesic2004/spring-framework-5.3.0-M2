@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.FormHttpMessageReaderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:37" hostname="DESKTOP-VGJP1PJ" time="0.116">
+  <properties/>
+  <testcase name="readFormError()" classname="org.springframework.http.codec.FormHttpMessageReaderTests" time="0.109"/>
+  <testcase name="readFormAsFlux()" classname="org.springframework.http.codec.FormHttpMessageReaderTests" time="0.002"/>
+  <testcase name="readFormAsMono()" classname="org.springframework.http.codec.FormHttpMessageReaderTests" time="0.001"/>
+  <testcase name="canRead()" classname="org.springframework.http.codec.FormHttpMessageReaderTests" time="0.003"/>
+  <system-out><![CDATA[02:58:37.537 [Test worker] DEBUG o.s.w.HttpLogging - Read form fields [name 1, name 2, name 3] (content masked)
+02:58:37.538 [Test worker] DEBUG o.s.w.HttpLogging - Read form fields [name 1, name 2, name 3] (content masked)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

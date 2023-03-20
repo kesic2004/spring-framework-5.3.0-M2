@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.support.Spr8954Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:37:52" hostname="DESKTOP-VGJP1PJ" time="0.026">
+  <properties/>
+  <testcase name="repro()" classname="org.springframework.beans.factory.support.Spr8954Tests" time="0.023"/>
+  <testcase name="findsFactoryBeanNameByTypeWithoutInstantiation()" classname="org.springframework.beans.factory.support.Spr8954Tests" time="0.001"/>
+  <testcase name="findsBeansByTypeIfNotInstantiated()" classname="org.springframework.beans.factory.support.Spr8954Tests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

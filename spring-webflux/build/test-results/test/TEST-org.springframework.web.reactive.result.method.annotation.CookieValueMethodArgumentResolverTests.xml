@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:16:09" hostname="DESKTOP-VGJP1PJ" time="0.062">
+  <properties/>
+  <testcase name="resolveCookieArgument()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.02"/>
+  <testcase name="resolveCookieDefaultValue()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="resolveCookieStringArgument()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="notFound()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="doesNotSupportParameter()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.reactive.result.method.annotation.CookieValueMethodArgumentResolverTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

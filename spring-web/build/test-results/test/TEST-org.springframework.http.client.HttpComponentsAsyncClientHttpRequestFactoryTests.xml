@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:22" hostname="DESKTOP-VGJP1PJ" time="0.453">
+  <properties/>
+  <testcase name="cancel()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.156"/>
+  <testcase name="headersAfterExecute()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.098"/>
+  <testcase name="status()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.038"/>
+  <testcase name="echo()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.022"/>
+  <testcase name="statusCallback()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.023"/>
+  <testcase name="multipleWrites()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.027"/>
+  <testcase name="defaultSettingsOfHttpAsyncClientLostOnExecutorCustomization()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.018"/>
+  <testcase name="customHttpAsyncClientUsesItsDefault()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.018"/>
+  <testcase name="httpMethods()" classname="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactoryTests" time="0.045"/>
+  <system-out><![CDATA[02:58:22.775 [pool-2-thread-1] ERROR o.a.h.i.n.c.InternalHttpAsyncClient - I/O reactor terminated abnormally
+org.apache.http.nio.reactor.IOReactorException: I/O dispatch worker terminated abnormally
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:356) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) [httpasyncclient-4.1.4.jar:4.1.4]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+Caused by: java.lang.IllegalStateException: Connection must be created by connection manager
+	at org.apache.http.impl.nio.client.InternalIODispatch.createConnection(InternalIODispatch.java:56) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.client.InternalIODispatch.createConnection(InternalIODispatch.java:39) ~[httpasyncclient-4.1.4.jar:4.1.4]
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.connected(AbstractIODispatch.java:70) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.sessionCreated(BaseIOReactor.java:248) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processNewChannels(AbstractIOReactor.java:427) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:287) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588) ~[httpcore-nio-4.4.10.jar:4.4.10]
+	... 1 more
+]]></system-out>
+  <system-err><![CDATA[Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58398] starting to accept connections
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$4 processConnection
+WARNING: MockWebServer[58398] connection from /127.0.0.1 didn't make a request
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58398] done accepting connections: socket closed
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58410] starting to accept connections
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58410] received request: POST /echo HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58410] done accepting connections: socket closed
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58422] starting to accept connections
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58422] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58422] done accepting connections: socket closed
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58434] starting to accept connections
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58434] received request: PUT /echo HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58434] done accepting connections: socket closed
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58446] starting to accept connections
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58446] received request: GET /status/notfound HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58446] done accepting connections: socket closed
+Mar 20, 2023 2:58:22 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58458] starting to accept connections
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58458] received request: POST /echo HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58458] done accepting connections: socket closed
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58470] starting to accept connections
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58470] done accepting connections: socket closed
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58491] starting to accept connections
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58491] done accepting connections: socket closed
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[58512] starting to accept connections
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: GET /methods/get HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: HEAD /methods/head HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: POST /methods/post HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: PUT /methods/put HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: OPTIONS /methods/options HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: DELETE /methods/delete HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[58512] received request: PATCH /methods/patch HTTP/1.1 and responded: HTTP/1.1 200 OK
+Mar 20, 2023 2:58:23 AM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[58512] done accepting connections: socket closed
+]]></system-err>
+</testsuite>

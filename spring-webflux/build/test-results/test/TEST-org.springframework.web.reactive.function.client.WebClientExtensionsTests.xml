@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.WebClientExtensionsTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:18:56" hostname="DESKTOP-VGJP1PJ" time="22.978">
+  <properties/>
+  <testcase name="RequestBodySpec#body with CompletableFuture and reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="7.765"/>
+  <testcase name="bodyToFlow with reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="9.457"/>
+  <testcase name="ResponseSpec#bodyToMono with reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="1.699"/>
+  <testcase name="RequestBodySpec#body with Publisher and reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="0.363"/>
+  <testcase name="awaitExchange()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="1.709"/>
+  <testcase name="awaitBody()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="0.275"/>
+  <testcase name="RequestBodySpec#body with Flow and reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="0.664"/>
+  <testcase name="ResponseSpec#bodyToFlux with reified type parameters()" classname="org.springframework.web.reactive.function.client.WebClientExtensionsTests" time="0.154"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

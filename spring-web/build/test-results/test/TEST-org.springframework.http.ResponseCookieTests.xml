@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.ResponseCookieTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:48" hostname="DESKTOP-VGJP1PJ" time="0.009">
+  <properties/>
+  <testcase name="valueChecks()" classname="org.springframework.http.ResponseCookieTests" time="0.004"/>
+  <testcase name="domainChecks()" classname="org.springframework.http.ResponseCookieTests" time="0.002"/>
+  <testcase name="nameChecks()" classname="org.springframework.http.ResponseCookieTests" time="0.001"/>
+  <testcase name="domainWithEmptyDoubleQuotes()" classname="org.springframework.http.ResponseCookieTests" time="0.001"/>
+  <testcase name="basic()" classname="org.springframework.http.ResponseCookieTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

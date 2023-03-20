@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jms.annotation.EnableJmsTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:54:49" hostname="DESKTOP-VGJP1PJ" time="1.775">
+  <properties/>
+  <testcase name="jmsListeners()" classname="org.springframework.jms.annotation.EnableJmsTests" time="1.108"/>
+  <testcase name="unknownFactory()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.039"/>
+  <testcase name="sampleConfiguration()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.062"/>
+  <testcase name="customConfiguration()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.073"/>
+  <testcase name="composedJmsListeners()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.063"/>
+  <testcase name="containerCanBeStarterViaTheRegistry()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.047"/>
+  <testcase name="jmsHandlerMethodFactoryConfiguration()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.026"/>
+  <testcase name="explicitContainerFactory()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.031"/>
+  <testcase name="fullConfiguration()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.056"/>
+  <testcase name="lazyComponent()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.042"/>
+  <testcase name="defaultContainerFactory()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.081"/>
+  <testcase name="fullConfigurableConfiguration()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.043"/>
+  <testcase name="jmsListenerIsRepeatable()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.013"/>
+  <testcase name="containerAreStartedByDefault()" classname="org.springframework.jms.annotation.EnableJmsTests" time="0.079"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.resource.AppCacheManifestTransformerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:26" hostname="DESKTOP-VGJP1PJ" time="0.169">
+  <properties/>
+  <testcase name="noTransformIfExtensionDoesNotMatch()" classname="org.springframework.web.reactive.resource.AppCacheManifestTransformerTests" time="0.049"/>
+  <testcase name="transformManifest()" classname="org.springframework.web.reactive.resource.AppCacheManifestTransformerTests" time="0.106"/>
+  <testcase name="syntaxErrorInManifest()" classname="org.springframework.web.reactive.resource.AppCacheManifestTransformerTests" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.TestExecutionListenersTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:09:54" hostname="DESKTOP-VGJP1PJ" time="0.061">
+  <properties/>
+  <testcase name="inheritedDefaultListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.004"/>
+  <testcase name="inheritedListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="customsListenersRegisteredViaMetaAnnotationWithInheritedListenersWithOverrides()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.004"/>
+  <testcase name="customListenersRegisteredViaMetaAnnotationWithNonInheritedListenersWithOverrides()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="defaultListenersMergedWithCustomListenerInserted()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.004"/>
+  <testcase name="customListenersRegisteredViaMetaAnnotationWithOverrides()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.003"/>
+  <testcase name="defaultListenersMergedWithCustomListenerAppended()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.007"/>
+  <testcase name="nonInheritedDefaultListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="defaultListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.005"/>
+  <testcase name="inheritedListenersRegisteredViaMetaAnnotation()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.004"/>
+  <testcase name="listenersAndValueAttributesDeclared()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="customListenersDeclaredOnInterface()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="nonInheritedListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.001"/>
+  <testcase name="nonInheritedListenersRegisteredViaMetaAnnotation()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.003"/>
+  <testcase name="defaultListenersMergedWithCustomListenerPrepended()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.005"/>
+  <testcase name="customListenersRegisteredViaMetaAnnotation()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <testcase name="customListeners()" classname="org.springframework.test.context.TestExecutionListenersTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

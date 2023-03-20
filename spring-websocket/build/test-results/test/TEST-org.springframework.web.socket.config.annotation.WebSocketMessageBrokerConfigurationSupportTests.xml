@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:20" hostname="DESKTOP-VGJP1PJ" time="0.606">
+  <properties/>
+  <testcase name="brokerChannel()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.332"/>
+  <testcase name="handlerMapping()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.034"/>
+  <testcase name="webSocketHandlerDecorator()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.042"/>
+  <testcase name="webSocketHandler()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.036"/>
+  <testcase name="clientInboundChannelSendMessage()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.056"/>
+  <testcase name="clientOutboundChannel()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.038"/>
+  <testcase name="taskScheduler()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.034"/>
+  <testcase name="webSocketMessageBrokerStats()" classname="org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurationSupportTests" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

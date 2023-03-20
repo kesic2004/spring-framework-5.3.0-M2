@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - InvalidHttpMethodIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>InvalidHttpMethodIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.web.reactive.function.server.html">org.springframework.web.reactive.function.server</a> &gt; InvalidHttpMethodIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.233s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1] org.springframework.web.testfixture.http.server.reactive.bootstrap.JettyHttpServer@2b7b629e</td>
+<td class="success">invalidHttpMethod(HttpServer)[1]</td>
+<td class="success">0.865s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] org.springframework.web.testfixture.http.server.reactive.bootstrap.ReactorHttpServer@11618816</td>
+<td class="success">invalidHttpMethod(HttpServer)[2]</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] org.springframework.web.testfixture.http.server.reactive.bootstrap.TomcatHttpServer@1ea52130</td>
+<td class="success">invalidHttpMethod(HttpServer)[3]</td>
+<td class="success">0.298s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] org.springframework.web.testfixture.http.server.reactive.bootstrap.UndertowHttpServer@2acc0e1a</td>
+<td class="success">invalidHttpMethod(HttpServer)[4]</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>03:15:56.841 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:15:56.842 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:15:56.842 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@27b17cba{/,null,AVAILABLE}
+03:15:56.842 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:15:56.842 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:15:56.845 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@926804{HTTP/1.1, (http/1.1)}{0.0.0.0:64472}
+03:15:56.846 [Test worker] INFO  o.e.j.s.Server - Started @58069ms
+03:15:56.846 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 64472(0 millis).
+03:15:57.633 [qtp1998602061-832] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3630283b] HTTP null &quot;/&quot;
+03:15:57.648 [qtp1998602061-832] DEBUG o.s.c.c.CharSequenceEncoder - [3630283b] Writing &quot;BAR&quot;
+03:15:57.652 [qtp1998602061-832] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3630283b] Completed 200 OK
+03:15:57.660 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:15:57.660 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@27b17cba{/,null,UNAVAILABLE}
+03:15:57.663 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@926804{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:15:57.664 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:15:57.677 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:15:57.677 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:15:57.692 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 64478(0 millis).
+03:15:57.698 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43bd505b-4] HTTP null &quot;/&quot;
+03:15:57.699 [reactor-http-nio-1] DEBUG o.s.c.c.CharSequenceEncoder - [43bd505b-4] Writing &quot;BAR&quot;
+03:15:57.701 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:15:57.701 [reactor-http-nio-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43bd505b-4] Completed 200 OK
+03:15:57.701 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:15:57.714 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:15:57.715 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:15:57.726 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 64480(0 millis).
+03:15:57.810 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6d15d189] HTTP null &quot;/&quot;
+03:15:57.810 [http-nio-auto-4-exec-1] DEBUG o.s.c.c.CharSequenceEncoder - [6d15d189] Writing &quot;BAR&quot;
+03:15:57.812 [http-nio-auto-4-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6d15d189] Completed 200 OK
+03:15:57.814 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:15:58.000 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:15:58.010 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:15:58.010 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:15:58.010 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:15:58.019 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 64497(0 millis).
+03:15:58.024 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5637e24a] HTTP null &quot;/&quot;
+03:15:58.025 [XNIO-4 I/O-2] DEBUG o.s.c.c.CharSequenceEncoder - [5637e24a] Writing &quot;BAR&quot;
+03:15:58.026 [XNIO-4 I/O-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5637e24a] Completed 200 OK
+03:15:58.026 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:15:58.026 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:15:58.032 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Mar 20, 2023 3:20:28 AM</p>
+</div>
+</div>
+</body>
+</html>

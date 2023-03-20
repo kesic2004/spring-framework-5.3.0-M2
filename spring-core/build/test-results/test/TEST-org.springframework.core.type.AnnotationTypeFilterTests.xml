@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.core.type.AnnotationTypeFilterTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:38:45" hostname="DESKTOP-VGJP1PJ" time="0.462">
+  <properties/>
+  <testcase name="directAnnotationMatch()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.363"/>
+  <testcase name="inheritedAnnotationFromInterfaceDoesNotMatch()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.046"/>
+  <testcase name="inheritedAnnotationFromBaseClassDoesMatch()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.008"/>
+  <testcase name="matchesInterfacesIfConfigured()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.003"/>
+  <testcase name="nonAnnotatedClassDoesntMatch()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.006"/>
+  <testcase name="nonInheritedAnnotationDoesNotMatch()" classname="org.springframework.core.type.AnnotationTypeFilterTests" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

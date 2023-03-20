@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:56:26" hostname="DESKTOP-VGJP1PJ" time="0.338">
+  <properties/>
+  <testcase name="handleNoMatch()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.297"/>
+  <testcase name="rejectConnectMappingMethodsThatCanReply()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.006"/>
+  <testcase name="mappings()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.01"/>
+  <testcase name="metadataExtractorWithExplicitlySetDecoders()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.001"/>
+  <testcase name="ignoreFireAndForgetToHandlerThatCanReply()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.002"/>
+  <testcase name="getRSocketStrategiesReflectsCurrentState()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.008"/>
+  <testcase name="setRSocketStrategies()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.004"/>
+  <testcase name="rejectRequestResponseToStreamingHandler()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.001"/>
+  <testcase name="getRSocketStrategies()" classname="org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandlerTests" time="0.005"/>
+  <system-out><![CDATA[02:56:26.974 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+02:56:26.975 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+02:56:26.978 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+02:56:26.978 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No handler for fireAndForget to 'path'
+02:56:26.980 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+02:56:26.988 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+02:56:26.988 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No handler for fireAndForget to 'mono-string'
+02:56:27.010 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

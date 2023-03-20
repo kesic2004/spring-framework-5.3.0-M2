@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:57:02" hostname="DESKTOP-VGJP1PJ" time="1.078">
+  <properties/>
+  <testcase name="unitReturnValueFromExceptionHandler()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.201"/>
+  <testcase name="echoStreamAsync()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.187"/>
+  <testcase name="handleWithThrownException()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.047"/>
+  <testcase name="echoAsync()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.077"/>
+  <testcase name="echoChannel()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.2"/>
+  <testcase name="fireAndForgetAsync()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.146"/>
+  <testcase name="fireAndForget()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.062"/>
+  <testcase name="echoStream()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.141"/>
+  <testcase name="unitReturnValue()" classname="org.springframework.messaging.rsocket.RSocketClientToServerCoroutinesIntegrationTests" time="0.016"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

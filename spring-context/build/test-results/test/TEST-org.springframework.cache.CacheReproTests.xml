@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cache.CacheReproTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:41:17" hostname="DESKTOP-VGJP1PJ" time="1.61">
+  <properties/>
+  <testcase name="spr11124MultipleAnnotations()" classname="org.springframework.cache.CacheReproTests" time="0.429"/>
+  <testcase name="spr11592GetNeverCache()" classname="org.springframework.cache.CacheReproTests" time="0.699"/>
+  <testcase name="spr14230AdaptsToOptional()" classname="org.springframework.cache.CacheReproTests" time="0.043"/>
+  <testcase name="spr11249PrimitiveVarargs()" classname="org.springframework.cache.CacheReproTests" time="0.065"/>
+  <testcase name="spr15271FindsOnInterfaceWithCglibProxy()" classname="org.springframework.cache.CacheReproTests" time="0.042"/>
+  <testcase name="spr11592GetSimple()" classname="org.springframework.cache.CacheReproTests" time="0.053"/>
+  <testcase name="spr15271FindsOnInterfaceWithInterfaceProxy()" classname="org.springframework.cache.CacheReproTests" time="0.074"/>
+  <testcase name="spr13081ConfigFailIfCacheResolverReturnsNullCacheName()" classname="org.springframework.cache.CacheReproTests" time="0.117"/>
+  <testcase name="spr14853AdaptsToOptionalWithSync()" classname="org.springframework.cache.CacheReproTests" time="0.053"/>
+  <testcase name="spr13081ConfigNoCacheNameIsRequired()" classname="org.springframework.cache.CacheReproTests" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

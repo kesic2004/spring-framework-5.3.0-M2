@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ZeroCopyIntegrationTests" tests="4" skipped="2" failures="0" errors="0" timestamp="2023-03-20T07:58:57" hostname="DESKTOP-VGJP1PJ" time="0.089">
+  <properties/>
+  <testcase name="zeroCopy(HttpServer)[1]" classname="org.springframework.http.server.reactive.ZeroCopyIntegrationTests" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase name="zeroCopy(HttpServer)[2]" classname="org.springframework.http.server.reactive.ZeroCopyIntegrationTests" time="0.06"/>
+  <testcase name="zeroCopy(HttpServer)[3]" classname="org.springframework.http.server.reactive.ZeroCopyIntegrationTests" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="zeroCopy(HttpServer)[4]" classname="org.springframework.http.server.reactive.ZeroCopyIntegrationTests" time="0.025"/>
+  <system-out><![CDATA[02:58:57.183 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:58:57.184 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 59090(0 millis).
+02:58:57.190 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59090
+02:58:57.190 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/octet-stream, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+02:58:57.197 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:58:57.240 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [[B] as "image/png"
+02:58:57.241 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:58:57.242 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:58:57.244 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:58:57.254 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 59102(0 millis).
+02:58:57.259 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:59102
+02:58:57.260 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/octet-stream, application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json, */*]
+02:58:57.265 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:58:57.265 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading to [[B] as "image/png"
+02:58:57.266 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:58:57.269 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

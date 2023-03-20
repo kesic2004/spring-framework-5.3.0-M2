@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.handler.SimpleUrlHandlerMappingTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:19:55" hostname="DESKTOP-VGJP1PJ" time="0.555">
+  <properties/>
+  <testcase name="handlerMappingJavaConfig()" classname="org.springframework.web.reactive.handler.SimpleUrlHandlerMappingTests" time="0.218"/>
+  <testcase name="handlerMappingXmlConfig()" classname="org.springframework.web.reactive.handler.SimpleUrlHandlerMappingTests" time="0.337"/>
+  <system-out><![CDATA[03:19:55.235 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [bceab9b] Mapped to java.lang.Object@5f4b9681
+03:19:55.235 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [139d83f7] Mapped to java.lang.Object@7f5c21b3
+03:19:55.236 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [130dfb0] Mapped to java.lang.Object@7f5c21b3
+03:19:55.236 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [24cbe89] Mapped to java.lang.Object@5f4b9681
+03:19:55.237 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [7d31170c] Mapped to java.lang.Object@5f4b9681
+03:19:55.533 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/shortpattern/testing, /*/test.jpeg, /pathmatching??.html, /??path??matching.html, /welcome.html, /anotherTest*, /administrator/*/pathmatching.html, /confirmation.html, /outofpattern*yeah, /administrator/*/testlast*, /sho*, /reservation.html, /payment.html, /*pathmatchingTest.html, /*test*.jpeg, /administrator/another/bla.xml, /path??matching.html, /stillAnotherTestYeah, /show123.html, /bookseats.html, /administrator/testing/longer/*, /administrator/pathmatching.html] in 'mapping'
+03:19:55.562 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/shortpattern/testing, /*/test.jpeg, /pathmatching??.html, /??path??matching.html, /welcome.html, /anotherTest*, /administrator/*/pathmatching.html, /confirmation.html, /outofpattern*yeah, /administrator/*/testlast*, /sho*, /reservation.html, /payment.html, /*pathmatchingTest.html, /*test*.jpeg, /administrator/another/bla.xml, /path??matching.html, /stillAnotherTestYeah, /show123.html, /bookseats.html, /administrator/testing/longer/*, /administrator/pathmatching.html] in 'mapping'
+03:19:55.563 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [2640193e] Mapped to java.lang.Object@709521aa
+03:19:55.564 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [4264b7a9] Mapped to java.lang.Object@709521aa
+03:19:55.565 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [3d0a3a70] Mapped to java.lang.Object@709521aa
+03:19:55.565 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [3707722b] Mapped to java.lang.Object@709521aa
+03:19:55.566 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [6a31a5f7] Mapped to java.lang.Object@709521aa
+03:19:55.567 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [a9e67ba] Mapped to java.lang.Object@709521aa
+03:19:55.568 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [77d07021] Mapped to java.lang.Object@709521aa
+03:19:55.569 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [75091f5a] Mapped to java.lang.Object@709521aa
+03:19:55.570 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [1ac38a2] Mapped to java.lang.Object@709521aa
+03:19:55.571 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [1566f746] Mapped to java.lang.Object@709521aa
+03:19:55.571 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [75efb460] Mapped to java.lang.Object@709521aa
+03:19:55.572 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [1b7d9e1b] Mapped to java.lang.Object@709521aa
+03:19:55.573 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [75cdbd4c] Mapped to java.lang.Object@709521aa
+03:19:55.573 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [5ff75a46] Mapped to java.lang.Object@709521aa
+03:19:55.574 [Test worker] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - [30b27565] Mapped to java.lang.Object@709521aa
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

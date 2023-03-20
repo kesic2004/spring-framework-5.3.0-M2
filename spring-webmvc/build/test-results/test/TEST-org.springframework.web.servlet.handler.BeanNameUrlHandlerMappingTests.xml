@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:28" hostname="DESKTOP-VGJP1PJ" time="0.073">
+  <properties/>
+  <testcase name="requestsWithoutHandlers()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.01"/>
+  <testcase name="requestsWithSubPathsInParentContext()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.011"/>
+  <testcase name="asteriskMatches()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.013"/>
+  <testcase name="doubleMappings()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.009"/>
+  <testcase name="requestsWithSubPaths()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.01"/>
+  <testcase name="requestsWithFullPaths()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.009"/>
+  <testcase name="overlappingMappings()" classname="org.springframework.web.servlet.handler.BeanNameUrlHandlerMappingTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

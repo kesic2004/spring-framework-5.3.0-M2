@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:15:01" hostname="DESKTOP-VGJP1PJ" time="0.327">
+  <properties/>
+  <testcase name="supports()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="httpEntityWithMonoBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="httpEntityWithStringBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.001"/>
+  <testcase name="emptyBodyWithSingle()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.107"/>
+  <testcase name="emptyBodyWithString()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="emptyBodyWithCompletableFuture()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="emptyBodyWithFlowable()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.054"/>
+  <testcase name="emptyBodyWithFlux()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="emptyBodyWithMono()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="httpEntityWithMaybeBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="emptyBodyWithMaybe()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="httpEntityWithFluxBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="requestEntity()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="doesNotSupport()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="httpEntityWithSingleBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="httpEntityWithCompletableFutureBody()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="emptyBodyWithObservable()" classname="org.springframework.web.reactive.result.method.annotation.HttpEntityMethodArgumentResolverTests" time="0.037"/>
+  <system-out><![CDATA[03:15:01.149 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [164c4473] Content-Type:text/plain
+03:15:01.149 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [164c4473] 0..1 [java.lang.String]
+03:15:01.149 [Test worker] DEBUG o.s.c.c.StringDecoder - [164c4473] Decoded "line1"
+03:15:01.151 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [2e17cfc] Content-Type:text/plain
+03:15:01.152 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [2e17cfc] 0..1 [java.lang.String]
+03:15:01.152 [Test worker] DEBUG o.s.c.c.StringDecoder - [2e17cfc] Decoded "line1"
+03:15:01.153 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [76facf0f] No Content-Type, using application/octet-stream
+03:15:01.153 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [76facf0f] 0..1 [java.lang.String]
+03:15:01.264 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [7fc80762] No Content-Type, using application/octet-stream
+03:15:01.265 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [7fc80762] 0..1 [java.lang.String]
+03:15:01.269 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [1e7bf5ca] No Content-Type, using application/octet-stream
+03:15:01.269 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [1e7bf5ca] 0..1 [java.lang.String]
+03:15:01.327 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [4c44b15d] No Content-Type, using application/octet-stream
+03:15:01.328 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [4c44b15d] 0..N [java.lang.String]
+03:15:01.332 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [576de051] No Content-Type, using application/octet-stream
+03:15:01.332 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [576de051] 0..N [java.lang.String]
+03:15:01.335 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [5cb23e34] No Content-Type, using application/octet-stream
+03:15:01.335 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [5cb23e34] 0..1 [java.lang.String]
+03:15:01.338 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [3515b2a6] Content-Type:text/plain
+03:15:01.338 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [3515b2a6] 0..1 [java.lang.String]
+03:15:01.340 [Test worker] DEBUG o.s.c.c.StringDecoder - [3515b2a6] Decoded "line1"
+03:15:01.344 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [7d1ff445] No Content-Type, using application/octet-stream
+03:15:01.344 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [7d1ff445] 0..1 [java.lang.String]
+03:15:01.348 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [656106cb] Content-Type:text/plain
+03:15:01.348 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [656106cb] 0..N [java.lang.String]
+03:15:01.349 [Test worker] DEBUG o.s.c.c.StringDecoder - [656106cb] Decoded "line1"
+03:15:01.350 [Test worker] DEBUG o.s.c.c.StringDecoder - [656106cb] Decoded "line2"
+03:15:01.351 [Test worker] DEBUG o.s.c.c.StringDecoder - [656106cb] Decoded "line3"
+03:15:01.352 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [67de7bfe] Content-Type:text/plain
+03:15:01.353 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [67de7bfe] 0..1 [java.lang.String]
+03:15:01.353 [Test worker] DEBUG o.s.c.c.StringDecoder - [67de7bfe] Decoded "line1"
+03:15:01.363 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [2d9ac3ab] Content-Type:text/plain
+03:15:01.364 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [2d9ac3ab] 0..1 [java.lang.String]
+03:15:01.364 [Test worker] DEBUG o.s.c.c.StringDecoder - [2d9ac3ab] Decoded "line1"
+03:15:01.416 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [49d7d97] Content-Type:text/plain
+03:15:01.416 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [49d7d97] 0..1 [java.lang.String]
+03:15:01.416 [Test worker] DEBUG o.s.c.c.StringDecoder - [49d7d97] Decoded "line1"
+03:15:01.430 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [472623cd] No Content-Type, using application/octet-stream
+03:15:01.430 [Test worker] DEBUG o.s.w.r.r.m.a.HttpEntityMethodArgumentResolver - [472623cd] 0..N [java.lang.String]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:37" hostname="DESKTOP-VGJP1PJ" time="0.092">
+  <properties/>
+  <testcase name="transactionalWithJUnitTimeout" classname="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" time="0.067"/>
+  <testcase name="transactionalWithJUnitRuleBasedTimeout" classname="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" time="0.004"/>
+  <testcase name="notTransactionalWithJUnitTimeout" classname="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" time="0.011"/>
+  <testcase name="transactionalWithSpringTimeout" classname="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" time="0.007"/>
+  <testcase name="notTransactionalWithSpringTimeout" classname="org.springframework.test.context.junit4.rules.TimedTransactionalSpringRuleTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

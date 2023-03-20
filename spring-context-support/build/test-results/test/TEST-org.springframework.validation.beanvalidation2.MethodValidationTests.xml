@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.validation.beanvalidation2.MethodValidationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:55:23" hostname="DESKTOP-VGJP1PJ" time="0.481">
+  <properties/>
+  <testcase name="testLazyValidatorForMethodValidation()" classname="org.springframework.validation.beanvalidation2.MethodValidationTests" time="0.153"/>
+  <testcase name="testMethodValidationInterceptor()" classname="org.springframework.validation.beanvalidation2.MethodValidationTests" time="0.088"/>
+  <testcase name="testLazyValidatorForMethodValidationWithProxyTargetClass()" classname="org.springframework.validation.beanvalidation2.MethodValidationTests" time="0.195"/>
+  <testcase name="testMethodValidationPostProcessor()" classname="org.springframework.validation.beanvalidation2.MethodValidationTests" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

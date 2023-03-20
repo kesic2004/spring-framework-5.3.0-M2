@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:13" hostname="DESKTOP-VGJP1PJ" time="0.868">
+  <properties/>
+  <testcase name="decodeFromText()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.524"/>
+  <testcase name="encodeToBinary()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.022"/>
+  <testcase name="encodeToTextCannotConvert()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.039"/>
+  <testcase name="cannotFindConversionService()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.052"/>
+  <testcase name="encodeToText()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.022"/>
+  <testcase name="encodeAndDecodeBytes()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.04"/>
+  <testcase name="decodeFromBinary()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.021"/>
+  <testcase name="cannotFindApplicationContext()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.024"/>
+  <testcase name="encodeAndDecodeText()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.017"/>
+  <testcase name="decodeFromTextCannotConvert()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.021"/>
+  <testcase name="encodeToBinaryCannotConvert()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.019"/>
+  <testcase name="decodeFromBinaryCannotConvert()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.027"/>
+  <testcase name="autowiresIntoEncoder()" classname="org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupportTests" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.web.client.match.ContentRequestMatchersTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:00" hostname="DESKTOP-VGJP1PJ" time="0.134">
+  <properties/>
+  <testcase name="testXml()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.038"/>
+  <testcase name="testBytes()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.001"/>
+  <testcase name="testContentType()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testJsonStrictNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.018"/>
+  <testcase name="testNodeMatcherNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.023"/>
+  <testcase name="testFormDataContains()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.003"/>
+  <testcase name="testStringNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testXmlNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.038"/>
+  <testcase name="testJsonStrictMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testJsonLenientNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.001"/>
+  <testcase name="testContentTypeNoMatch1()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.001"/>
+  <testcase name="testContentTypeNoMatch2()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testNodeMatcher()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.003"/>
+  <testcase name="testJsonLenientMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testFormData()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testBytesNoMatch()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <testcase name="testString()" classname="org.springframework.test.web.client.match.ContentRequestMatchersTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

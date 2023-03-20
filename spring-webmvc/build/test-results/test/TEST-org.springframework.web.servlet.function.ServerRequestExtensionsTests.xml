@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.function.ServerRequestExtensionsTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:19:13" hostname="DESKTOP-VGJP1PJ" time="12.06">
+  <properties/>
+  <testcase name="contentTypeOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="8.122"/>
+  <testcase name="contentLengthOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.237"/>
+  <testcase name="attributeOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.703"/>
+  <testcase name="remoteAddressOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.19"/>
+  <testcase name="principalOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.26"/>
+  <testcase name="principalOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.238"/>
+  <testcase name="paramOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.226"/>
+  <testcase name="paramOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.109"/>
+  <testcase name="body()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="1.139"/>
+  <testcase name="contentTypeOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.054"/>
+  <testcase name="attributeOrNull with value()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.06"/>
+  <testcase name="contentLengthOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.032"/>
+  <testcase name="remoteAddressOrNull with null()" classname="org.springframework.web.servlet.function.ServerRequestExtensionsTests" time="0.078"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

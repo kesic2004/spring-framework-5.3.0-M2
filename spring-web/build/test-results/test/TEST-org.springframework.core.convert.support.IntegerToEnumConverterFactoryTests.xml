@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.core.convert.support.IntegerToEnumConverterFactoryTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:20" hostname="DESKTOP-VGJP1PJ" time="0.268">
+  <properties/>
+  <testcase name="convertsIntegerToEnum(int, Color)[1]" classname="org.springframework.core.convert.support.IntegerToEnumConverterFactoryTests" time="0.243"/>
+  <testcase name="convertsIntegerToEnum(int, Color)[2]" classname="org.springframework.core.convert.support.IntegerToEnumConverterFactoryTests" time="0.001"/>
+  <testcase name="convertsIntegerToEnum(int, Color)[3]" classname="org.springframework.core.convert.support.IntegerToEnumConverterFactoryTests" time="0.004"/>
+  <testcase name="throwsArrayIndexOutOfBoundsExceptionIfInvalidEnumInteger()" classname="org.springframework.core.convert.support.IntegerToEnumConverterFactoryTests" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

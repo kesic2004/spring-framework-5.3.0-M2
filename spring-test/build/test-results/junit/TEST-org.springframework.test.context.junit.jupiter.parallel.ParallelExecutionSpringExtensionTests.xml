@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:09:44" hostname="DESKTOP-VGJP1PJ" time="7.295">
+  <properties/>
+  <testcase name="runTestsInParallel()[1]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="1.25"/>
+  <testcase name="runTestsInParallel()[2]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="1.027"/>
+  <testcase name="runTestsInParallel()[3]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.872"/>
+  <testcase name="runTestsInParallel()[4]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.776"/>
+  <testcase name="runTestsInParallel()[5]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.672"/>
+  <testcase name="runTestsInParallel()[6]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.661"/>
+  <testcase name="runTestsInParallel()[7]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.533"/>
+  <testcase name="runTestsInParallel()[8]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.524"/>
+  <testcase name="runTestsInParallel()[9]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.491"/>
+  <testcase name="runTestsInParallel()[10]" classname="org.springframework.test.context.junit.jupiter.parallel.ParallelExecutionSpringExtensionTests" time="0.482"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

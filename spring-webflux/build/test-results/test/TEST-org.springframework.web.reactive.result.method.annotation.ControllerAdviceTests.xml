@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:27" hostname="DESKTOP-VGJP1PJ" time="0.388">
+  <properties/>
+  <testcase name="resolveExceptionGlobalHandlerOrdered()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.126"/>
+  <testcase name="initBinderAdvice()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.04"/>
+  <testcase name="modelAttributeAdvice()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.025"/>
+  <testcase name="resolveExceptionGlobalHandler()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.037"/>
+  <testcase name="resolveExceptionWithAssertionError()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.074"/>
+  <testcase name="resolveExceptionWithAssertionErrorAsRootCause()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.018"/>
+  <testcase name="resolveExceptionWithHandlerMethodArg()" classname="org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests" time="0.063"/>
+  <system-out><![CDATA[03:14:27.218 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.249 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerAdapter - [f25e4aa] Using @ExceptionHandler org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests$OneControllerAdvice#handleException(IllegalStateException)
+03:14:27.291 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.319 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.350 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.358 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerAdapter - [5afe8e78] Using @ExceptionHandler org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests$SecondControllerAdvice#handleException(Exception)
+03:14:27.433 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.435 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerAdapter - [60b2ff86] Using @ExceptionHandler org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests$OneControllerAdvice#handleAssertionError(Error)
+03:14:27.452 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.454 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerAdapter - [30c95632] Using @ExceptionHandler org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests$OneControllerAdvice#handleAssertionError(Error)
+03:14:27.515 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 @ExceptionHandler
+03:14:27.517 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerAdapter - [2da3f67e] Using @ExceptionHandler org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests$OneControllerAdvice#handleWithHandlerMethod(HandlerMethod)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

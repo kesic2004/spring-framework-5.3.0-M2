@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.testng.DirtiesContextTransactionalTestNGSpringContextTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:47" hostname="DESKTOP-VGJP1PJ" time="1.105">
+  <properties/>
+  <testcase name="dirtyContext" classname="org.springframework.test.context.testng.DirtiesContextTransactionalTestNGSpringContextTests" time="0.075"/>
+  <testcase name="verifyContextWasDirtied" classname="org.springframework.test.context.testng.DirtiesContextTransactionalTestNGSpringContextTests" time="0.001"/>
+  <testcase name="verifyContextWasNotDirtied" classname="org.springframework.test.context.testng.DirtiesContextTransactionalTestNGSpringContextTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

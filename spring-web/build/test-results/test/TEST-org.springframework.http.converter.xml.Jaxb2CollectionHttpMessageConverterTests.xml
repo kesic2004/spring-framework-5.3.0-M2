@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:47" hostname="DESKTOP-VGJP1PJ" time="0.178">
+  <properties/>
+  <testcase name="readXmlRootElementSet()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.046"/>
+  <testcase name="readXmlRootElementExternalEntityDisabled()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.061"/>
+  <testcase name="readXmlRootElementExternalEntityEnabled()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.039"/>
+  <testcase name="readXmlTypeSet()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.008"/>
+  <testcase name="readXmlTypeList()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.005"/>
+  <testcase name="canRead()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.001"/>
+  <testcase name="readXmlRootElementList()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.008"/>
+  <testcase name="testXmlBomb()" classname="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverterTests" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

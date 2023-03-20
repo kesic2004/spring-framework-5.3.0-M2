@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jdbc.support.DatabaseStartupValidatorTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:43:56" hostname="DESKTOP-VGJP1PJ" time="4.051">
+  <properties/>
+  <testcase name="shouldCallValidatonTwiceInCaseOfException()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="1.012"/>
+  <testcase name="shouldCallValidatonTwiceWhenNotValid()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="1.014"/>
+  <testcase name="shouldExecuteValidatonTwiceOnError()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="1.007"/>
+  <testcase name="useValidationQueryInsteadOfIsValid()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="0.001"/>
+  <testcase name="exceededTimeoutThrowsException()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="1.013"/>
+  <testcase name="shouldUseJdbc4IsValidByDefault()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="0.0"/>
+  <testcase name="properSetupForDataSource()" classname="org.springframework.jdbc.support.DatabaseStartupValidatorTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

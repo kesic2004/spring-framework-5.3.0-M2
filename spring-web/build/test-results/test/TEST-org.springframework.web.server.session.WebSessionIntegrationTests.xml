@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.session.WebSessionIntegrationTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:59:22" hostname="DESKTOP-VGJP1PJ" time="1.41">
+  <properties/>
+  <testcase name="invalidate(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.033"/>
+  <testcase name="invalidate(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.015"/>
+  <testcase name="invalidate(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.237"/>
+  <testcase name="invalidate(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.019"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.022"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.013"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.208"/>
+  <testcase name="expiredSessionIsRecreated(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.031"/>
+  <testcase name="expiredSessionEnds(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.02"/>
+  <testcase name="expiredSessionEnds(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.01"/>
+  <testcase name="expiredSessionEnds(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.215"/>
+  <testcase name="expiredSessionEnds(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.016"/>
+  <testcase name="createSession(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.024"/>
+  <testcase name="createSession(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.009"/>
+  <testcase name="createSession(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.205"/>
+  <testcase name="createSession(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.015"/>
+  <testcase name="changeSessionId(HttpServer)[1]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.02"/>
+  <testcase name="changeSessionId(HttpServer)[2]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.009"/>
+  <testcase name="changeSessionId(HttpServer)[3]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.202"/>
+  <testcase name="changeSessionId(HttpServer)[4]" classname="org.springframework.web.server.session.WebSessionIntegrationTests" time="0.016"/>
+  <system-out><![CDATA[02:59:22.129 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.130 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+02:59:22.138 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 60271(0 millis).
+02:59:22.138 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60271/
+02:59:22.139 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.143 [qtp635532717-1398] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1505cda1] HTTP GET "/"
+02:59:22.144 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.145 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1505cda1] Completed 200 OK
+02:59:22.146 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.147 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60271/?invalidate
+02:59:22.147 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.153 [qtp635532717-1393] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [49e4477e] HTTP GET "/?invalidate"
+02:59:22.154 [qtp635532717-1393] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [49e4477e] Completed 200 OK
+02:59:22.154 [qtp635532717-1393] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.155 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.155 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+02:59:22.161 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+02:59:22.166 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.166 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:59:22.168 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 60277(0 millis).
+02:59:22.168 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60277/
+02:59:22.169 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.172 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [424f7b0f-13] HTTP GET "/"
+02:59:22.172 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.172 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [424f7b0f-13] Completed 200 OK
+02:59:22.175 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.175 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60277/?invalidate
+02:59:22.176 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.177 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [424f7b0f-14] HTTP GET "/?invalidate"
+02:59:22.177 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [424f7b0f-14] Completed 200 OK
+02:59:22.177 [reactor-http-nio-2] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.180 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.180 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:59:22.181 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:59:22.186 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.187 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+02:59:22.205 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 60279(0 millis).
+02:59:22.205 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60279/
+02:59:22.206 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.217 [http-nio-auto-11-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [28e0716d] HTTP GET "/"
+02:59:22.219 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.219 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [28e0716d] Completed 200 OK
+02:59:22.224 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.224 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60279/?invalidate
+02:59:22.224 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.229 [http-nio-auto-11-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4691e3f3] HTTP GET "/?invalidate"
+02:59:22.230 [http-nio-auto-11-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4691e3f3] Completed 200 OK
+02:59:22.230 [http-nio-auto-11-exec-2] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.230 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.231 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+02:59:22.423 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+02:59:22.426 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.427 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:59:22.434 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 60296(0 millis).
+02:59:22.434 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60296/
+02:59:22.435 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.437 [XNIO-12 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1059eaff] HTTP GET "/"
+02:59:22.438 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.438 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1059eaff] Completed 200 OK
+02:59:22.439 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.439 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60296/?invalidate
+02:59:22.439 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.440 [XNIO-12 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1059eaff] HTTP GET "/?invalidate"
+02:59:22.440 [XNIO-12 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1059eaff] Completed 200 OK
+02:59:22.440 [XNIO-12 I/O-1] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.442 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.442 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:59:22.446 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+02:59:22.451 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.451 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+02:59:22.456 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 60298(0 millis).
+02:59:22.456 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60298/
+02:59:22.457 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.459 [qtp1059103137-1426] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1299bab8] HTTP GET "/"
+02:59:22.459 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.459 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1299bab8] Completed 200 OK
+02:59:22.461 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.462 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60298/
+02:59:22.462 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.465 [qtp1059103137-1422] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [21b010f9] HTTP GET "/"
+02:59:22.465 [qtp1059103137-1422] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [21b010f9] Completed 200 OK
+02:59:22.465 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.466 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60298/
+02:59:22.466 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.467 [qtp1059103137-1425] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3c6ddcf9] HTTP GET "/"
+02:59:22.468 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.468 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3c6ddcf9] Completed 200 OK
+02:59:22.468 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.469 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+02:59:22.471 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+02:59:22.476 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.476 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:59:22.477 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 60304(0 millis).
+02:59:22.477 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60304/
+02:59:22.478 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.480 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-15] HTTP GET "/"
+02:59:22.480 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.480 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-15] Completed 200 OK
+02:59:22.482 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.483 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60304/
+02:59:22.483 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.484 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-16] HTTP GET "/"
+02:59:22.484 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-16] Completed 200 OK
+02:59:22.485 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.485 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60304/
+02:59:22.485 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.486 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-17] HTTP GET "/"
+02:59:22.486 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.487 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [ca4aca54-17] Completed 200 OK
+02:59:22.487 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.488 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:59:22.488 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:59:22.492 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.493 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+02:59:22.505 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 60306(0 millis).
+02:59:22.505 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60306/
+02:59:22.505 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.513 [http-nio-auto-12-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [77e8814e] HTTP GET "/"
+02:59:22.513 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.514 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [77e8814e] Completed 200 OK
+02:59:22.518 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.518 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60306/
+02:59:22.518 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.520 [http-nio-auto-12-exec-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [26abac2f] HTTP GET "/"
+02:59:22.520 [http-nio-auto-12-exec-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [26abac2f] Completed 200 OK
+02:59:22.522 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.522 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60306/
+02:59:22.522 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.524 [http-nio-auto-12-exec-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3ce06462] HTTP GET "/"
+02:59:22.524 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.524 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3ce06462] Completed 200 OK
+02:59:22.525 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.525 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+02:59:22.699 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+02:59:22.703 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.703 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:59:22.713 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 60323(0 millis).
+02:59:22.714 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60323/
+02:59:22.714 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.720 [XNIO-13 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] HTTP GET "/"
+02:59:22.721 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.721 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] Completed 200 OK
+02:59:22.721 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.722 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60323/
+02:59:22.722 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.727 [XNIO-13 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] HTTP GET "/"
+02:59:22.727 [XNIO-13 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] Completed 200 OK
+02:59:22.727 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.728 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60323/
+02:59:22.728 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.729 [XNIO-13 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] HTTP GET "/"
+02:59:22.729 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.729 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [4c178f0] Completed 200 OK
+02:59:22.730 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.730 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:59:22.733 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+02:59:22.738 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.739 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+02:59:22.744 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 60325(0 millis).
+02:59:22.744 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60325/
+02:59:22.745 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.747 [qtp565775445-1455] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [238095f4] HTTP GET "/"
+02:59:22.747 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.748 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [238095f4] Completed 200 OK
+02:59:22.749 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.750 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60325/?expire
+02:59:22.750 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.752 [qtp565775445-1452] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3d1ba0b4] HTTP GET "/?expire"
+02:59:22.753 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.754 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3d1ba0b4] Completed 200 OK
+02:59:22.754 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.755 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.755 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+02:59:22.758 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+02:59:22.762 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.762 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:59:22.763 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 60331(0 millis).
+02:59:22.763 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60331/
+02:59:22.764 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.765 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f22e521-18] HTTP GET "/"
+02:59:22.765 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.765 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f22e521-18] Completed 200 OK
+02:59:22.768 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.768 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60331/?expire
+02:59:22.768 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.769 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f22e521-19] HTTP GET "/?expire"
+02:59:22.769 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.769 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7f22e521-19] Completed 200 OK
+02:59:22.770 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.771 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.771 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:59:22.771 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:59:22.775 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.776 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+02:59:22.786 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 60333(0 millis).
+02:59:22.786 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60333/
+02:59:22.786 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.791 [http-nio-auto-13-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2eddbab6] HTTP GET "/"
+02:59:22.791 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.791 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2eddbab6] Completed 200 OK
+02:59:22.796 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.796 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60333/?expire
+02:59:22.796 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:22.798 [http-nio-auto-13-exec-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5a191d6a] HTTP GET "/?expire"
+02:59:22.798 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:22.799 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5a191d6a] Completed 200 OK
+02:59:22.799 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:22.800 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:22.800 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+02:59:22.989 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+02:59:22.992 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:22.992 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:59:23.000 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 60350(0 millis).
+02:59:23.000 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60350/
+02:59:23.001 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.003 [XNIO-14 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [18a40d8] HTTP GET "/"
+02:59:23.003 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.003 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [18a40d8] Completed 200 OK
+02:59:23.004 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.004 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60350/?expire
+02:59:23.004 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.005 [XNIO-14 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [18a40d8] HTTP GET "/?expire"
+02:59:23.005 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.005 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [18a40d8] Completed 200 OK
+02:59:23.005 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - WebSession expired or has been invalidated
+02:59:23.006 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.006 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:59:23.008 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+02:59:23.013 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.014 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+02:59:23.021 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 60352(0 millis).
+02:59:23.021 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60352/
+02:59:23.022 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.025 [qtp423882993-1482] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1b66a7ab] HTTP GET "/"
+02:59:23.026 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.026 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1b66a7ab] Completed 200 OK
+02:59:23.027 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.028 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60352/
+02:59:23.029 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.032 [qtp423882993-1485] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6483c358] HTTP GET "/"
+02:59:23.034 [qtp423882993-1485] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6483c358] Completed 200 OK
+02:59:23.034 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.034 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+02:59:23.036 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+02:59:23.039 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.039 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:59:23.040 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 60358(0 millis).
+02:59:23.040 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60358/
+02:59:23.041 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.043 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7343d52-20] HTTP GET "/"
+02:59:23.043 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.044 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7343d52-20] Completed 200 OK
+02:59:23.046 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.046 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60358/
+02:59:23.046 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.047 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7343d52-21] HTTP GET "/"
+02:59:23.047 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d7343d52-21] Completed 200 OK
+02:59:23.048 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.048 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:59:23.049 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:59:23.051 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.052 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+02:59:23.064 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 60360(0 millis).
+02:59:23.064 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60360/
+02:59:23.064 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.070 [http-nio-auto-14-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6214fa5c] HTTP GET "/"
+02:59:23.072 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.072 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [6214fa5c] Completed 200 OK
+02:59:23.075 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.076 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60360/
+02:59:23.076 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.079 [http-nio-auto-14-exec-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e5ce6be] HTTP GET "/"
+02:59:23.079 [http-nio-auto-14-exec-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [2e5ce6be] Completed 200 OK
+02:59:23.081 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.081 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+02:59:23.257 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+02:59:23.262 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.262 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:59:23.269 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 60377(0 millis).
+02:59:23.269 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60377/
+02:59:23.269 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.271 [XNIO-15 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c3827f7] HTTP GET "/"
+02:59:23.272 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.272 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c3827f7] Completed 200 OK
+02:59:23.272 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.272 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60377/
+02:59:23.273 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.273 [XNIO-15 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c3827f7] HTTP GET "/"
+02:59:23.273 [XNIO-15 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7c3827f7] Completed 200 OK
+02:59:23.274 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.274 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:59:23.277 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+02:59:23.281 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.281 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+02:59:23.287 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 60379(0 millis).
+02:59:23.287 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60379/
+02:59:23.287 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.290 [qtp1820523417-1513] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [67553994] HTTP GET "/"
+02:59:23.290 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.290 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [67553994] Completed 200 OK
+02:59:23.291 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.293 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60379/?changeId
+02:59:23.293 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.297 [qtp1820523417-1509] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [545f1c1c] HTTP GET "/?changeId"
+02:59:23.298 [qtp1820523417-1509] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [545f1c1c] Completed 200 OK
+02:59:23.298 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.299 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+02:59:23.301 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+02:59:23.304 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.304 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+02:59:23.305 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 60385(0 millis).
+02:59:23.305 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60385/
+02:59:23.306 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.308 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [0d95db13-22] HTTP GET "/"
+02:59:23.308 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.308 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [0d95db13-22] Completed 200 OK
+02:59:23.309 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.310 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60385/?changeId
+02:59:23.310 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.311 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [0d95db13-23] HTTP GET "/?changeId"
+02:59:23.311 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [0d95db13-23] Completed 200 OK
+02:59:23.312 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.312 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+02:59:23.313 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+02:59:23.317 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.317 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+02:59:23.327 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 60387(0 millis).
+02:59:23.327 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60387/
+02:59:23.327 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.333 [http-nio-auto-15-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [efcec7c] HTTP GET "/"
+02:59:23.334 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.334 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [efcec7c] Completed 200 OK
+02:59:23.338 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.338 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60387/?changeId
+02:59:23.338 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.340 [http-nio-auto-15-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [20e5aa99] HTTP GET "/?changeId"
+02:59:23.341 [http-nio-auto-15-exec-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [20e5aa99] Completed 200 OK
+02:59:23.342 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.342 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+02:59:23.518 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+02:59:23.522 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:23.522 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+02:59:23.529 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 60404(0 millis).
+02:59:23.529 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60404/
+02:59:23.530 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.532 [XNIO-16 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59f6527b] HTTP GET "/"
+02:59:23.532 [boundedElastic-12] DEBUG o.s.w.s.s.DefaultWebSessionManager - Created new WebSession.
+02:59:23.532 [boundedElastic-12] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59f6527b] Completed 200 OK
+02:59:23.533 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.533 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP GET http://localhost:60404/?changeId
+02:59:23.533 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:59:23.534 [XNIO-16 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59f6527b] HTTP GET "/?changeId"
+02:59:23.534 [XNIO-16 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [59f6527b] Completed 200 OK
+02:59:23.535 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:59:23.535 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+02:59:23.538 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-11"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-11-60279"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-11-60279"]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-11-60279"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-11-60279"]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-12"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-12-60306"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-12-60306"]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-12-60306"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-12-60306"]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-13"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-13-60333"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-13-60333"]
+Mar 20, 2023 2:59:22 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-13-60333"]
+Mar 20, 2023 2:59:22 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-13-60333"]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-14"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-14-60360"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-14-60360"]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-14-60360"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-14-60360"]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-15"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-15-60387"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-15-60387"]
+Mar 20, 2023 2:59:23 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-15-60387"]
+Mar 20, 2023 2:59:23 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-auto-15-60387"]
+]]></system-err>
+</testsuite>

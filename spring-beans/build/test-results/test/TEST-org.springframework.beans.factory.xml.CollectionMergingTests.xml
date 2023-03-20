@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.xml.CollectionMergingTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:37:52" hostname="DESKTOP-VGJP1PJ" time="1.326">
+  <properties/>
+  <testcase name="mergeSetInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.304"/>
+  <testcase name="mergeSetWithInnerBeanAsSetElement()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.356"/>
+  <testcase name="mergeMapWithInnerBeanAsMapEntryValueInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.016"/>
+  <testcase name="mergeProperties()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.024"/>
+  <testcase name="mergeMap()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.036"/>
+  <testcase name="mergeSet()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.008"/>
+  <testcase name="mergeMapWithInnerBeanAsMapEntryValue()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.324"/>
+  <testcase name="mergeListInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.016"/>
+  <testcase name="mergeMapInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.014"/>
+  <testcase name="mergeSetWithInnerBeanAsSetElementInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.017"/>
+  <testcase name="mergeList()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.008"/>
+  <testcase name="mergeListWithInnerBeanAsListElement()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.007"/>
+  <testcase name="mergeListWithInnerBeanAsListElementInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.123"/>
+  <testcase name="mergePropertiesInConstructor()" classname="org.springframework.beans.factory.xml.CollectionMergingTests" time="0.066"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

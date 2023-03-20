@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.cache.caffeine.CaffeineCacheManagerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:54:52" hostname="DESKTOP-VGJP1PJ" time="2.079">
+  <properties/>
+  <testcase name="customCacheRegistration()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.286"/>
+  <testcase name="changeCacheLoaderRecreateCache()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="1.768"/>
+  <testcase name="changeCacheSpecificationRecreateCache()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.003"/>
+  <testcase name="setCacheNameNullRestoreDynamicMode()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.001"/>
+  <testcase name="testDynamicMode()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.002"/>
+  <testcase name="testStaticMode()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.001"/>
+  <testcase name="changeCaffeineRecreateCache()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.0"/>
+  <testcase name="changeCaffeineSpecRecreateCache()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.001"/>
+  <testcase name="cacheLoaderUseLoadingCache()" classname="org.springframework.cache.caffeine.CaffeineCacheManagerTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" tests="16" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:57:22" hostname="DESKTOP-VGJP1PJ" time="0.11">
+  <properties/>
+  <testcase name="shouldApplySimpleStatementFilterFunctions()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.034"/>
+  <testcase name="shouldApplyExecuteFunction()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.008"/>
+  <testcase name="executeShouldBindNamedValuesByIndex()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.004"/>
+  <testcase name="connectionFactoryIsExposed()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.002"/>
+  <testcase name="shouldApplyStatementFilterFunctions()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.004"/>
+  <testcase name="selectShouldEmitFirstValue()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.005"/>
+  <testcase name="executeShouldBindSettableValues()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.005"/>
+  <testcase name="selectOneShouldFailWithException()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.005"/>
+  <testcase name="shouldCloseConnectionOnlyOnce()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.003"/>
+  <testcase name="executeShouldBindNamedValuesFromIndexes()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.004"/>
+  <testcase name="executeShouldBindNamedNullValues()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.003"/>
+  <testcase name="executeShouldBindNullValues()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.004"/>
+  <testcase name="shouldApplyPreparedOperation()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.003"/>
+  <testcase name="executeShouldBindValues()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.003"/>
+  <testcase name="selectShouldEmitAllValues()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.002"/>
+  <testcase name="rowsUpdatedShouldEmitSingleValue()" classname="org.springframework.r2dbc.core.DefaultDatabaseClientUnitTests" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

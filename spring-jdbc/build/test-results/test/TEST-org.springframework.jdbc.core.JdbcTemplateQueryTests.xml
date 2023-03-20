@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jdbc.core.JdbcTemplateQueryTests" tests="28" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:43:41" hostname="DESKTOP-VGJP1PJ" time="0.203">
+  <properties/>
+  <testcase name="testQueryForListWithArgsAndEmptyResult()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.106"/>
+  <testcase name="testQueryForObjectWithBigDecimal()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForIntPrimitive()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForObjectWithBigInteger()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.006"/>
+  <testcase name="testQueryForStreamWithArgsAndRowMapper()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.005"/>
+  <testcase name="testQueryForStreamWithRowMapper()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.005"/>
+  <testcase name="testQueryForMapWithSingleRowAndColumn()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForObjectWithString()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForListWithArgs()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.004"/>
+  <testcase name="testQueryForListWithArgsAndIntegerElementAndSingleRowAndColumn()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForObjectWithIntegerAndNull()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForObjectWithInteger()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.004"/>
+  <testcase name="testQueryForObjectWithArgsAndRowMapper()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForLongPrimitive()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForLongWithArgs()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.004"/>
+  <testcase name="testQueryForIntWithArgs()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForListWithArgsAndSingleRowAndColumn()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForObjectWithRowMapper()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.004"/>
+  <testcase name="testQueryForListWithIntegerElement()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.001"/>
+  <testcase name="testQueryForObjectWithArgsAndInteger()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForObjectThrowsIncorrectResultSizeForMoreThanOneRow()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForMapWithArgsAndSingleRowAndColumn()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForListIsNotConfusedByNamedParameterPrefix()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForListWithSingleRowAndColumn()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForListWithEmptyResult()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForList()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <testcase name="testQueryForLong()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.003"/>
+  <testcase name="testQueryForInt()" classname="org.springframework.jdbc.core.JdbcTemplateQueryTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

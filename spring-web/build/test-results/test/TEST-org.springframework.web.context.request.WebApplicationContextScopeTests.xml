@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.context.request.WebApplicationContextScopeTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:59:09" hostname="DESKTOP-VGJP1PJ" time="0.007">
+  <properties/>
+  <testcase name="testRequestScope()" classname="org.springframework.web.context.request.WebApplicationContextScopeTests" time="0.003"/>
+  <testcase name="testApplicationScope()" classname="org.springframework.web.context.request.WebApplicationContextScopeTests" time="0.002"/>
+  <testcase name="testSessionScope()" classname="org.springframework.web.context.request.WebApplicationContextScopeTests" time="0.001"/>
+  <system-out><![CDATA[02:59:09.403 [Test worker] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d717b19
+02:59:09.406 [Test worker] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2014accb
+02:59:09.408 [Test worker] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d77b08a
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.function.RequestPredicateTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:28" hostname="DESKTOP-VGJP1PJ" time="0.019">
+  <properties/>
+  <testcase name="negate()" classname="org.springframework.web.servlet.function.RequestPredicateTests" time="0.009"/>
+  <testcase name="or()" classname="org.springframework.web.servlet.function.RequestPredicateTests" time="0.004"/>
+  <testcase name="and()" classname="org.springframework.web.servlet.function.RequestPredicateTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

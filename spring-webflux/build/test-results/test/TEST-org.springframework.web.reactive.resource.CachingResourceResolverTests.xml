@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.resource.CachingResourceResolverTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:08" hostname="DESKTOP-VGJP1PJ" time="0.286">
+  <properties/>
+  <testcase name="resolveResourceMatchingEncoding()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.209"/>
+  <testcase name="resolveResourceInternal()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.025"/>
+  <testcase name="resolverUrlPathNoMatch()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.002"/>
+  <testcase name="resolverUrlPath()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.002"/>
+  <testcase name="resolverUrlPathFromCache()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceInternalNoMatch()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.001"/>
+  <testcase name="resolveResourceNoAcceptEncoding()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.002"/>
+  <testcase name="resolveResourceAcceptEncodingInCacheKey(GzippedFiles)" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.041"/>
+  <testcase name="resolveResourceInternalFromCache()" classname="org.springframework.web.reactive.resource.CachingResourceResolverTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

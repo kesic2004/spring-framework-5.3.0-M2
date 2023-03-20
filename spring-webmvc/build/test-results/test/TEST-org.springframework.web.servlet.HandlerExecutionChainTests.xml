@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.HandlerExecutionChainTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:30" hostname="DESKTOP-VGJP1PJ" time="0.161">
+  <properties/>
+  <testcase name="exceptionBeforePreHandle()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.025"/>
+  <testcase name="successAsyncScenario()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.008"/>
+  <testcase name="successScenario()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.004"/>
+  <testcase name="exceptionDuringPreHandle()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.1"/>
+  <testcase name="earlyExitInPreHandle()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.004"/>
+  <testcase name="exceptionAfterPreHandle()" classname="org.springframework.web.servlet.HandlerExecutionChainTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

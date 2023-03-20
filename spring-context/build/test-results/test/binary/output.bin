@@ -1,0 +1,828 @@
+PO(StopWatch '': running time = 2110900 ns
+PO.---------------------------------------------
+POns         %     Task name
+PO.---------------------------------------------
+PO?002110900  100%  10 repeated mixed invocations with Spring AOP
+PO
+PQ'StopWatch '': running time = 762200 ns
+PQ.---------------------------------------------
+PQns         %     Task name
+PQ.---------------------------------------------
+PQG000762200  100%  10 repeated around advice invocations with Spring AOP
+PQ
+PR'StopWatch '': running time = 792500 ns
+PR.---------------------------------------------
+PRns         %     Task name
+PR.---------------------------------------------
+PRD000792500  100%  10 repeated before advice invocations with AspectJ
+PR
+PS(StopWatch '': running time = 4144800 ns
+PS.---------------------------------------------
+PSns         %     Task name
+PS.---------------------------------------------
+PSD004144800  100%  10 repeated around advice invocations with AspectJ
+PS
+PT(StopWatch '': running time = 7570000 ns
+PT.---------------------------------------------
+PTns         %     Task name
+PT.---------------------------------------------
+PTM007570000  100%  10 repeated after returning advice invocations with AspectJ
+PT
+PU'StopWatch '': running time = 829400 ns
+PU.---------------------------------------------
+PUns         %     Task name
+PU.---------------------------------------------
+PUG000829400  100%  10 repeated before advice invocations with Spring AOP
+PU
+PV'StopWatch '': running time = 295900 ns
+PV.---------------------------------------------
+PVns         %     Task name
+PV.---------------------------------------------
+PVP000295900  100%  10 repeated after returning advice invocations with Spring AOP
+PV
+PW(StopWatch '': running time = 6129700 ns
+PW.---------------------------------------------
+PWns         %     Task name
+PW.---------------------------------------------
+PW<006129700  100%  10 repeated mixed invocations with AspectJ
+PW
+çåî02:41:04.659 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.AspectJPointcutAdvisor]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: name [Xlint:invalidAbsoluteTypeName]
+çéÊ02:41:04.697 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#7ad0b3e7' of type [org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7ad0b3e7': Cannot create inner bean '(inner bean)#78110074' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#78110074': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Cannot resolve method 'myBeforeAdvice' to a unique method. Attempted to resolve to overloaded method with the least number of parameters but there were 2 candidates.
+öôHello
+öôHello
+∏∑‡02:41:06.559 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#147b8bb6' of type [org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#147b8bb6': Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+∏∑ÆPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'argumentNames' threw exception; nested exception is java.lang.IllegalArgumentException: 'argumentNames' property of AbstractAspectJAdvice contains an argument name 'age bean' that is not a valid Java identifier
+ß®0
+ß®1
+ß®2
+ß®3
+ß®4
+ß®5
+ß®6
+ß®7
+ß®8
+ß®9
+≥¥„02:41:13.622 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.inject.Inject(), @org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥∂í02:41:13.633 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.inject.Inject(), @org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifierWithMultipleAttributes(value=default, number=123)}
+≥ª‘02:41:13.759 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥Ωó02:41:13.785 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.inject.Named(value=juergen)}
+≥æ‘02:41:13.790 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥ø€02:41:13.798 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through method 'setPerson' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥¿À02:41:13.803 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected single matching bean but found 2: juergen,mark
+≥¡€02:41:13.808 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through method 'setPerson' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥≈„02:41:13.836 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.inject.Inject(), @org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifier()}
+≥»Ä02:41:13.850 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.inject.Inject(), @org.springframework.beans.factory.support.InjectAnnotationAutowireContextTests$TestQualifierWithDefaultValue(value=default)}
+ Õ⁄02:41:13.869 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ Œ»02:41:13.876 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifierWithMultipleAttributes(value=default, number=123)}
+ œ⁄02:41:13.880 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ –·02:41:13.888 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through method 'setPerson' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ ”·02:41:13.904 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through method 'setPerson' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ ÷‹02:41:13.925 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected single matching bean but found 2: juergen1,juergen2
+ €ô02:41:13.943 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ ﬁ∂02:41:13.954 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifierWithDefaultValue(value=default)}
+ ﬂŒ02:41:13.959 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected single matching bean but found 2: juergen,mark
+ ·ô02:41:13.964 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autowired': Unsatisfied dependency expressed through field 'person'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$Person' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.support.QualifierAnnotationAutowireContextTests$TestQualifier()}
+ÁÏ®02:41:14.282 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testBean': Unsatisfied dependency expressed through field 'anonymous'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.xml.QualifierAnnotationTests$Person' available: expected single matching bean but found 6: larryBean,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#0,org.springframework.beans.factory.xml.QualifierAnnotationTests$SpecialPerson#0,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#1,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#2,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#3
+Á®02:41:14.488 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testBean': Unsatisfied dependency expressed through field 'moeSenior'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.beans.factory.xml.QualifierAnnotationTests$Person' available: expected single matching bean but found 6: larryBean,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#0,org.springframework.beans.factory.xml.QualifierAnnotationTests$SpecialPerson#0,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#1,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#2,org.springframework.beans.factory.xml.QualifierAnnotationTests$Person#3
+ Å¢˚org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'failsOnInnerBean' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Cannot create inner bean 'org.springframework.beans.testfixture.beans.TestBean#18925e0f' of type [org.springframework.beans.testfixture.beans.TestBean] while setting bean property 'someMap' with key [TypedStringValue: value [someKey], target type [null]]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.beans.testfixture.beans.TestBean#18925e0f' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢Ç	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+ Å¢â	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:127)
+ Å¢å	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.lambda$resolveManagedMap$1(BeanDefinitionValueResolver.java:453)
+ Å¢=	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+ Å¢É	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:451)
+ Å¢â	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:181)
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1691)
+ Å¢ç	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+ Å¢å	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+ Å¢ä	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+ Å¢t	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+ Å¢Ä	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+ Å¢k	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+ Å¢i	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+ Å¢n	at org.springframework.beans.factory.xml.XmlBeanFactoryTests.failsOnInnerBean(XmlBeanFactoryTests.java:286)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢\	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+ Å¢[	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+ Å¢Ö	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+ Å¢^	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+ Å¢l	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+ Å¢g	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+ Å¢Ü	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+ Å¢f	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+ Å¢Ü	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+ Å¢o	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+ Å¢v	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+ Å¢n	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+ Å¢]	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+ Å¢\	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+ Å¢	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢v	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+ Å¢m	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+ Å¢l	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ Å¢õ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ Å¢õ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢ò	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+ Å¢w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+ Å¢s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+ Å¢a	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+ Å¢g	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+ Å¢∂	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+ Å¢´	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+ Å¢á	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+ Å¢i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ Å¢j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+ Å¢y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+ Å¢0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+ Å¢W	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ Å¢í	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+ Å¢í	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+ Å¢Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+ Å¢l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+ Å¢[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+ Å¢U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ Å¢U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ Å¢k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+ Å¢+	at java.lang.Thread.run(Thread.java:748)
+ Å¢üCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.beans.testfixture.beans.TestBean#18925e0f' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1728)
+ Å¢ç	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+ Å¢å	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+ Å¢ä	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+ Å¢Ç	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+ Å¢	... 102 more
+ Å¢lCaused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢m	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+ Å¢l	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1724)
+ Å¢	... 106 more
+ Å¢ﬂorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'failsOnInnerBeanForConstructor' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Cannot create inner bean 'innerBean' of type [org.springframework.beans.testfixture.beans.TestBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'innerBean#1' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢Ç	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+ Å¢â	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:127)
+ Å¢}	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:704)
+ Å¢u	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+ Å¢ì	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+ Å¢å	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+ Å¢ä	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+ Å¢t	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+ Å¢Ä	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+ Å¢k	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+ Å¢i	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+ Å¢n	at org.springframework.beans.factory.xml.XmlBeanFactoryTests.failsOnInnerBean(XmlBeanFactoryTests.java:296)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢\	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+ Å¢[	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+ Å¢Ö	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+ Å¢^	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+ Å¢l	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+ Å¢g	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+ Å¢Ü	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+ Å¢f	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+ Å¢Ü	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+ Å¢o	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+ Å¢v	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+ Å¢n	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+ Å¢]	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+ Å¢\	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+ Å¢	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢v	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+ Å¢m	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+ Å¢l	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ Å¢õ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ Å¢õ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ Å¢O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ Å¢t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ Å¢k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ Å¢_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ Å¢ò	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+ Å¢w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+ Å¢s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+ Å¢a	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+ Å¢g	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+ Å¢X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+ Å¢∂	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+ Å¢´	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+ Å¢á	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+ Å¢i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ Å¢j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+ Å¢y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+ Å¢0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+ Å¢W	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+ Å¢A	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ Å¢S	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ Å¢[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ Å¢6	at java.lang.reflect.Method.invoke(Method.java:498)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ Å¢Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ Å¢í	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+ Å¢í	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+ Å¢Y	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+ Å¢l	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+ Å¢[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+ Å¢U	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ Å¢U	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ Å¢k	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+ Å¢+	at java.lang.Thread.run(Thread.java:748)
+ Å¢ÌCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'innerBean#1' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-reftypes.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1728)
+ Å¢ç	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+ Å¢å	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+ Å¢ä	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+ Å¢Ç	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+ Å¢	... 100 more
+ Å¢lCaused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ Å¢ØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ Å¢m	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+ Å¢l	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+ Å¢î	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1724)
+ Å¢	... 104 more
+ ÅÀÈorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rod2Accessor' defined in class path resource [org/springframework/beans/factory/xml/XmlBeanFactoryTests-constructorArg.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ ÅÀØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ ÅÀî	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1728)
+ ÅÀç	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+ ÅÀå	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+ ÅÀä	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+ ÅÀt	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+ ÅÀÄ	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+ ÅÀk	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+ ÅÀi	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+ ÅÀÑ	at org.springframework.beans.factory.xml.XmlBeanFactoryTests.relatedCausesFromConstructorResolution(XmlBeanFactoryTests.java:944)
+ ÅÀA	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ ÅÀS	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ ÅÀ[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ ÅÀ6	at java.lang.reflect.Method.invoke(Method.java:498)
+ ÅÀ\	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+ ÅÀ[	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+ ÅÀÖ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+ ÅÀ^	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+ ÅÀl	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+ ÅÀg	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+ ÅÀÜ	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+ ÅÀf	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+ ÅÀÜ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+ ÅÀo	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+ ÅÀv	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+ ÅÀn	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+ ÅÀ]	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+ ÅÀ\	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+ ÅÀ	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀv	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+ ÅÀm	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+ ÅÀl	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ ÅÀO	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ ÅÀ_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ ÅÀ6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ ÅÀõ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ ÅÀO	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ ÅÀ_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ ÅÀ6	at java.util.ArrayList.forEach(ArrayList.java:1259)
+ ÅÀõ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+ ÅÀO	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+ ÅÀt	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+ ÅÀk	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+ ÅÀ_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+ ÅÀò	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+ ÅÀw	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+ ÅÀs	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+ ÅÀX	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+ ÅÀa	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+ ÅÀg	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+ ÅÀX	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+ ÅÀX	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+ ÅÀ∂	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+ ÅÀ´	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+ ÅÀá	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+ ÅÀi	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+ ÅÀA	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ ÅÀS	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ ÅÀ[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ ÅÀ6	at java.lang.reflect.Method.invoke(Method.java:498)
+ ÅÀZ	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ ÅÀZ	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ ÅÀj	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+ ÅÀy	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+ ÅÀ0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+ ÅÀW	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+ ÅÀA	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ ÅÀS	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ ÅÀ[	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ ÅÀ6	at java.lang.reflect.Method.invoke(Method.java:498)
+ ÅÀZ	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+ ÅÀZ	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+ ÅÀí	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+ ÅÀí	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+ ÅÀY	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+ ÅÀl	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+ ÅÀ[	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+ ÅÀU	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ ÅÀU	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ ÅÀk	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+ ÅÀ+	at java.lang.Thread.run(Thread.java:748)
+ ÅÀlCaused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+ ÅÀØPropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'touchy' threw exception; nested exception is java.lang.Exception: Can't contain a .
+ ÅÀm	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:122)
+ ÅÀl	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:77)
+ ÅÀî	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1724)
+ ÅÀ	... 96 more
+ÂßÇ02:41:33.928 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableCachingTests.MultiCacheManagerConfigurer': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: 2 implementations of CachingConfigurer were found when only 1 was expected. Refactor the configuration such that CachingConfigurer is implemented only once or not at all.
+¢	´	Ö02:41:42.014 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'componentScanParserBeanDefinitionDefaultsTests.DefaultsTestBean' defined in file [F:\spring-framework-5.3.x\spring-framework-5.3.0-M2\spring-context\build\classes\java\test\org\springframework\context\annotation\ComponentScanParserBeanDefinitionDefaultsTests$DefaultsTestBean.class]: Unsatisfied dependency expressed through bean property 'propertyDependency1'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.context.annotation.ComponentScanParserBeanDefinitionDefaultsTests$PropertyDependencyTestBean' available: expected single matching bean but found 2: org.springframework.context.annotation.ComponentScanParserBeanDefinitionDefaultsTests$PropertyDependencyTestBean#0,propertyDependency2
+£
+™
+Ûorg.springframework.beans.factory.support.DefaultListableBeanFactory@5a6132c4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,config-b,config-a]; root of factory hierarchy
+—
+Ë
+¯	02:41:48.081 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'configurationClassPostProcessorTests.A': Unsatisfied dependency expressed through field 'z'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'configurationClassPostProcessorTests.AStrich': Unsatisfied dependency expressed through field 'b'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'b' defined in org.springframework.context.annotation.ConfigurationClassPostProcessorTests$A: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.context.annotation.ConfigurationClassPostProcessorTests$B]: Circular reference involving containing bean 'configurationClassPostProcessorTests.A' - consider declaring the factory method as static for independence from its containing instance. Factory method 'b' threw exception; nested exception is java.lang.NullPointerException: z is null
+—
+á⁄02:41:48.269 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'myTestBean' defined in org.springframework.context.annotation.MyTestBean: Bean name derived from @Bean method 'myTestBean' clashes with bean name for containing configuration class; please make those names unique!
+ó£õ02:41:53.320 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.springframework.context.annotation.PropertySourceAnnotationTests$ConfigWithMissingPropertySource]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/context/annotation/missing.properties] cannot be opened because it does not exist
+ó•ﬂ02:41:53.330 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.springframework.context.annotation.PropertySourceAnnotationTests$ConfigWithEmptyResourceLocations]; nested exception is java.lang.IllegalArgumentException: At least one @PropertySource(value) location is required
+ó´á02:41:53.359 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.springframework.context.annotation.PropertySourceAnnotationTests$ConfigWithUnresolvablePlaceholder]; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'unresolvable' in value "classpath:${unresolvable}/p1.properties"
+≥≤SimpleAsyncTaskExecutor-1
+ À≥02:41:53.981 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spr12278Tests.TwoSpecificConstructorsComponent': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.context.annotation.Spr12278Tests$TwoSpecificConstructorsComponent]: No default constructor found; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Spr12278Tests$TwoSpecificConstructorsComponent.<init>()
+ıˆ•02:41:54.372 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'foo' defined in class path resource [org/springframework/context/config/contextNamespaceHandlerTests-location-placeholder.xml]: Could not resolve placeholder 'foo' in value "${foo}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'foo' in value "${foo}"
+ÅäÅ02:42:01.722 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'annotationDrivenEventListenerTests.InvalidMethodSignatureEventListener'; nested exception is java.lang.IllegalStateException: Maximum one parameter is allowed for event listener method: public void org.springframework.context.event.AnnotationDrivenEventListenerTests$InvalidMethodSignatureEventListener.cannotBeCalled(java.lang.String,java.lang.Integer)
+ÅïÀ02:42:01.956 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'annotationDrivenEventListenerTests.CglibProxyWithPrivateMethod'; nested exception is java.lang.IllegalStateException: Need to invoke method 'handleIt' found on proxy for target class 'CglibProxyWithPrivateMethod' but cannot be delegated to target bean. Switch its visibility to package or protected.
+Å¢¿02:42:06.438 [SimpleAsyncTaskExecutor-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void org.springframework.context.event.AnnotationDrivenEventListenerTests$ExceptionEventListener.handleAsync(org.springframework.context.event.test.AnotherTestEvent)
+Å¢1java.lang.IllegalStateException: Test exception
+Å¢•	at org.springframework.context.event.AnnotationDrivenEventListenerTests$ExceptionEventListener.handleAsync(AnnotationDrivenEventListenerTests.java:794) ~[test/:?]
+Å¢¢	at org.springframework.context.event.AnnotationDrivenEventListenerTests$ExceptionEventListener$$FastClassBySpringCGLIB$$356572e3.invoke(<generated>) ~[test/:?]
+Å¢s	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.0-M2.jar:5.3.0-M2]
+Å¢ê	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.0-M2.jar:?]
+Å¢å	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.0-M2.jar:?]
+Å¢à	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.0-M2.jar:?]
+Å¢õ	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.0-M2.jar:5.3.0-M2]
+Å¢L	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+Å¢9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+¶µv02:42:06.862 [Test worker] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+¶µ"java.lang.RuntimeException: null
+¶µß	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:203) ~[spring-context-5.3.0-M2.jar:?]
+¶µ•	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:189) ~[spring-context-5.3.0-M2.jar:?]
+¶µ•	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:170) ~[spring-context-5.3.0-M2.jar:?]
+¶µ•	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:148) ~[spring-context-5.3.0-M2.jar:?]
+¶µ®	at org.springframework.context.event.ApplicationContextEventTests.simpleApplicationEventMulticasterWithErrorHandler(ApplicationContextEventTests.java:181) ~[test/:?]
+¶µP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+¶µb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_261]
+¶µj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_261]
+¶µE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_261]
+¶µÜ	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686) ~[junit-platform-commons-1.6.2.jar:1.6.2]
+¶µÉ	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µ≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µÜ	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µî	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µè	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µÆ	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µé	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µÆ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µó	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µû	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µÖ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µÑ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µß	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µû	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µï	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µî	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µE	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_261]
+¶µƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µE	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_261]
+¶µƒ	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µx	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µù	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µî	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µà	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µ¡	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µ†	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µú	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+¶µÉ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+¶µå	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
+¶µë	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) [junit-platform-launcher-1.6.2.jar:1.6.2]
+¶µÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) [junit-platform-launcher-1.6.2.jar:1.6.2]
+¶µÇ	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) [junit-platform-launcher-1.6.2.jar:1.6.2]
+¶µÊ	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) [gradle-testing-junit-platform-6.5.1.jar:6.5.1]
+¶µ€	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) [gradle-testing-junit-platform-6.5.1.jar:6.5.1]
+¶µ∑	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) [gradle-testing-junit-platform-6.5.1.jar:6.5.1]
+¶µè	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) [gradle-testing-base-6.5.1.jar:6.5.1]
+¶µP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+¶µb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_261]
+¶µj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_261]
+¶µE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_261]
+¶µ}	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µ}	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µç	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µú	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µ6	at com.sun.proxy.$Proxy2.stop(Unknown Source) [?:?]
+¶µ}	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133) [gradle-testing-base-6.5.1.jar:6.5.1]
+¶µP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+¶µb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_261]
+¶µj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_261]
+¶µE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_261]
+¶µ}	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µ}	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µµ	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µµ	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µ|	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414) [gradle-messaging-6.5.1.jar:6.5.1]
+¶µì	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64) [gradle-base-services-6.5.1.jar:6.5.1]
+¶µÇ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48) [gradle-base-services-6.5.1.jar:6.5.1]
+¶µc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+¶µc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+¶µí	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56) [gradle-base-services-6.5.1.jar:6.5.1]
+¶µ9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+«…ö02:42:16.128 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'someMessageSource' defined in class path resource [org/springframework/context/support/invalidValueType.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'useCodeAsDefaultMessage'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value [xxx]
+íë≠02:42:19.678 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-context/test] cannot be opened because it does not exist
+íì√02:42:19.680 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'tb1' defined in null: Circular placeholder reference 'var' in property definitions; nested exception is java.lang.IllegalArgumentException: Circular placeholder reference 'var' in property definitions
+íî02:42:19.695 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-context/test/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-context] cannot be opened because it does not exist
+íïø02:42:19.706 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'tb1' defined in null: Circular placeholder reference 'm' in property definitions; nested exception is java.lang.IllegalArgumentException: Circular placeholder reference 'm' in property definitions
+íñ±02:42:19.708 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'tb1' defined in null: Could not resolve placeholder 'm2' in value "${m2}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'm2' in value "${m2}"
+íó˛02:42:19.711 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [${myprop}/test/${myprop}] cannot be opened because it does not exist
+ØΩ˚02:42:20.186 [Test worker] WARN  o.s.c.s.ResourceBundleMessageSource - ResourceBundle [org/springframework/context/support/messages] not found for MessageSource: Can't find bundle for base name org/springframework/context/support/messages, locale en
+ÕŒ”02:42:20.499 [Test worker] WARN  o.s.c.s.SerializableBeanFactoryMemoryLeakTests$1 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'misconfigured': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'nonexistent' of bean class [java.lang.Object]: Bean property 'nonexistent' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+Õœƒ02:42:20.500 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'misconfigured': Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'nonexistent' of bean class [java.lang.Object]: Bean property 'nonexistent' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+¬∆M/d/yy h:mm a
+¬∆MMM d, yyyy h:mm:ss a
+¬∆MMMM d, yyyy h:mm:ss a z
+¬∆ EEEE, MMMM d, yyyy h:mm:ss a z
+ √¬oMar 20, 2023 2:42:25 AM org.javamoney.moneta.DefaultMonetaryContextFactory createMonetaryContextNonNullConfig
+ √¬GINFO: Using custom MathContext: precision=256, roundingMode=HALF_EVEN
+ Æ∞9Mar 20, 2023 2:42:28 AM ClientCommunicatorAdmin restart
+ Æ∞TWARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+ Æ∞9Mar 20, 2023 2:42:28 AM ClientCommunicatorAdmin restart
+ Æ∞TWARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+ ≤æ9Mar 20, 2023 2:42:29 AM ClientCommunicatorAdmin restart
+ ≤æTWARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+ ”“2Mar 20, 2023 2:42:29 AM ClientIntermediary close
+ ”“IINFO: java.io.IOException: The connection is not currently established.
+ ”“Cjava.io.IOException: The connection is not currently established.
+ ”“{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+ ”“{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+ ”“W	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+ ”“W	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+ ”“{	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+ ”“g	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+ ”“m	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+ ”“h	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+ ”“~	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+ ”“\	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+ ”“F	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+ ”“
+ ÅÇ2Mar 20, 2023 2:42:29 AM ClientIntermediary close
+ ÅÇIINFO: java.io.IOException: The connection is not currently established.
+ ÅÇCjava.io.IOException: The connection is not currently established.
+ ÅÇ{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+ ÅÇ{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+ ÅÇW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+ ÅÇW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+ ÅÇ{	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+ ÅÇg	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+ ÅÇm	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+ ÅÇh	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+ ÅÇ~	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+ ÅÇ\	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+ ÅÇF	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+ ÅÇ
+ ü 2Mar 20, 2023 2:42:30 AM ClientIntermediary close
+ ü IINFO: java.io.IOException: The connection is not currently established.
+ ü Cjava.io.IOException: The connection is not currently established.
+ ü {	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+ ü {	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+ ü W	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+ ü W	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+ ü {	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+ ü g	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+ ü m	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+ ü h	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+ ü ~	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+ ü \	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+ ü F	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+ ü 
+ÀÿÙ02:42:32.453 [e0-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void org.springframework.scheduling.annotation.AsyncExecutionTests$AsyncMethodWithQualifierBean.doNothing(int)
+Àÿ'org.opentest4j.AssertionFailedError: 
+ÀÿExpecting:
+Àÿ
+ <false>
+Àÿto be equal to:
+Àÿ	 <true>
+Àÿbut was not.
+ÀÿZ	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_261]
+Àÿq	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_261]
+Àÿy	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_261]
+Àÿì	at org.springframework.scheduling.annotation.AsyncExecutionTests$AsyncMethodWithQualifierBean.doNothing(AsyncExecutionTests.java:478) ~[test/:?]
+Àÿ°	at org.springframework.scheduling.annotation.AsyncExecutionTests$AsyncMethodWithQualifierBean$$FastClassBySpringCGLIB$$85bd9822.invoke(<generated>) ~[test/:?]
+Àÿs	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.0-M2.jar:5.3.0-M2]
+Àÿê	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.0-M2.jar:?]
+Àÿå	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.0-M2.jar:?]
+Àÿà	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.0-M2.jar:?]
+Àÿõ	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.0-M2.jar:5.3.0-M2]
+ÀÿL	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+Àÿc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+Àÿc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+Àÿ9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+ÀŸÙ02:42:32.464 [e0-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void org.springframework.scheduling.annotation.AsyncExecutionTests$AsyncMethodWithQualifierBean.doNothing(int)
+ÀŸ'org.opentest4j.AssertionFailedError: 
+ÀŸExpecting:
+ÀŸ
+ <false>
+ÀŸto be equal to:
+ÀŸ	 <true>
+ÀŸbut was not.
+ÀŸZ	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_261]
+ÀŸq	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_261]
+ÀŸy	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_261]
+ÀŸì	at org.springframework.scheduling.annotation.AsyncExecutionTests$AsyncMethodWithQualifierBean.doNothing(AsyncExecutionTests.java:478) ~[test/:?]
+ÀŸP	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+ÀŸb	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_261]
+ÀŸj	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_261]
+ÀŸE	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_261]
+ÀŸÑ	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.0-M2.jar:5.3.0-M2]
+ÀŸî	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.0-M2.jar:?]
+ÀŸå	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.0-M2.jar:?]
+ÀŸõ	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.0-M2.jar:5.3.0-M2]
+ÀŸL	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+ÀŸc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+ÀŸc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+ÀŸ9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+„‰Ê02:42:32.586 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'enableAsyncTests.AsyncBeanUser': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'asyncBean' is expected to be of type 'org.springframework.scheduling.annotation.EnableAsyncTests$AsyncBean' but was actually of type 'com.sun.proxy.$Proxy233'
+„Ê≥02:42:32.643 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [org.springframework.scheduling.annotation.EnableAsyncTests$AspectJAsyncAnnotationConfig]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/scheduling/aspectj/AspectJAsyncConfiguration.class] cannot be opened because it does not exist
+„È≥02:42:32.670 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'user' defined in org.springframework.scheduling.annotation.EnableAsyncTests$UserConfiguration: Unsatisfied dependency expressed through method 'user' parameter 0; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'asyncBean' is expected to be of type 'org.springframework.scheduling.annotation.EnableAsyncTests$AsyncBeanWithInterface' but was actually of type 'com.sun.proxy.$Proxy233'
+„ÏÊ02:42:32.776 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'enableAsyncTests.AsyncBeanUser': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'asyncBean' is expected to be of type 'org.springframework.scheduling.annotation.EnableAsyncTests$AsyncBean' but was actually of type 'com.sun.proxy.$Proxy233'
+ ÇÑ9Mar 20, 2023 2:42:33 AM ClientCommunicatorAdmin restart
+ ÇÑTWARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+ ÇÑ9Mar 20, 2023 2:42:33 AM ClientCommunicatorAdmin restart
+ ÇÑTWARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+ÇÖ†02:42:33.187 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'target': Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'cron': Invalid time zone specification 'FOO'
+Çà≤02:42:33.192 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'target': Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'invalid': Only no-arg methods may be annotated with @Scheduled
+Çãπ02:42:33.205 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'target': Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'invalid': Cron expression must consist of 6 fields (found 1 in "abc")
+Çç‹02:42:33.209 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'target': Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'invalid': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+ÇìÔ02:42:33.229 [Test worker] WARN  o.s.c.s.StaticApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'target': Initialization of bean failed; nested exception is java.lang.IllegalStateException: Need to invoke method 'cron' found on proxy for target class 'CronTestBean' but cannot be delegated to target bean. Switch its visibility to package or protected.
+± É02:42:33.640 [executeFailingRunnable-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+± zjava.lang.RuntimeException: TestTask failure for test 'executeFailingRunnable': expectedRunCount:<0>, actualRunCount:<1>
+± ô	at org.springframework.scheduling.concurrent.AbstractSchedulingTaskExecutorTests$TestTask.run(AbstractSchedulingTaskExecutorTests.java:299) ~[test/:?]
+± ô	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.0-M2.jar:?]
+± c	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+± c	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+± 9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+›ÁÇ02:42:34.043 [submitFailingRunnable-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+›Áyjava.lang.RuntimeException: TestTask failure for test 'submitFailingRunnable': expectedRunCount:<0>, actualRunCount:<1>
+›Áô	at org.springframework.scheduling.concurrent.AbstractSchedulingTaskExecutorTests$TestTask.run(AbstractSchedulingTaskExecutorTests.java:299) ~[test/:?]
+›Áô	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.0-M2.jar:?]
+›Á[	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_261]
+›ÁL	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+›Áâ	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_261]
+›ÁÇ	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_261]
+›Ác	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+›Ác	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+›Á9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+› É02:42:34.073 [executeFailingRunnable-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+› zjava.lang.RuntimeException: TestTask failure for test 'executeFailingRunnable': expectedRunCount:<0>, actualRunCount:<1>
+› ô	at org.springframework.scheduling.concurrent.AbstractSchedulingTaskExecutorTests$TestTask.run(AbstractSchedulingTaskExecutorTests.java:299) ~[test/:?]
+› ô	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.0-M2.jar:?]
+› [	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_261]
+› L	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+› â	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_261]
+› Ç	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_261]
+› c	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+› c	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+› 9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+ ›Ì2Mar 20, 2023 2:42:34 AM ClientIntermediary close
+ ›ÌIINFO: java.io.IOException: The connection is not currently established.
+ ›ÌCjava.io.IOException: The connection is not currently established.
+ ›Ì{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+ ›Ì{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+ ›ÌW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+ ›ÌW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+ ›Ì{	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+ ›Ìg	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+ ›Ìm	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+ ›Ìh	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+ ›Ì~	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+ ›Ì\	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+ ›ÌF	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+ ›Ì
+ ›Ì2Mar 20, 2023 2:42:34 AM ClientIntermediary close
+ ›ÌIINFO: java.io.IOException: The connection is not currently established.
+ ›ÌCjava.io.IOException: The connection is not currently established.
+ ›Ì{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.checkState(ClientSynchroMessageConnectionImpl.java:617)
+ ›Ì{	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl.sendOneWay(ClientSynchroMessageConnectionImpl.java:202)
+ ›ÌW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:300)
+ ›ÌW	at javax.management.remote.generic.GenericConnector.close(GenericConnector.java:271)
+ ›Ì{	at javax.management.remote.generic.ClientIntermediary$GenericClientCommunicatorAdmin.doStop(ClientIntermediary.java:897)
+ ›Ìg	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.restart(ClientCommunicatorAdmin.java:172)
+ ›Ìm	at com.sun.jmx.remote.opt.internal.ClientCommunicatorAdmin.gotIOException(ClientCommunicatorAdmin.java:73)
+ ›Ìh	at javax.management.remote.generic.GenericConnector$RequestHandler.execute(GenericConnector.java:662)
+ ›Ì~	at com.sun.jmx.remote.generic.ClientSynchroMessageConnectionImpl$RemoteJob.run(ClientSynchroMessageConnectionImpl.java:568)
+ ›Ì\	at com.sun.jmx.remote.opt.util.ThreadService$ThreadServiceJob.run(ThreadService.java:248)
+ ›ÌF	at com.sun.jmx.remote.opt.util.JobExecutor.run(JobExecutor.java:99)
+ ›Ì
+›Òö02:42:38.851 [scheduleOneTimeFailingTaskWithoutErrorHandler-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+›Òëjava.lang.RuntimeException: TestTask failure for test 'scheduleOneTimeFailingTaskWithoutErrorHandler': expectedRunCount:<0>, actualRunCount:<1>
+›Òô	at org.springframework.scheduling.concurrent.AbstractSchedulingTaskExecutorTests$TestTask.run(AbstractSchedulingTaskExecutorTests.java:299) ~[test/:?]
+›Òô	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.0-M2.jar:?]
+›Ò[	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_261]
+›ÒL	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+›Òâ	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_261]
+›ÒÇ	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_261]
+›Òc	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+›Òc	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+›Ò9	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+ÓÌ˙02:42:40.401 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'broken' defined in class path resource [org/springframework/scripting/bsh/bshBrokenContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptedObject.broken' defined in class path resource [org/springframework/scripting/bsh/bshBrokenContext.xml]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Object]: Factory method 'getScriptedObject' threw exception; nested exception is org.springframework.scripting.ScriptCompilationException: Could not compile class path resource [org/springframework/scripting/bsh/Broken.bsh]; nested exception is In file: inline evaluation of: ``one sure is the loneliest number... that i'll ever know;'' Encountered "is" at line 1, column 10.
+ÓÌ
+ÓÒªorg.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@9e367c7, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+ÓÒ∏org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@9e367c7, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+ÓÚºorg.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5d574352, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+Ó˜ºorg.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@707e0330, started on Mon Mar 20 02:42:41 GMT-05:00 2023]
+Ó˙ºorg.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5dbd67a7, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+Ó˙ƒorg.springframework.scripting.bsh.BshScriptFactoryTests$MyEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5dbd67a7, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+Ó¸ºorg.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@6fed4b30, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+ùúOcustomizing org.springframework.scripting.groovy.GroovyCalculator@2106c465...
+ùüGroovyMessenger
+ù¢Ë02:42:45.461 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messenger' defined in class path resource [org/springframework/scripting/groovy/lwspBadGroovyContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messenger': Could not determine scripted object type for GroovyScriptFactory: script source locator [
+ù¢    inline:
+ù¢			
+ù¢	class Bingo {
+ù¢
+ù¢		@Property String message;
+ù¢	}
+ù¢O			]; nested exception is java.io.FileNotFoundException: class path resource [
+ù¢    inline:
+ù¢			
+ù¢	class Bingo {
+ù¢
+ù¢		@Property String message;
+ù¢	}
+ù¢1			] cannot be opened because it does not exist
+ù§GroovyMessenger
+ù•Ncustomizing org.springframework.scripting.groovy.GroovyCalculator@884f075...
+ù¶GroovyMessenger
+ùßGroovyMessenger
+ù®GroovyMessenger
+ù©Ocustomizing org.springframework.scripting.groovy.GroovyCalculator@25e986c2...
+ù™GroovyMessenger
+ù´GroovyMessenger
+ù¨Ocustomizing org.springframework.scripting.groovy.GroovyCalculator@5b3cc602...
+ù≠GroovyMessenger
+ùÆGroovyMessenger
+ù∞Ocustomizing org.springframework.scripting.groovy.GroovyCalculator@1d09c1eb...
+ù±GroovyMessenger
+ùµ∞02:42:47.466 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'broken' defined in class path resource [org/springframework/scripting/groovy/groovyBrokenContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'broken': Could not determine scripted object type for GroovyScriptFactory: script source locator [classpath:org/springframework/scripting/groovy/Broken.groovyb]; nested exception is org.springframework.scripting.ScriptCompilationException: Could not compile class path resource [org/springframework/scripting/groovy/Broken.groovyb]; nested exception is org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+ùµ>Broken: 9: Unexpected input: 'breakfast' @ line 9, column 5.
+ùµ   for breakfast
+ùµ
+       ^
+ùµ
+ùµ	1 error
+ùµ
+ù∑Ú02:42:47.530 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messenger' defined in class path resource [org/springframework/scripting/groovy/twoClassesWrongOneFirst.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messenger': Could not determine scripted object type for GroovyScriptFactory: script source locator [inline:
+ù∑/	package org.springframework.scripting.groovy;
+ù∑
+ù∑1	import org.springframework.scripting.Messenger;
+ù∑			
+ù∑	class Bingo {
+ù∑
+ù∑		@Property String message;
+ù∑	}
+ù∑
+ù∑.	class GroovyMessenger implements Messenger {
+ù∑
+ù∑		@Property String message;
+ù∑	}
+ù∑Ù			]; nested exception is org.springframework.scripting.ScriptCompilationException: Could not compile static script [scriptFactory.messenger]; nested exception is org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+ù∑=scriptFactory.messenger: 8: unable to resolve class Property
+ù∑ @ line 8, column 3.
+ù∑    		@Property String message;
+ù∑     ^
+ù∑
+ù∑>scriptFactory.messenger: 13: unable to resolve class Property
+ù∑ @ line 13, column 3.
+ù∑    		@Property String message;
+ù∑     ^
+ù∑
+ù∑
+2 errors
+ù∑
+¸Ä¥02:42:49.511 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bean': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanInitializationException: Bean state is invalid: stringValue - size must be between 2 and 2147483647
+¸Åõ02:42:49.522 [Test worker] WARN  o.s.c.s.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bean': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanInitializationException: Bean state is invalid: testBean - may not be null
+é†lets begin
+é∞lets begin
+µ¥ã02:42:59.099 [Test worker] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'KotlinConfigurationClassTests.FinalConfigurationWithProxy' may not be final. Remove the final modifier to continue.
+µ¥vOffending resource: org.springframework.context.annotation.KotlinConfigurationClassTests$FinalConfigurationWithProxy

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.scheduling.aspectj.AnnotationDrivenBeanDefinitionParserTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:19:18" hostname="DESKTOP-VGJP1PJ" time="1.006">
+  <properties/>
+  <testcase name="asyncPostProcessorExceptionHandlerReference()" classname="org.springframework.scheduling.aspectj.AnnotationDrivenBeanDefinitionParserTests" time="0.941"/>
+  <testcase name="asyncAspectRegistered()" classname="org.springframework.scheduling.aspectj.AnnotationDrivenBeanDefinitionParserTests" time="0.035"/>
+  <testcase name="asyncPostProcessorExecutorReference()" classname="org.springframework.scheduling.aspectj.AnnotationDrivenBeanDefinitionParserTests" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

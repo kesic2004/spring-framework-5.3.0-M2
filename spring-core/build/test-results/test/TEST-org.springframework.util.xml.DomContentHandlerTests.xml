@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.util.xml.DomContentHandlerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:38:57" hostname="DESKTOP-VGJP1PJ" time="1.274">
+  <properties/>
+  <testcase name="contentHandlerDocumentNoNamespacePrefixes()" classname="org.springframework.util.xml.DomContentHandlerTests" time="1.212"/>
+  <testcase name="contentHandlerDocumentNamespacePrefixes()" classname="org.springframework.util.xml.DomContentHandlerTests" time="0.035"/>
+  <testcase name="contentHandlerElement()" classname="org.springframework.util.xml.DomContentHandlerTests" time="0.025"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

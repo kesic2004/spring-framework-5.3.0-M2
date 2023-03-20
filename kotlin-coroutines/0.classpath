@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="kotlin-coroutines/bin/eclipse"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/kotlin">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.jetbrains.kotlin.core.KOTLIN_CONTAINER"/>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.4.0-rc/55e5bd718130f189d7f4d3f56ed4ff333a656215/kotlin-reflect-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.4.0-rc/c486eb999386bd9ab63c376283a9d12d3feffddb/kotlin-reflect-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactor/1.3.8-1.4.0-rc/a40bbf098cf7bbd0a20fb8fed549e14f77c88782/kotlinx-coroutines-reactor-1.3.8-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactor/1.3.8-1.4.0-rc/528d1ebf7130493a2119375ce1de62c20930e460/kotlinx-coroutines-reactor-1.3.8-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactive/1.3.8-1.4.0-rc/8c83dcc1a62978abcb631a857389aa04d422c06e/kotlinx-coroutines-reactive-1.3.8-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactive/1.3.8-1.4.0-rc/f51b09b8ccf8ee46c05fc432b4c481f9624158f8/kotlinx-coroutines-reactive-1.3.8-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.3.8-1.4.0-rc/cf34ea128726f898d9a68f137b0265d6e197f53c/kotlinx-coroutines-core-jvm-1.3.8-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.3.8-1.4.0-rc/2c9c533543d2ace69b1e64918d159264a50e5/kotlinx-coroutines-core-jvm-1.3.8-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.0-rc/29ff4f3e8f138e1f28bf4171a6f262ab3a1e376b/kotlin-stdlib-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.4.0-rc/aaffe62d7edab3b254a15f410ded317c6869e5b8/kotlin-stdlib-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.4.0-M2/89adeb3685bee6b504ea3e6b092edd5b84868209/reactor-core-3.4.0-M2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.4.0-M2/c4893a25efcb0b5f673b08c91ea8a3deed8ec2b2/reactor-core-3.4.0-M2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.0-rc/b08a208c3cd4af5855d76bd5710b881a3910e1ae/kotlin-stdlib-common-1.4.0-rc-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.4.0-rc/4f17246362f6cbcf924f199a06619a4f77b51335/kotlin-stdlib-common-1.4.0-rc.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/e6ffdff8c438d959376c91d94b319457354a84c5/reactive-streams-1.0.3-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.6.2/bada08402ff53506b1446bc8b3caf5a2aec6c7d1/junit-platform-commons-1.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.6.2/7644a14b329e76b5fe487628b50fb5eab6ba7d26/junit-platform-commons-1.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.6.2/f09c69685e20753eaf05577f5da1f9a220783def/junit-jupiter-params-5.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.6.2/f2a64a42cf73077062c2386db0598062b7480d91/junit-jupiter-params-5.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.6.2/ce1129e07053701f7458120b12229aedb05bcd4a/junit-jupiter-api-5.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.6.2/c9ba885abfe975cda123bf6f8f0a69a1b46956d0/junit-jupiter-api-5.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.4.6/8115f39cae68b976c432b317abb93609a90004f3/mockito-junit-jupiter-3.4.6-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.4.6/c06e9d5514c82f27707693a4195182415874f0d4/mockito-junit-jupiter-3.4.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.mockito/mockito-core/3.4.6/85125f9c870601cc6bb258fdcb525a88000a7c2d/mockito-core-3.4.6-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.mockito/mockito-core/3.4.6/ac377337eb06d243cf603b0d21fecdbb914b6143/mockito-core-3.4.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk/1.10.0/f65aa94ae5ece00cddf068d771705f0897026409/mockk-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk/1.10.0/a19a1252ed960831e81d7d83473554f76761b319/mockk-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.assertj/assertj-core/3.16.1/f9dc10a74d690a0bbe2a0c07a4fa33b13db867bb/assertj-core-3.16.1-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.assertj/assertj-core/3.16.1/6e772120aff69ca3d1583b3d1b36b7529de43ba1/assertj-core-3.16.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.13/2862e745ed6b27c5696d93e5fc1b8cc14abe88ef/byte-buddy-1.10.13-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.13/1426b15be5954246a9a72fd4baae1f42b9a4f45d/byte-buddy-1.10.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.13/f0819f2059e3c8ed2ad4e418a7b5ad6ff28b827f/byte-buddy-agent-1.10.13-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.13/f5b939963d13be46c101a3c12bf49aa23abb191/byte-buddy-agent-1.10.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/96614f514a1031296657bf0dde452dc15e42fcb8/objenesis-2.6-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-common/1.10.0/f7172e9d00d79f25809b1430cf97c2b980f67bf9/mockk-common-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-common/1.10.0/7d2b40e91c2bb479e73d1f0a7f36dd76f5d3bb22/mockk-common-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-dsl-jvm/1.10.0/2528e42ab676ef2f766e8673d1c87630a2bbecf/mockk-dsl-jvm-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-dsl-jvm/1.10.0/1cc423685a1651fd2126cc48e317ca0a63b87807/mockk-dsl-jvm-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.10.0/d32652f030e7254caa3946286c75d2015f16496c/mockk-dsl-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.10.0/aa3b68d98fad6c089078c4053dde5e24c896d2f2/mockk-dsl-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.6.2/d9efa09350f724e7e7defa0e74c4f4573e276fe1/junit-platform-launcher-1.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.6.2/d866de2950859ca1c7996351d7b3d97428083cd0/junit-platform-launcher-1.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.6.2/2116c399709549a3094a8f2bd96bb3f94b98a341/junit-jupiter-engine-5.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.6.2/c0833bd6de29dd77f8d071025b97b8b434308cd3/junit-jupiter-engine-5.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.6.2/9240cb4f3ee7693f8f18f4140acc7f8c83336e30/junit-platform-engine-1.6.2-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.6.2/1752cad2579e20c2b224602fe846fc660fb35805/junit-platform-engine-1.6.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.13.3/9b7f420c635c51622d0984a7fc3fd6e312d5ce57/log4j-slf4j-impl-2.13.3-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.13.3/7cca27a921a18645139cf651c04b83b1a19cfd76/log4j-slf4j-impl-2.13.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.13.3/e9d59a9a974a2a8e4749b996710e9c5a38ea2eba/log4j-core-2.13.3-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.13.3/4e857439fc4fe974d212adaaaa3b118b8b50e3ec/log4j-core-2.13.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jul/2.13.3/c745b059340c5bb2741b7fa1016040e8da7c1ef0/log4j-jul-2.13.3-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jul/2.13.3/b669b3b98612e352de350c839fc2c992e746dc69/log4j-jul-2.13.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-jvm/1.10.0/f7a627af0a36eacaf2462194c2a1bca66ca3b58/mockk-agent-jvm-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-jvm/1.10.0/9b42a88de1f13e6a11fc512e9147a09c4b4bd3bf/mockk-agent-jvm-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.objenesis/objenesis/3.1/36e4b278b98654980a51e36ef60b186a757ed3d7/objenesis-3.1-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.objenesis/objenesis/3.1/48f12deaae83a8dfc3775d830c9fd60ea59bbbca/objenesis-3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/735efba8bfdacf25716fa1e2e82f57b2837f8300/log4j-api-2.13.3-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/71a1fdefa224da50f1db6306ce609981e20186c9/slf4j-api-1.7.30-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-common/1.10.0/baa1a6388350f473a393512b9f3ca8b386a816d1/mockk-agent-common-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-common/1.10.0/75e868f97405dc8d367d028dac80239266c48e6f/mockk-agent-common-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-api/1.10.0/20a7cfc545f8852cadf33e0d1baaddd6d92dc263/mockk-agent-api-1.10.0-sources.jar" kind="lib" path="F:/real_M2/caches/modules-2/files-2.1/io.mockk/mockk-agent-api/1.10.0/3990d27fd5d5eb3df041bdb0fd31ac7a14e7575b/mockk-agent-api-1.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+</classpath>

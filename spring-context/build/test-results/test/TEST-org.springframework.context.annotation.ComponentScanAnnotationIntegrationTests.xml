@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:41:36" hostname="DESKTOP-VGJP1PJ" time="2.508">
+  <properties/>
+  <testcase name="controlScan()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.018"/>
+  <testcase name="withScopedProxy()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.035"/>
+  <testcase name="withScopeResolver()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.031"/>
+  <testcase name="multiComponentScan()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.03"/>
+  <testcase name="withScopedProxyThroughAspectJPattern()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="1.349"/>
+  <testcase name="withAwareTypeFilter()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.507"/>
+  <testcase name="withCustomBeanNameGenerator()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.034"/>
+  <testcase name="viaContextRegistration_FromPackageOfConfigClass()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.009"/>
+  <testcase name="withMultipleAnnotationIncludeFilters1()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.023"/>
+  <testcase name="withMultipleAnnotationIncludeFilters2()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.015"/>
+  <testcase name="viaContextRegistration()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.024"/>
+  <testcase name="viaContextRegistration_WithComposedAnnotation()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.01"/>
+  <testcase name="withBasePackagesAndValueAlias()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.02"/>
+  <testcase name="withScopedProxyThroughRegex()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.01"/>
+  <testcase name="withCustomTypeFilter()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.343"/>
+  <testcase name="viaBeanRegistration()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.016"/>
+  <testcase name="viaContextRegistration_WithValueAttribute()" classname="org.springframework.context.annotation.ComponentScanAnnotationIntegrationTests" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

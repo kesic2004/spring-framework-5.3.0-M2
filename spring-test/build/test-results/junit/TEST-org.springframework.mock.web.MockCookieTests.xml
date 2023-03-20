@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.mock.web.MockCookieTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:09:30" hostname="DESKTOP-VGJP1PJ" time="0.053">
+  <properties/>
+  <testcase name="parseInvalidAttribute()" classname="org.springframework.mock.web.MockCookieTests" time="0.009"/>
+  <testcase name="parseHeaderWithInvalidExpiresAttribute(String)[1]" classname="org.springframework.mock.web.MockCookieTests" time="0.018"/>
+  <testcase name="parseHeaderWithInvalidExpiresAttribute(String)[2]" classname="org.springframework.mock.web.MockCookieTests" time="0.002"/>
+  <testcase name="setSameSite()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <testcase name="parseHeaderWithoutAttributes()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <testcase name="parseNullHeader()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <testcase name="parseHeaderWithAttributes()" classname="org.springframework.mock.web.MockCookieTests" time="0.008"/>
+  <testcase name="constructCookie()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <testcase name="parseInvalidHeader()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <testcase name="parseHeaderWithAttributesCaseSensitivity()" classname="org.springframework.mock.web.MockCookieTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

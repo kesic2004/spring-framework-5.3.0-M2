@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.filter.CorsFilterTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:59:09" hostname="DESKTOP-VGJP1PJ" time="0.009">
+  <properties/>
+  <testcase name="sameOriginRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.001"/>
+  <testcase name="validActualRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.001"/>
+  <testcase name="validPreFlightRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.001"/>
+  <testcase name="nonCorsRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.0"/>
+  <testcase name="invalidPreFlightRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.001"/>
+  <testcase name="invalidActualRequest()" classname="org.springframework.web.filter.CorsFilterTests" time="0.002"/>
+  <system-out><![CDATA[02:59:09.795 [Test worker] DEBUG o.s.w.c.DefaultCorsProcessor - Reject: HTTP 'DELETE' is not allowed
+02:59:09.797 [Test worker] DEBUG o.s.w.c.DefaultCorsProcessor - Reject: HTTP 'DELETE' is not allowed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.core.MessageRequestReplyTemplateTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:56:19" hostname="DESKTOP-VGJP1PJ" time="0.032">
+  <properties/>
+  <testcase name="convertAndSendWithPostProcessor()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.002"/>
+  <testcase name="convertAndSendToDestinationWithHeadersAndPostProcessor()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.004"/>
+  <testcase name="convertAndSendToDestinationWithHeaders()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.003"/>
+  <testcase name="sendAndReceive()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.001"/>
+  <testcase name="convertAndSendToDestinationWithPostProcessor()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.001"/>
+  <testcase name="sendAndReceiveMissingDestination()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.001"/>
+  <testcase name="sendAndReceiveToDestination()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.001"/>
+  <testcase name="convertAndSend()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.0"/>
+  <testcase name="convertAndSendToDestination()" classname="org.springframework.messaging.core.MessageRequestReplyTemplateTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

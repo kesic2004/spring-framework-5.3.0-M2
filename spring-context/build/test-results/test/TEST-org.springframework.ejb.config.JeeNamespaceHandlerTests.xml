@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.ejb.config.JeeNamespaceHandlerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:42:22" hostname="DESKTOP-VGJP1PJ" time="0.547">
+  <properties/>
+  <testcase name="testSimpleDefinition()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.144"/>
+  <testcase name="testComplexRemoteSlsb()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.061"/>
+  <testcase name="testLazyInitJndiLookup()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.046"/>
+  <testcase name="testWithEnvironment()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.022"/>
+  <testcase name="testWithReferencedEnvironment()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.04"/>
+  <testcase name="testComplexLocalSlsb()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.05"/>
+  <testcase name="testSimpleRemoteSlsb()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.018"/>
+  <testcase name="testComplexDefinition()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.062"/>
+  <testcase name="testSimpleLocalSlsb()" classname="org.springframework.ejb.config.JeeNamespaceHandlerTests" time="0.101"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

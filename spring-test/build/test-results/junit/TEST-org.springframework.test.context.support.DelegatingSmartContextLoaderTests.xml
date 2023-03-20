@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:09:53" hostname="DESKTOP-VGJP1PJ" time="0.057">
+  <properties/>
+  <testcase name="loadContextWithNullConfig()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="loadContextWithXmlConfig()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.037"/>
+  <testcase name="processLocations()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="processContextConfigurationWithDefaultConfigurationClassGeneration()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.002"/>
+  <testcase name="loadContextWithConfigurationClass()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.007"/>
+  <testcase name="loadContextWithoutLocationsAndConfigurationClasses()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="loadContextFromLocations()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="processContextConfigurationWithConfigurationClass()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.0"/>
+  <testcase name="processContextConfigurationWithLocation()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="loadContextWithLocationsAndConfigurationClasses()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.0"/>
+  <testcase name="processContextConfigurationWithDefaultXmlConfigGeneration()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.001"/>
+  <testcase name="processContextConfigurationWithDefaultXmlConfigAndConfigurationClassGeneration()" classname="org.springframework.test.context.support.DelegatingSmartContextLoaderTests" time="0.002"/>
+  <system-out><![CDATA[03:09:54.043 [Test worker] ERROR o.s.t.c.s.AbstractDelegatingSmartContextLoader - Configuration error: both default locations AND default configuration classes were detected for context configuration [ContextConfigurationAttributes@6c70dfbc declaringClass = 'org.springframework.test.context.support.DelegatingSmartContextLoaderTests$ImproperDuplicateDefaultXmlAndConfigClassTestCase', classes = '{class org.springframework.test.context.support.DelegatingSmartContextLoaderTests$ImproperDuplicateDefaultXmlAndConfigClassTestCase$Config}', locations = '{classpath:org/springframework/test/context/support/DelegatingSmartContextLoaderTests$ImproperDuplicateDefaultXmlAndConfigClassTestCase-context.xml}', inheritLocations = true, initializers = 'null', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']; configure one or the other, but not both.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

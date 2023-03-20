@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" tests="40" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:37" hostname="DESKTOP-VGJP1PJ" time="0.936">
+  <properties/>
+  <testcase name="noEndHeader(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.081"/>
+  <testcase name="noEndHeader(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.004"/>
+  <testcase name="noEndHeader(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.004"/>
+  <testcase name="chrome(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.08"/>
+  <testcase name="chrome(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.034"/>
+  <testcase name="chrome(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.096"/>
+  <testcase name="noEndBody(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noEndBody(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noEndBody(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="safari(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.043"/>
+  <testcase name="safari(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.025"/>
+  <testcase name="safari(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.05"/>
+  <testcase name="simple(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.019"/>
+  <testcase name="simple(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.012"/>
+  <testcase name="simple(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.014"/>
+  <testcase name="firefox(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.049"/>
+  <testcase name="firefox(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.16"/>
+  <testcase name="firefox(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.032"/>
+  <testcase name="garbage(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.017"/>
+  <testcase name="garbage(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.016"/>
+  <testcase name="garbage(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.015"/>
+  <testcase name="canRead(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.001"/>
+  <testcase name="canRead(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.0"/>
+  <testcase name="canRead(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.0"/>
+  <testcase name="cancelBodyThenPart(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.013"/>
+  <testcase name="cancelBodyThenPart(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.01"/>
+  <testcase name="cancelBodyThenPart(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.011"/>
+  <testcase name="noHeaders(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noHeaders(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noHeaders(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noEndBoundary(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.002"/>
+  <testcase name="noEndBoundary(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="noEndBoundary(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="cancelBody(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.014"/>
+  <testcase name="cancelBody(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.01"/>
+  <testcase name="cancelBody(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.015"/>
+  <testcase name="cancelPart(String, DefaultPartHttpMessageReader)[1]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.013"/>
+  <testcase name="cancelPart(String, DefaultPartHttpMessageReader)[2]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.012"/>
+  <testcase name="cancelPart(String, DefaultPartHttpMessageReader)[3]" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.011"/>
+  <testcase name="tooManyParts()" classname="org.springframework.http.codec.multipart.DefaultPartHttpMessageReaderTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

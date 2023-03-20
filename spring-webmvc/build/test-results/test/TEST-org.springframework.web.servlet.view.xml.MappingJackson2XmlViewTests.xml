@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:18:53" hostname="DESKTOP-VGJP1PJ" time="2.364">
+  <properties/>
+  <testcase name="renderOnlySpecifiedModelKey()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="1.482"/>
+  <testcase name="renderSimpleBean()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.252"/>
+  <testcase name="renderModelWithMultipleKeys()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.002"/>
+  <testcase name="renderSimpleBeanWithJsonView()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.002"/>
+  <testcase name="renderCaching()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.0"/>
+  <testcase name="isExposePathVars()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.002"/>
+  <testcase name="renderWithSelectedContentType()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.0"/>
+  <testcase name="renderSimpleMap()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.135"/>
+  <testcase name="renderWithCustomSerializerLocatedByFactory()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.243"/>
+  <testcase name="renderWithCustomSerializerLocatedByAnnotation()" classname="org.springframework.web.servlet.view.xml.MappingJackson2XmlViewTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

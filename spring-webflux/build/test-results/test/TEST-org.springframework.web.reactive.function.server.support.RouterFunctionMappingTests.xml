@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:19:54" hostname="DESKTOP-VGJP1PJ" time="0.023">
+  <properties/>
+  <testcase name="normal()" classname="org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests" time="0.006"/>
+  <testcase name="changeParser()" classname="org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests" time="0.01"/>
+  <testcase name="noMatch()" classname="org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests" time="0.006"/>
+  <system-out><![CDATA[03:19:55.002 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [19f7cc2c] Mapped to org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests$$Lambda$825/356395944@61b7f47e
+03:19:55.012 [Test worker] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - [62fe17f] Mapped to org.springframework.web.reactive.function.server.support.RouterFunctionMappingTests$$Lambda$829/310198057@32d24979
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

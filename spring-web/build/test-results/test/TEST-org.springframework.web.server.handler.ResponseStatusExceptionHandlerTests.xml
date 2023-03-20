@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:59:21" hostname="DESKTOP-VGJP1PJ" time="0.011">
+  <properties/>
+  <testcase name="handleNestedResponseStatusException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.002"/>
+  <testcase name="unresolvedException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.0"/>
+  <testcase name="handleResponseStatusExceptionWithHeaders()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="handleMethodNotAllowed()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <testcase name="responseCommitted()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.002"/>
+  <testcase name="handleResponseStatusException()" classname="org.springframework.web.server.handler.ResponseStatusExceptionHandlerTests" time="0.001"/>
+  <system-out><![CDATA[02:59:21.652 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [14a16402] Resolved [Exception: org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+02:59:21.654 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [2e02aff] Resolved [NotAcceptableStatusException: 406 NOT_ACCEPTABLE "Could not find acceptable representation"] for HTTP GET /
+02:59:21.657 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [11cd3892] Resolved [MethodNotAllowedException: 405 METHOD_NOT_ALLOWED "Request method 'PATCH' not supported"] for HTTP GET /
+02:59:21.662 [Test worker] DEBUG o.s.w.s.h.ResponseStatusExceptionHandler - [4d51348c] Resolved [ResponseStatusException: 400 BAD_REQUEST ""] for HTTP GET /
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

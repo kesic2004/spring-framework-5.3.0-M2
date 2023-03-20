@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.support.ClientCodecConfigurerTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:44" hostname="DESKTOP-VGJP1PJ" time="0.09">
+  <properties/>
+  <testcase name="defaultReaders()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.075"/>
+  <testcase name="maxInMemorySize()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.001"/>
+  <testcase name="defaultWriters()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.001"/>
+  <testcase name="cloneShouldNotBeImpactedByChangesToOriginal()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.005"/>
+  <testcase name="cloneShouldNotDropMultipartCodecs()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.001"/>
+  <testcase name="enableLoggingRequestDetails()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.0"/>
+  <testcase name="jackson2EncoderOverride()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.0"/>
+  <testcase name="clonedConfigurer()" classname="org.springframework.http.codec.support.ClientCodecConfigurerTests" time="0.004"/>
+  <system-out><![CDATA[02:58:44.249 [Test worker] DEBUG o.s.w.HttpLogging - Decoded "line1"
+02:58:44.250 [Test worker] DEBUG o.s.w.HttpLogging - Decoded "line2"
+02:58:44.250 [Test worker] DEBUG o.s.w.HttpLogging - Decoded "line1"
+02:58:44.250 [Test worker] DEBUG o.s.w.HttpLogging - Decoded "line2"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

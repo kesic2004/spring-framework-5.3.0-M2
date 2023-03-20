@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.DefaultWebClientTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:13:29" hostname="DESKTOP-VGJP1PJ" time="6.299">
+  <properties/>
+  <testcase name="defaultHeaderAndCookie()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="1.869"/>
+  <testcase name="defaultHeaderAndCookieOverrides()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.01"/>
+  <testcase name="onStatusHandlersOrderIsPreserved()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.316"/>
+  <testcase name="uriBuilder()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.005"/>
+  <testcase name="defaultRequest()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.018"/>
+  <testcase name="shouldApplyFiltersAtSubscription()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.005"/>
+  <testcase name="requestHeaderAndCookie()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.009"/>
+  <testcase name="cloneBuilder()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.031"/>
+  <testcase name="withStringAttribute()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.003"/>
+  <testcase name="withNullAttribute()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.003"/>
+  <testcase name="uriBuilderWithPathOverride()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.003"/>
+  <testcase name="apply()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.143"/>
+  <testcase name="basic()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.018"/>
+  <testcase name="switchToErrorOnEmptyClientResponseMono()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.006"/>
+  <testcase name="bodyObjectPublisher()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.008"/>
+  <testcase name="onStatusHandlersDefaultHandlerIsLast()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.144"/>
+  <testcase name="uriBuilderWithUriTemplate()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="0.003"/>
+  <testcase name="mutateDoesCopy()" classname="org.springframework.web.reactive.function.client.DefaultWebClientTests" time="3.672"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:13:43" hostname="DESKTOP-VGJP1PJ" time="5.583">
+  <properties/>
+  <testcase name="resourceChainWithVersionResolver()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="1.685"/>
+  <testcase name="cacheControl()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.001"/>
+  <testcase name="hasMappingForPattern()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.002"/>
+  <testcase name="noResourceHandlers()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.001"/>
+  <testcase name="urlResourceWithCharset()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.818"/>
+  <testcase name="mapPathToLocation()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.128"/>
+  <testcase name="resourceChainWithOverrides()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.475"/>
+  <testcase name="order()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.003"/>
+  <testcase name="cachePeriod()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.006"/>
+  <testcase name="resourceChainWithoutCaching()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="0.787"/>
+  <testcase name="resourceChain()" classname="org.springframework.web.servlet.config.annotation.ResourceHandlerRegistryTests" time="1.668"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

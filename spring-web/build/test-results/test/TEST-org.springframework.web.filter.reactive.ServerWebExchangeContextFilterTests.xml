@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.filter.reactive.ServerWebExchangeContextFilterTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:59:10" hostname="DESKTOP-VGJP1PJ" time="0.012">
+  <properties/>
+  <testcase name="extractServerWebExchangeFromContext()" classname="org.springframework.web.filter.reactive.ServerWebExchangeContextFilterTests" time="0.012"/>
+  <system-out><![CDATA[02:59:10.175 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:59:10.175 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [42e907f6] HTTP GET "/path"
+02:59:10.181 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [42e907f6] Completed 200 OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

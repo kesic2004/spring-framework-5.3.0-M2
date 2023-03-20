@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.server.RouterFunctionDslTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:18:58" hostname="DESKTOP-VGJP1PJ" time="2.393">
+  <properties/>
+  <testcase name="accept()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="1.591"/>
+  <testcase name="header()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.008"/>
+  <testcase name="method()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.013"/>
+  <testcase name="resourceByPath()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.208"/>
+  <testcase name="contentType()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.031"/>
+  <testcase name="resource()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.029"/>
+  <testcase name="path()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.009"/>
+  <testcase name="emptyRouter()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.163"/>
+  <testcase name="acceptAndPOSTWithRequestPredicate()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.008"/>
+  <testcase name="rendering()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.199"/>
+  <testcase name="acceptAndPOST()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.042"/>
+  <testcase name="noRoute()" classname="org.springframework.web.reactive.function.server.RouterFunctionDslTests" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

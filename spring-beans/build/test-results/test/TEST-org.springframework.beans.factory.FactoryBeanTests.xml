@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.FactoryBeanTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:37:49" hostname="DESKTOP-VGJP1PJ" time="0.142">
+  <properties/>
+  <testcase name="testCircularReferenceWithPostProcessor()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.078"/>
+  <testcase name="testFactoryBeansWithIntermediateFactoryBeanAutowiringFailure()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.043"/>
+  <testcase name="testFactoryBeanReturnsNull()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.004"/>
+  <testcase name="testAbstractFactoryBeanViaType()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.007"/>
+  <testcase name="testAbstractFactoryBeanViaAnnotation()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.004"/>
+  <testcase name="testFactoryBeansWithAutowiring()" classname="org.springframework.beans.factory.FactoryBeanTests" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

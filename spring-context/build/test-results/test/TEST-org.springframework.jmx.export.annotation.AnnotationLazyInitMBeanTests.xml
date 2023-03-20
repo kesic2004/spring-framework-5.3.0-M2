@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.jmx.export.annotation.AnnotationLazyInitMBeanTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:42:27" hostname="DESKTOP-VGJP1PJ" time="1.068">
+  <properties/>
+  <testcase name="lazyAssembling()" classname="org.springframework.jmx.export.annotation.AnnotationLazyInitMBeanTests" time="0.32"/>
+  <testcase name="lazyNaming()" classname="org.springframework.jmx.export.annotation.AnnotationLazyInitMBeanTests" time="0.02"/>
+  <testcase name="componentScan()" classname="org.springframework.jmx.export.annotation.AnnotationLazyInitMBeanTests" time="0.727"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mar 20, 2023 2:42:28 AM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+Mar 20, 2023 2:42:28 AM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.net.ConnectException: Connection refused: connect
+]]></system-err>
+</testsuite>

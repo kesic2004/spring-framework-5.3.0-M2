@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:16:49" hostname="DESKTOP-VGJP1PJ" time="1.237">
+  <properties/>
+  <testcase name="resolveEmptyValueWithoutDefault()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="1.164"/>
+  <testcase name="resolveSimpleTypeParam()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.006"/>
+  <testcase name="resolveWithQueryString()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.008"/>
+  <testcase name="resolveEmptyValueToDefault()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.005"/>
+  <testcase name="doesNotSupportParameterWithDefaultResolutionTurnedOff()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.003"/>
+  <testcase name="resolveOptionalParamValue()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.009"/>
+  <testcase name="resolveStringArray()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.007"/>
+  <testcase name="missingRequestParam()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveEmptyValueRequiredWithoutDefault()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="resolveDefaultValue()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.002"/>
+  <testcase name="doesNotSupportReactiveWrapper()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="resolveAndConvertNullValue()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.004"/>
+  <testcase name="supportsParameter()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.01"/>
+  <testcase name="resolveSimpleTypeParamToNull()" classname="org.springframework.web.reactive.result.method.annotation.RequestParamMethodArgumentResolverTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

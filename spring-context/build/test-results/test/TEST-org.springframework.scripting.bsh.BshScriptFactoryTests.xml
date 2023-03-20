@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.scripting.bsh.BshScriptFactoryTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:42:40" hostname="DESKTOP-VGJP1PJ" time="2.473">
+  <properties/>
+  <testcase name="scriptCompilationException()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.086"/>
+  <testcase name="scriptThatCompilesButIsJustPlainBad()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.021"/>
+  <testcase name="staticPrototypeScript()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.173"/>
+  <testcase name="resourceScriptFromTag()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.255"/>
+  <testcase name="prototypeScriptFromTag()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.205"/>
+  <testcase name="staticScriptWithNullReturnValue()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.228"/>
+  <testcase name="staticWithScriptReturningInstance()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.183"/>
+  <testcase name="staticScriptWithTwoInterfacesSpecified()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.297"/>
+  <testcase name="staticScriptImplementingInterface()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.175"/>
+  <testcase name="inlineScriptFromTag()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.161"/>
+  <testcase name="ctorWithWhitespacedScriptSourceLocator()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.001"/>
+  <testcase name="ctorWithNullScriptSourceLocator()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.001"/>
+  <testcase name="applicationEventListener()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.167"/>
+  <testcase name="staticScript()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.204"/>
+  <testcase name="refreshableFromTag()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.168"/>
+  <testcase name="ctorWithEmptyScriptSourceLocator()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.001"/>
+  <testcase name="nonStaticScript()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.085"/>
+  <testcase name="nonStaticPrototypeScript()" classname="org.springframework.scripting.bsh.BshScriptFactoryTests" time="0.057"/>
+  <system-out><![CDATA[02:42:40.401 [Test worker] WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'broken' defined in class path resource [org/springframework/scripting/bsh/bshBrokenContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptedObject.broken' defined in class path resource [org/springframework/scripting/bsh/bshBrokenContext.xml]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Object]: Factory method 'getScriptedObject' threw exception; nested exception is org.springframework.scripting.ScriptCompilationException: Could not compile class path resource [org/springframework/scripting/bsh/Broken.bsh]; nested exception is In file: inline evaluation of: ``one sure is the loneliest number... that i'll ever know;'' Encountered "is" at line 1, column 10.
+
+org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@9e367c7, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+org.springframework.context.event.ContextClosedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@9e367c7, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5d574352, started on Mon Mar 20 02:42:40 GMT-05:00 2023]
+org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@707e0330, started on Mon Mar 20 02:42:41 GMT-05:00 2023]
+org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5dbd67a7, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+org.springframework.scripting.bsh.BshScriptFactoryTests$MyEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5dbd67a7, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@6fed4b30, started on Mon Mar 20 02:42:42 GMT-05:00 2023]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

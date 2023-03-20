@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ServerHttpRequestTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:56" hostname="DESKTOP-VGJP1PJ" time="0.018">
+  <properties/>
+  <testcase name="mutateContextPathWithoutUpdatingPathShouldFail()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.002"/>
+  <testcase name="queryParams()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="mutateRequestMethod()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="mutateHeadersViaConsumer()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="mutatePathWithEncodedQueryParams()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="mutateHeaderBySettingHeaderValues()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="mutateUriAndPath()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="mutateWithInvalidPath()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="queryParamsWithEncodedValue()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="mutateWithExistingContextPath()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="mutateSslInfo()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.007"/>
+  <testcase name="queryParamsWithEmptyValue()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.001"/>
+  <testcase name="queryParamsWithNoValue()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="queryParamsNone()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <testcase name="queryParamsWithMultipleValues()" classname="org.springframework.http.server.reactive.ServerHttpRequestTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

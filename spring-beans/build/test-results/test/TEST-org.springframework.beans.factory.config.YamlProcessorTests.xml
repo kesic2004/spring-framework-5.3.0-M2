@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.config.YamlProcessorTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:37:47" hostname="DESKTOP-VGJP1PJ" time="0.212">
+  <properties/>
+  <testcase name="customTypesSupportedDueToExplicitConfiguration()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.188"/>
+  <testcase name="arrayConvertedToIndexedBeanReference()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.003"/>
+  <testcase name="stringResource()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <testcase name="integerKeyBehaves()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.001"/>
+  <testcase name="integerDeepKeyBehaves()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <testcase name="mapConvertedToIndexedBeanReference()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <testcase name="customTypeSupportedByDefault()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.003"/>
+  <testcase name="customTypeNotSupportedDueToExplicitConfiguration()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <testcase name="badDocumentStart()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.003"/>
+  <testcase name="flattenedMapIsSameAsPropertiesButOrdered()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <testcase name="badResource()" classname="org.springframework.beans.factory.config.YamlProcessorTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

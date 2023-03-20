@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:56:40" hostname="DESKTOP-VGJP1PJ" time="17.683">
+  <properties/>
+  <testcase name="messageDeliveryExceptionIfSystemSessionForwardFails()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="2.098"/>
+  <testcase name="publishSubscribe()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="2.108"/>
+  <testcase name="brokerAvailabilityEventWhenStopped()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="2.058"/>
+  <testcase name="relayReconnectsIfBrokerComesBackUp()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="7.183"/>
+  <testcase name="brokerBecomingUnavailableTriggersErrorFrame()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="2.08"/>
+  <testcase name="disconnectWithReceipt()" classname="org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerIntegrationTests" time="2.153"/>
+  <system-out><![CDATA[02:56:40.734 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:40.735 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:2) is starting
+02:56:40.736 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64130
+02:56:40.736 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64130 started
+02:56:40.736 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:2) started
+02:56:40.736 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:40.759 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:2) is shutting down
+02:56:40.766 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64130 stopped
+02:56:40.767 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:2) uptime 0.032 seconds
+02:56:40.767 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:2) is shutdown
+02:56:42.830 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:42.833 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:3) is starting
+02:56:42.834 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:61941
+02:56:42.834 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61941 started
+02:56:42.834 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:3) started
+02:56:42.834 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:44.933 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:3) is shutting down
+02:56:44.934 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:61941 stopped
+02:56:44.936 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:3) uptime 2.105 seconds
+02:56:44.936 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:3) is shutdown
+02:56:44.937 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:44.938 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:4) is starting
+02:56:44.938 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63101
+02:56:44.939 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63101 started
+02:56:44.939 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:4) started
+02:56:44.939 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:44.960 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:4) is shutting down
+02:56:44.968 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63101 stopped
+02:56:44.969 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:4) uptime 0.032 seconds
+02:56:44.969 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:4) is shutdown
+02:56:46.995 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:46.996 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:5) is starting
+02:56:46.996 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63528
+02:56:46.997 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63528 started
+02:56:46.998 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:5) started
+02:56:46.998 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:47.044 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:5) is shutting down
+02:56:47.054 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63528 stopped
+02:56:47.055 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:5) uptime 0.060 seconds
+02:56:47.055 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:5) is shutdown
+02:56:47.056 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:47.058 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:6) is starting
+02:56:47.058 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:63528
+02:56:47.059 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63528 started
+02:56:47.059 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:6) started
+02:56:47.059 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:54.175 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:6) is shutting down
+02:56:54.176 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:63528 stopped
+02:56:54.176 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:6) uptime 7.120 seconds
+02:56:54.176 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:6) is shutdown
+02:56:54.181 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:54.182 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:7) is starting
+02:56:54.182 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64384
+02:56:54.183 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64384 started
+02:56:54.183 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:7) started
+02:56:54.183 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:54.217 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:7) is shutting down
+02:56:54.229 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64384 stopped
+02:56:54.229 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:7) uptime 0.048 seconds
+02:56:54.229 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:7) is shutdown
+02:56:56.262 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+02:56:56.264 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:8) is starting
+02:56:56.266 [Test worker] INFO  o.a.a.t.TransportServerThreadSupport - Listening for connections at: stomp://127.0.0.1:64232
+02:56:56.267 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64232 started
+02:56:56.267 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:8) started
+02:56:56.268 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+02:56:58.383 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:8) is shutting down
+02:56:58.410 [Test worker] INFO  o.a.a.b.TransportConnector - Connector stomp://127.0.0.1:64232 stopped
+02:56:58.411 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:8) uptime 2.149 seconds
+02:56:58.411 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.16.0 (localhost, ID:DESKTOP-VGJP1PJ-58201-1679298999742-0:8) is shutdown
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

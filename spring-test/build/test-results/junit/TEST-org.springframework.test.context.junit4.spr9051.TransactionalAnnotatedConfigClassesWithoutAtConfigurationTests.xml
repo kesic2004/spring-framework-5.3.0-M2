@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.context.junit4.spr9051.TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:38" hostname="DESKTOP-VGJP1PJ" time="0.029">
+  <properties/>
+  <testcase name="autowiringFromConfigClass" classname="org.springframework.test.context.junit4.spr9051.TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests" time="0.002"/>
+  <testcase name="modifyTestDataWithinTransaction" classname="org.springframework.test.context.junit4.spr9051.TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

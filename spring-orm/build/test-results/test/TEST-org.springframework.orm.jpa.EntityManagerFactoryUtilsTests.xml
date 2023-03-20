@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:06:40" hostname="DESKTOP-VGJP1PJ" time="0.013">
+  <properties/>
+  <testcase name="testConvertJpaPersistenceException()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.004"/>
+  <testcase name="testDoesNotTranslateUnfamiliarException()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.001"/>
+  <testcase name="testTranslatesIllegalArgumentException()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.001"/>
+  <testcase name="testDoGetEntityManager()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.002"/>
+  <testcase name="testTranslatesIllegalStateException()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.001"/>
+  <testcase name="testDoGetEntityManagerWithTx()" classname="org.springframework.orm.jpa.EntityManagerFactoryUtilsTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.resource.ResourceWebHandlerTests" tests="31" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:08" hostname="DESKTOP-VGJP1PJ" time="0.683">
+  <properties/>
+  <testcase name="getResourceNoCache()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.049"/>
+  <testcase name="getResourceFromAlternatePath()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.016"/>
+  <testcase name="missingResourcePath()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.001"/>
+  <testcase name="partialContentMultipleByteRanges()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.019"/>
+  <testcase name="testInvalidPath()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.124"/>
+  <testcase name="partialContentByteRange()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.017"/>
+  <testcase name="getResourceFromSubDirectoryOfAlternatePath()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.035"/>
+  <testcase name="getResourceHttpOptions()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.004"/>
+  <testcase name="directory()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.004"/>
+  <testcase name="modified()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.006"/>
+  <testcase name="partialContentByteRangeNoEnd()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.007"/>
+  <testcase name="resourceNotFound()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.055"/>
+  <testcase name="unsupportedHttpMethod()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.01"/>
+  <testcase name="notModified()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.003"/>
+  <testcase name="processPath()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.001"/>
+  <testcase name="partialContentSuffixRange()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.008"/>
+  <testcase name="doOverwriteExistingCacheControlHeaders()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.011"/>
+  <testcase name="getResourceWithHtmlMediaType()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.05"/>
+  <testcase name="partialContentInvalidRangeHeader()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.004"/>
+  <testcase name="directoryInJarFile()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.003"/>
+  <testcase name="initAllowedLocationsWithExplicitConfiguration()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.0"/>
+  <testcase name="testResolvePathWithTraversal()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.104"/>
+  <testcase name="getMediaTypeWithFavorPathExtensionOff()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.006"/>
+  <testcase name="partialContentSuffixRangeLargeSuffix()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.005"/>
+  <testcase name="noPathWithinHandlerMappingAttribute()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.002"/>
+  <testcase name="partialContentByteRangeLargeEnd()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.005"/>
+  <testcase name="getResourceFromSubDirectory()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.017"/>
+  <testcase name="getVersionedResource()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.062"/>
+  <testcase name="initAllowedLocations()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.0"/>
+  <testcase name="getResource()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.006"/>
+  <testcase name="getResourceHttpHeader()" classname="org.springframework.web.reactive.resource.ResourceWebHandlerTests" time="0.003"/>
+  <system-out><![CDATA[03:14:08.689 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [7c62325d] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.css]]
+03:14:08.698 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [7b9efa21] Writing [class path resource [org/springframework/web/reactive/resource/testalternatepath/baz.css]]
+03:14:08.714 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4533ee29] Resource not found
+03:14:08.714 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [774b0ffe] Writing region 0-2 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:08.730 [Thread-8] DEBUG o.s.c.c.ResourceRegionEncoder - [774b0ffe] Writing region 4-6 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:08.730 [Thread-5] DEBUG o.s.c.c.ResourceRegionEncoder - [774b0ffe] Writing region 8-10 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:08.823 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:08.823 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [5abac8] Resource not found
+03:14:08.823 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:08.823 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [117bb3c4] Resource not found
+03:14:08.823 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:08.823 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [40416ea2] Resource not found
+03:14:08.823 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.823 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [15181098] Resource not found
+03:14:08.823 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6049d07c] Resource not found
+03:14:08.839 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2c60aa22] Resource not found
+03:14:08.839 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [671ff572] Resource not found
+03:14:08.839 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [32d6a5d9] Resource not found
+03:14:08.839 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [1c3249cf] Resource not found
+03:14:08.839 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:08.839 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [35aad1d1] Resource not found
+03:14:08.854 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:08.854 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2d060673] Resource not found
+03:14:08.886 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [2af99667] Writing region 0-2 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:08.886 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [248bdec6] Writing [class path resource [org/springframework/web/reactive/resource/testalternatepath/js/baz.js]]
+03:14:08.934 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [5ae404cb] Resource not found
+03:14:08.938 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [464f6fff] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.css]]
+03:14:08.946 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [649fdab6] Writing region 9-10 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [1e2758b2] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [1e2758b2] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [1e2758b2] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6655e00e] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6655e00e] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6655e00e] Resource not found
+03:14:08.951 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [719de92d] Resource not found
+03:14:08.966 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [719de92d] Resource not found
+03:14:08.971 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [719de92d] Resource not found
+03:14:08.973 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [36561205] Resource not found
+03:14:08.975 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [36561205] Resource not found
+03:14:08.979 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [36561205] Resource not found
+03:14:08.984 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6a88e49b] Resource not found
+03:14:08.987 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6a88e49b] Resource not found
+03:14:08.988 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6a88e49b] Resource not found
+03:14:08.990 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [23143c54] Resource not found
+03:14:08.991 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [23143c54] Resource not found
+03:14:08.993 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [23143c54] Resource not found
+03:14:08.996 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3d5e6d9a] Resource not found
+03:14:08.998 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3d5e6d9a] Resource not found
+03:14:08.999 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3d5e6d9a] Resource not found
+03:14:09.001 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3b9e860e] Resource not found
+03:14:09.003 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3b9e860e] Resource not found
+03:14:09.005 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3b9e860e] Resource not found
+03:14:09.025 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [5132206e] Writing region 9-10 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:09.033 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [71dacda6] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.css]]
+03:14:09.056 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [45ccb4ac] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.html]]
+03:14:09.098 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2f5fa3c7] Resource not found
+03:14:09.100 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.101 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [64844533] Resource not found
+03:14:09.102 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.102 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [94493af] Resource not found
+03:14:09.103 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.103 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3683e69d] Resource not found
+03:14:09.104 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.104 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [706890a3] Resource not found
+03:14:09.105 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.105 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [11cac7ad] Resource not found
+03:14:09.106 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.106 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3cbef7d0] Resource not found
+03:14:09.107 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.107 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [152059d4] Resource not found
+03:14:09.108 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.108 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [21f92e5b] Resource not found
+03:14:09.109 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.109 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [66496266] Resource not found
+03:14:09.110 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.110 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2d020908] Resource not found
+03:14:09.111 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.111 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3a7b0b85] Resource not found
+03:14:09.112 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.112 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [52987167] Resource not found
+03:14:09.113 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.113 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7f6f7300] Resource not found
+03:14:09.114 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.114 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [42986fac] Resource not found
+03:14:09.116 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.116 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [205d6359] Resource not found
+03:14:09.117 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.117 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [31df2d7c] Resource not found
+03:14:09.117 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.118 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [35acaf34] Resource not found
+03:14:09.118 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.118 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [34c85322] Resource not found
+03:14:09.119 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.119 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7fc4b949] Resource not found
+03:14:09.120 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.120 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [37b8cf00] Resource not found
+03:14:09.121 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.121 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [67bd03cc] Resource not found
+03:14:09.122 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.122 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [119a1d5a] Resource not found
+03:14:09.122 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.123 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4bcee0d1] Resource not found
+03:14:09.125 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.125 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3a7fe667] Resource not found
+03:14:09.126 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.127 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [35532187] Resource not found
+03:14:09.128 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.128 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [74e28aba] Resource not found
+03:14:09.129 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.129 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4816249f] Resource not found
+03:14:09.129 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.130 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [d9fbf24] Resource not found
+03:14:09.130 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.130 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [21ece809] Resource not found
+03:14:09.131 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.131 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [413b11d4] Resource not found
+03:14:09.131 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.132 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [38f0e7b0] Resource not found
+03:14:09.132 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.133 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [48e61915] Resource not found
+03:14:09.133 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.133 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [e8c1ca0] Resource not found
+03:14:09.134 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.134 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [17200914] Resource not found
+03:14:09.135 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.135 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2852b127] Resource not found
+03:14:09.136 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.136 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [50042b89] Resource not found
+03:14:09.137 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.137 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3e835435] Resource not found
+03:14:09.137 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.137 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [297c8258] Resource not found
+03:14:09.138 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.138 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [141ad5d9] Resource not found
+03:14:09.138 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.138 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6533fcb0] Resource not found
+03:14:09.139 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.139 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [41b53edf] Resource not found
+03:14:09.140 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.140 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [c161af3] Resource not found
+03:14:09.141 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.141 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4ee0a2b5] Resource not found
+03:14:09.141 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.141 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [344c11a5] Resource not found
+03:14:09.142 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.142 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [5ce78235] Resource not found
+03:14:09.143 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.143 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [601acad8] Resource not found
+03:14:09.144 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.144 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2b243964] Resource not found
+03:14:09.145 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.145 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7f31d49c] Resource not found
+03:14:09.146 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.146 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [1fa70765] Resource not found
+03:14:09.147 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.147 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [295d4243] Resource not found
+03:14:09.147 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.148 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2338a115] Resource not found
+03:14:09.148 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.149 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [525c04da] Resource not found
+03:14:09.149 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.149 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [75e7addb] Resource not found
+03:14:09.150 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.150 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [36eba67e] Resource not found
+03:14:09.151 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.151 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [503d89bf] Resource not found
+03:14:09.151 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.152 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [62752db6] Resource not found
+03:14:09.152 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.152 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2a34dd56] Resource not found
+03:14:09.153 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.153 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [41074638] Resource not found
+03:14:09.154 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.154 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7dcb4fd6] Resource not found
+03:14:09.155 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.155 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3618d544] Resource not found
+03:14:09.156 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.156 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3aca60bc] Resource not found
+03:14:09.156 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.157 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4187d75b] Resource not found
+03:14:09.157 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.157 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [66959542] Resource not found
+03:14:09.158 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.158 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [16d7ce21] Resource not found
+03:14:09.158 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.159 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7f7183c7] Resource not found
+03:14:09.159 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.160 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [33be7d] Resource not found
+03:14:09.160 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.161 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [4a4604bc] Resource not found
+03:14:09.162 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.162 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [62486d13] Resource not found
+03:14:09.164 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.164 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [11d4a526] Resource not found
+03:14:09.165 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.166 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [c893137] Resource not found
+03:14:09.166 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.167 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7690a7fe] Resource not found
+03:14:09.168 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.168 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [57116cca] Resource not found
+03:14:09.169 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.170 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [63580e9b] Resource not found
+03:14:09.170 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.170 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [269d9b4e] Resource not found
+03:14:09.175 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.175 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [55416734] Resource not found
+03:14:09.177 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.177 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [9ea266a] Resource not found
+03:14:09.178 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.178 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2ae5cd1a] Resource not found
+03:14:09.179 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [../testsecret/secret.txt]
+03:14:09.180 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [606874e3] Resource not found
+03:14:09.182 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [test/../../testsecret/secret.txt]
+03:14:09.183 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [3e4ec71d] Resource not found
+03:14:09.184 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [:/../../testsecret/secret.txt]
+03:14:09.184 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [664f6fc8] Resource not found
+03:14:09.186 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.186 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [6246e306] Resource not found
+03:14:09.187 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/file:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.188 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [41aa4cc1] Resource not found
+03:14:09.189 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.189 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [9941dc6] Resource not found
+03:14:09.190 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [/url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.190 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [14380213] Resource not found
+03:14:09.191 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../../F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.191 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [41339d41] Resource not found
+03:14:09.192 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.193 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [52ec0de2] Resource not found
+03:14:09.197 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path contains "../" after call to StringUtils#cleanPath: [/../testsecret/secret.txt]
+03:14:09.198 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [7b3f4054] Resource not found
+03:14:09.202 [Test worker] WARN  o.s.w.r.r.ResourceWebHandler - Path represents URL or has "url:" prefix: [url:/F:/spring-framework-5.3.x/spring-framework-5.3.0-M2/spring-webflux/build/resources/test/org/springframework/web/reactive/resource/testsecret/secret.txt]
+03:14:09.203 [Test worker] DEBUG o.s.w.r.r.ResourceWebHandler - [2f43fdba] Resource not found
+03:14:09.207 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [72c7b486] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.html]]
+03:14:09.214 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [40f62421] Writing region 0-10 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:09.242 [Test worker] DEBUG o.s.c.c.ResourceRegionEncoder - [3ef8830d] Writing region 9-10 of [class path resource [org/springframework/web/reactive/resource/test/foo.txt]]
+03:14:09.248 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [4f5e7fdf] Writing [class path resource [org/springframework/web/reactive/resource/test/js/foo.js]]
+03:14:09.322 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [7143df5d] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.css]]
+03:14:09.330 [Test worker] DEBUG o.s.c.c.ResourceEncoder - [161e0845] Writing [class path resource [org/springframework/web/reactive/resource/test/foo.css]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

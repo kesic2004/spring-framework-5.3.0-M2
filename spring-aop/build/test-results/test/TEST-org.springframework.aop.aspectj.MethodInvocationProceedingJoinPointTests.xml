@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:38:17" hostname="DESKTOP-VGJP1PJ" time="0.118">
+  <properties/>
+  <testcase name="testCanGetMethodSignatureFromJoinPoint()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.062"/>
+  <testcase name="testCanGetStaticPartFromJoinPoint()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.008"/>
+  <testcase name="testingBindingWithProceedingJoinPoint()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.002"/>
+  <testcase name="testingBindingWithJoinPoint()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.0"/>
+  <testcase name="toShortAndLongStringFormedCorrectly()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.042"/>
+  <testcase name="testCanGetSourceLocationFromJoinPoint()" classname="org.springframework.aop.aspectj.MethodInvocationProceedingJoinPointTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:23" hostname="DESKTOP-VGJP1PJ" time="0.507">
+  <properties/>
+  <testcase name="sendBufferSizeExceeded()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.02"/>
+  <testcase name="sendTimeLimitExceeded()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.207"/>
+  <testcase name="sendAfterBlockedSend()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.059"/>
+  <testcase name="overflowStrategyDrop()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.001"/>
+  <testcase name="send()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.001"/>
+  <testcase name="closeStatusChangesToSessionNotReliable()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.215"/>
+  <testcase name="closeStatusNormal()" classname="org.springframework.web.socket.handler.ConcurrentWebSocketSessionDecoratorTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

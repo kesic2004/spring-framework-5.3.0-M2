@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.beans.factory.config.SimpleScopeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:37:46" hostname="DESKTOP-VGJP1PJ" time="0.187">
+  <properties/>
+  <testcase name="testCanGetScopedObject()" classname="org.springframework.beans.factory.config.SimpleScopeTests" time="0.187"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

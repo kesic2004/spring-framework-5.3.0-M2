@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.server.reactive.ServerHttpsRequestIntegrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:56" hostname="DESKTOP-VGJP1PJ" time="0.664">
+  <properties/>
+  <testcase name="checkUri()" classname="org.springframework.http.server.reactive.ServerHttpsRequestIntegrationTests" time="0.664"/>
+  <system-out><![CDATA[02:58:56.726 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpsServer - Starting ReactorHttpsServer...
+02:58:56.727 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpsServer - Server started on port 59061(0 millis).
+02:58:56.736 [Test worker] DEBUG o.s.w.c.RestTemplate - HTTP POST https://localhost:59061/foo?param=bar
+02:58:56.737 [Test worker] DEBUG o.s.w.c.RestTemplate - Accept=[application/xml, text/xml, application/json, application/x-jackson-smile, application/cbor, application/*+xml, application/*+json]
+02:58:56.936 [Test worker] DEBUG o.s.w.c.RestTemplate - Response 200 OK
+02:58:56.937 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpsServer - Stopping ReactorHttpsServer...
+02:58:56.937 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpsServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

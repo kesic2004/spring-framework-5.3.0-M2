@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.json.Jackson2JsonEncoderTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:37" hostname="DESKTOP-VGJP1PJ" time="0.07">
+  <properties/>
+  <testcase name="encode()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.009"/>
+  <testcase name="encodeWithType()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.024"/>
+  <testcase name="encodeWithFlushAfterWriteOff()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.002"/>
+  <testcase name="canEncode()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.001"/>
+  <testcase name="canEncodeWithCustomMimeType()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.0"/>
+  <testcase name="canNotEncode()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.001"/>
+  <testcase name="encodeNonStream()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.005"/>
+  <testcase name="classLevelJsonView()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.005"/>
+  <testcase name="encodableMimeTypesIsImmutable()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.001"/>
+  <testcase name="encodeAsStreamWithCustomStreamingType()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.005"/>
+  <testcase name="encodeAscii()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.003"/>
+  <testcase name="fieldLevelJsonView()" classname="org.springframework.http.codec.json.Jackson2JsonEncoderTests" time="0.003"/>
+  <system-out><![CDATA[02:58:37.702 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foo', bar='bar']]
+02:58:37.703 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foofoo', bar='barbar']]
+02:58:37.704 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foofoofoo', bar='barbarbar']]
+02:58:37.705 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foo', bar='bar']]
+02:58:37.706 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foo', bar='bar']]
+02:58:37.723 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [[org.springframework.http.codec.json.Jackson2JsonEncoderTests$Foo@6761d250, org.springframework.http (truncated)...]
+02:58:37.733 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [[Pojo[foo='foo', bar='bar']]]
+02:58:37.741 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [[Pojo[foo='foo', bar='bar'], Pojo[foo='foofoo', bar='barbar'], Pojo[foo='foofoofoo', bar='barbarbar' (truncated)...]
+02:58:37.747 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [org.springframework.http.codec.json.JacksonViewBean@1ca53318]
+02:58:37.754 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foo', bar='bar']]
+02:58:37.756 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foofoo', bar='barbar']]
+02:58:37.757 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foofoofoo', bar='barbarbar']]
+02:58:37.761 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [Pojo[foo='foo', bar='bar']]
+02:58:37.765 [Test worker] DEBUG o.s.w.HttpLogging - Encoding [org.springframework.http.codec.json.JacksonViewBean@30a3cd75]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

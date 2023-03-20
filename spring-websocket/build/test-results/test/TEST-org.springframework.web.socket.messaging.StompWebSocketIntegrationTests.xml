@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" tests="18" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:23" hostname="DESKTOP-VGJP1PJ" time="4.469">
+  <properties/>
+  <testcase name="sendMessageToBrokerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.325"/>
+  <testcase name="sendMessageToBrokerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.359"/>
+  <testcase name="sendMessageToBrokerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.151"/>
+  <testcase name="webSocketScope(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.305"/>
+  <testcase name="webSocketScope(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.377"/>
+  <testcase name="webSocketScope(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.142"/>
+  <testcase name="sendMessageToControllerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.223"/>
+  <testcase name="sendMessageToControllerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.388"/>
+  <testcase name="sendMessageToControllerAndReceiveReplyViaTopic(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.15"/>
+  <testcase name="sendSubscribeToControllerAndReceiveReply(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.166"/>
+  <testcase name="sendSubscribeToControllerAndReceiveReply(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.36"/>
+  <testcase name="sendSubscribeToControllerAndReceiveReply(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.199"/>
+  <testcase name="sendMessageToController(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.158"/>
+  <testcase name="sendMessageToController(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.317"/>
+  <testcase name="sendMessageToController(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.137"/>
+  <testcase name="handleExceptionAndSendToUser(WebSocketTestServer, WebSocketClient, TestInfo)[1]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.176"/>
+  <testcase name="handleExceptionAndSendToUser(WebSocketTestServer, WebSocketClient, TestInfo)[2]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.339"/>
+  <testcase name="handleExceptionAndSendToUser(WebSocketTestServer, WebSocketClient, TestInfo)[3]" classname="org.springframework.web.socket.messaging.StompWebSocketIntegrationTests" time="0.142"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mar 20, 2023 3:11:24 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-3"]
+Mar 20, 2023 3:11:24 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:24 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:24 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-3-60741"]
+Mar 20, 2023 3:11:24 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:24 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:24 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-3-60741"]
+Mar 20, 2023 3:11:24 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:24 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-3-60741"]
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-4"]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-4-60776"]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-4-60776"]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-4-60776"]
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-5"]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:25 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-5-60809"]
+Mar 20, 2023 3:11:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-5-60809"]
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-5-60809"]
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-6"]
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-6-60842"]
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-6-60842"]
+Mar 20, 2023 3:11:26 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:26 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-6-60842"]
+Mar 20, 2023 3:11:27 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-7"]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:27 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-7-60875"]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:27 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-7-60875"]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:27 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-7-60875"]
+Mar 20, 2023 3:11:27 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-8"]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Mar 20, 2023 3:11:27 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.37]
+Mar 20, 2023 3:11:28 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-8-60909"]
+Mar 20, 2023 3:11:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'dispatcherServlet'
+Mar 20, 2023 3:11:28 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-8-60909"]
+Mar 20, 2023 3:11:28 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Mar 20, 2023 3:11:28 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-8-60909"]
+]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.web.servlet.samples.standalone.resultmatchers.SessionAttributeAssertionTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:18" hostname="DESKTOP-VGJP1PJ" time="0.058">
+  <properties/>
+  <testcase name="sessionAttributeEqualTo()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.SessionAttributeAssertionTests" time="0.002"/>
+  <testcase name="sessionAttributeDoesNotExist()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.SessionAttributeAssertionTests" time="0.002"/>
+  <testcase name="sessionAttributeMatcher()" classname="org.springframework.test.web.servlet.samples.standalone.resultmatchers.SessionAttributeAssertionTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

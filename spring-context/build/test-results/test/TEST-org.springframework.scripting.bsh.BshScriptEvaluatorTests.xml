@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.scripting.bsh.BshScriptEvaluatorTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:42:39" hostname="DESKTOP-VGJP1PJ" time="0.41">
+  <properties/>
+  <testcase name="testGroovyScriptWithArguments()" classname="org.springframework.scripting.bsh.BshScriptEvaluatorTests" time="0.355"/>
+  <testcase name="testBshScriptFromFile()" classname="org.springframework.scripting.bsh.BshScriptEvaluatorTests" time="0.047"/>
+  <testcase name="testBshScriptFromString()" classname="org.springframework.scripting.bsh.BshScriptEvaluatorTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

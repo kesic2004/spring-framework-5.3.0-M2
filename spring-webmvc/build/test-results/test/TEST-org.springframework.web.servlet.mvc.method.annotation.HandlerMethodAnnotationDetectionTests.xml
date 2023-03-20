@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:33" hostname="DESKTOP-VGJP1PJ" time="1.303">
+  <properties/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[1]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.14"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[2]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.084"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[3]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.171"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[4]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.058"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[5]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.154"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[6]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.053"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[7]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.101"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[8]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.045"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[9]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.06"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[10]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.046"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[11]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.081"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[12]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.123"/>
+  <testcase name="testRequestMappingMethod(Class, boolean)[13]" classname="org.springframework.web.servlet.mvc.method.annotation.HandlerMethodAnnotationDetectionTests" time="0.045"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

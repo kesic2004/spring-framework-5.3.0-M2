@@ -1,0 +1,24 @@
+org/springframework/context/index/processor/StereotypesProvider.java
+ org.springframework.context.index.processor.StereotypesProvider
+org/springframework/context/index/processor/SortedProperties.java
+ org.springframework.context.index.processor.SortedProperties
+org/springframework/context/index/processor/MetadataCollector.java
+ org.springframework.context.index.processor.MetadataCollector
+org/springframework/context/index/processor/ItemMetadata.java
+ org.springframework.context.index.processor.ItemMetadata
+org/springframework/context/index/processor/PropertiesMarshaller.java
+ org.springframework.context.index.processor.PropertiesMarshaller
+org/springframework/context/index/processor/MetadataStore.java
+ org.springframework.context.index.processor.MetadataStore
+org/springframework/context/index/processor/CandidateComponentsIndexer.java
+ org.springframework.context.index.processor.CandidateComponentsIndexer
+org/springframework/context/index/processor/StandardStereotypesProvider.java
+ org.springframework.context.index.processor.StandardStereotypesProvider
+org/springframework/context/index/processor/IndexedStereotypesProvider.java
+ org.springframework.context.index.processor.IndexedStereotypesProvider
+org/springframework/context/index/processor/PackageInfoStereotypesProvider.java
+ org.springframework.context.index.processor.PackageInfoStereotypesProvider
+org/springframework/context/index/processor/CandidateComponentsMetadata.java
+ org.springframework.context.index.processor.CandidateComponentsMetadata
+org/springframework/context/index/processor/TypeHelper.java
+ org.springframework.context.index.processor.TypeHelper

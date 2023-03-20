@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.web.reactive.server.samples.XmlContentTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:06" hostname="DESKTOP-VGJP1PJ" time="0.343">
+  <properties/>
+  <testcase name="postXmlContent()" classname="org.springframework.test.web.reactive.server.samples.XmlContentTests" time="0.061"/>
+  <testcase name="xpathIsEqualTo()" classname="org.springframework.test.web.reactive.server.samples.XmlContentTests" time="0.06"/>
+  <testcase name="xpathContainsSubstringViaRegex()" classname="org.springframework.test.web.reactive.server.samples.XmlContentTests" time="0.015"/>
+  <testcase name="xmlContent()" classname="org.springframework.test.web.reactive.server.samples.XmlContentTests" time="0.059"/>
+  <testcase name="xpathMatches()" classname="org.springframework.test.web.reactive.server.samples.XmlContentTests" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

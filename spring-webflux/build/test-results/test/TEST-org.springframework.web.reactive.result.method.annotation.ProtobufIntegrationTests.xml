@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:16:35" hostname="DESKTOP-VGJP1PJ" time="10.488">
+  <properties/>
+  <testcase name="defaultInstance(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="5.246"/>
+  <testcase name="defaultInstance(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.128"/>
+  <testcase name="defaultInstance(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.36"/>
+  <testcase name="defaultInstance(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.097"/>
+  <testcase name="values(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.375"/>
+  <testcase name="values(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.103"/>
+  <testcase name="values(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.352"/>
+  <testcase name="values(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.253"/>
+  <testcase name="streaming(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.212"/>
+  <testcase name="streaming(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.182"/>
+  <testcase name="streaming(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.622"/>
+  <testcase name="streaming(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.367"/>
+  <testcase name="empty(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.114"/>
+  <testcase name="empty(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.139"/>
+  <testcase name="empty(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.291"/>
+  <testcase name="empty(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.118"/>
+  <testcase name="value(HttpServer)[1]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.326"/>
+  <testcase name="value(HttpServer)[2]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.129"/>
+  <testcase name="value(HttpServer)[3]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.62"/>
+  <testcase name="value(HttpServer)[4]" classname="org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests" time="0.113"/>
+  <system-out><![CDATA[03:16:35.301 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:35.318 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:35.329 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:35.329 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:35.330 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@55ae5638{/,null,AVAILABLE}
+03:16:35.330 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:35.330 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:16:35.333 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@101d3b11{HTTP/1.1, (http/1.1)}{0.0.0.0:65073}
+03:16:35.333 [Test worker] INFO  o.e.j.s.Server - Started @96557ms
+03:16:35.333 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65073(0 millis).
+03:16:35.334 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7105dde6] HTTP GET http://localhost:65073/default-instance
+03:16:35.338 [qtp755098178-1832] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d4e4f2d] HTTP GET "/default-instance"
+03:16:35.338 [qtp755098178-1832] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [d4e4f2d] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#defaultInstance()
+03:16:38.191 [qtp755098178-1832] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:38.191 [qtp755098178-1832] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [d4e4f2d] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:40.506 [qtp755098178-1832] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d4e4f2d] Completed 200 OK
+03:16:40.507 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7105dde6] Response 200 OK
+03:16:40.508 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:40.509 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@55ae5638{/,null,UNAVAILABLE}
+03:16:40.511 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@101d3b11{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:40.512 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:40.563 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:40.579 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:40.594 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:40.594 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:40.595 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65080(0 millis).
+03:16:40.596 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [f95494e] HTTP GET http://localhost:65080/default-instance
+03:16:40.600 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [58b1b0a9-28] HTTP GET "/default-instance"
+03:16:40.600 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [58b1b0a9-28] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#defaultInstance()
+03:16:40.654 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:40.654 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [58b1b0a9-28] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:40.656 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [58b1b0a9-28] Completed 200 OK
+03:16:40.656 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [f95494e] Response 200 OK
+03:16:40.657 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:40.657 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:40.690 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:40.705 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:40.719 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:40.720 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:40.734 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65082(0 millis).
+03:16:40.735 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5fc9eaea] HTTP GET http://localhost:65082/default-instance
+03:16:40.745 [http-nio-auto-27-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [832eed9] HTTP GET "/default-instance"
+03:16:40.745 [http-nio-auto-27-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [832eed9] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#defaultInstance()
+03:16:40.842 [http-nio-auto-27-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:40.843 [http-nio-auto-27-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [832eed9] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:40.844 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [5fc9eaea] Response 200 OK
+03:16:40.844 [http-nio-auto-27-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [832eed9] Completed 200 OK
+03:16:40.846 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:41.028 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:41.065 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:41.083 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:41.096 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:41.096 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:41.096 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:41.104 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65099(0 millis).
+03:16:41.104 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [441b6b93] HTTP GET http://localhost:65099/default-instance
+03:16:41.109 [XNIO-25 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bba3a64] HTTP GET "/default-instance"
+03:16:41.109 [XNIO-25 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [bba3a64] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#defaultInstance()
+03:16:41.129 [XNIO-25 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:41.129 [XNIO-25 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [bba3a64] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:41.130 [XNIO-25 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [bba3a64] Completed 200 OK
+03:16:41.131 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [441b6b93] Response 200 OK
+03:16:41.132 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:41.132 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:41.134 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:41.172 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:41.191 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:41.206 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:41.206 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:41.207 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@7258221b{/,null,AVAILABLE}
+03:16:41.207 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:41.207 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:16:41.210 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@1490b996{HTTP/1.1, (http/1.1)}{0.0.0.0:65101}
+03:16:41.210 [Test worker] INFO  o.e.j.s.Server - Started @102434ms
+03:16:41.210 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65101(0 millis).
+03:16:41.499 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [37c51e16] HTTP GET http://localhost:65101/messages
+03:16:41.501 [qtp1754007062-1873] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3c7ca309] HTTP GET "/messages"
+03:16:41.502 [qtp1754007062-1873] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [3c7ca309] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messages()
+03:16:41.517 [qtp1754007062-1873] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:41.517 [qtp1754007062-1873] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [3c7ca309] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:41.519 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [37c51e16] Response 200 OK
+03:16:41.520 [qtp1754007062-1873] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [3c7ca309] Completed 200 OK
+03:16:41.524 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:41.524 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7258221b{/,null,UNAVAILABLE}
+03:16:41.525 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@1490b996{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:41.525 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:41.565 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:41.588 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:41.614 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:41.614 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:41.616 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65107(0 millis).
+03:16:41.617 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [439de10d] HTTP GET http://localhost:65107/messages
+03:16:41.621 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [164ca3f5-29] HTTP GET "/messages"
+03:16:41.621 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [164ca3f5-29] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messages()
+03:16:41.632 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:41.633 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [164ca3f5-29] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:41.634 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [439de10d] Response 200 OK
+03:16:41.636 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [164ca3f5-29] Completed 200 OK
+03:16:41.638 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:41.639 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:41.719 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:41.767 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:41.792 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:41.793 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:41.805 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65109(0 millis).
+03:16:41.806 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7a60fda1] HTTP GET http://localhost:65109/messages
+03:16:41.814 [http-nio-auto-28-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [36262558] HTTP GET "/messages"
+03:16:41.814 [http-nio-auto-28-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [36262558] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messages()
+03:16:41.832 [http-nio-auto-28-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:41.832 [http-nio-auto-28-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [36262558] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:41.833 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7a60fda1] Response 200 OK
+03:16:41.836 [http-nio-auto-28-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [36262558] Completed 200 OK
+03:16:41.836 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:42.025 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:42.086 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:42.139 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:42.226 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:42.227 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:42.227 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:42.238 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65126(0 millis).
+03:16:42.239 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [44b8634e] HTTP GET http://localhost:65126/messages
+03:16:42.268 [XNIO-26 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b4d6ac6] HTTP GET "/messages"
+03:16:42.268 [XNIO-26 I/O-3] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [b4d6ac6] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messages()
+03:16:42.280 [XNIO-26 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:42.281 [XNIO-26 I/O-3] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [b4d6ac6] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:42.282 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [44b8634e] Response 200 OK
+03:16:42.282 [XNIO-26 I/O-3] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b4d6ac6] Completed 200 OK
+03:16:42.284 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:42.284 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:42.288 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:42.348 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:42.371 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:42.389 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:42.389 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:42.390 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@44a4a5ca{/,null,AVAILABLE}
+03:16:42.390 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:42.390 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:16:42.395 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@727ae217{HTTP/1.1, (http/1.1)}{0.0.0.0:65128}
+03:16:42.395 [Test worker] INFO  o.e.j.s.Server - Started @103618ms
+03:16:42.395 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65128(0 millis).
+03:16:42.396 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [57d30a79] HTTP GET http://localhost:65128/message-stream
+03:16:42.400 [qtp1145341227-1914] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [36535e86] HTTP GET "/message-stream"
+03:16:42.400 [qtp1145341227-1914] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [36535e86] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messageStream()
+03:16:42.401 [qtp1145341227-1914] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf;delimited=true' given [*/*] and supported [application/x-protobuf;delimited=true]
+03:16:42.401 [qtp1145341227-1914] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [36535e86] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:42.454 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [57d30a79] Response 200 OK
+03:16:42.514 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [57d30a79] Cancel signal (to close connection)
+03:16:42.515 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:42.515 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@44a4a5ca{/,null,UNAVAILABLE}
+03:16:42.516 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@727ae217{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:42.517 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:42.553 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:42.572 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:42.586 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:42.586 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:42.587 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65134(0 millis).
+03:16:42.588 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6a9b9ab8] HTTP GET http://localhost:65134/message-stream
+03:16:42.592 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7bc829af-30] HTTP GET "/message-stream"
+03:16:42.592 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [7bc829af-30] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messageStream()
+03:16:42.593 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf;delimited=true' given [*/*] and supported [application/x-protobuf;delimited=true]
+03:16:42.593 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [7bc829af-30] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:42.650 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6a9b9ab8] Response 200 OK
+03:16:42.707 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [6a9b9ab8] Cancel signal (to close connection)
+03:16:42.708 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:42.708 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [7bc829af-30] Completed 200 OK
+03:16:42.708 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:42.737 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:42.751 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:42.774 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:42.774 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:42.783 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65136(0 millis).
+03:16:42.783 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [56f6d89] HTTP GET http://localhost:65136/message-stream
+03:16:42.790 [http-nio-auto-29-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [5ce240d9] HTTP GET "/message-stream"
+03:16:42.790 [http-nio-auto-29-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [5ce240d9] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messageStream()
+03:16:42.791 [http-nio-auto-29-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf;delimited=true' given [*/*] and supported [application/x-protobuf;delimited=true]
+03:16:42.791 [http-nio-auto-29-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [5ce240d9] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:42.851 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [56f6d89] Response 200 OK
+03:16:42.897 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [56f6d89] Cancel signal (to close connection)
+03:16:42.897 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:43.013 [http-nio-auto-29-exec-2] ERROR o.s.w.s.a.HttpWebHandlerAdapter - [5ce240d9] Error [java.io.IOException: An established connection was aborted by the software in your host machine] for HTTP GET "/message-stream", but ServerHttpResponse already committed (200 OK)
+03:16:43.295 [http-nio-auto-29-exec-2] DEBUG o.s.h.s.r.ServletHttpHandlerAdapter - [5ce240d9] Error notification: java.io.IOException: An established connection was aborted by the software in your host machine
+03:16:43.297 [http-nio-auto-29-exec-2] DEBUG o.s.h.s.r.ServletHttpHandlerAdapter - [5ce240d9] Error notification: java.io.IOException: An established connection was aborted by the software in your host machine
+03:16:43.340 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:43.495 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:43.556 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:43.602 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:43.602 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:43.602 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:43.611 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65153(0 millis).
+03:16:43.612 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7942eef2] HTTP GET http://localhost:65153/message-stream
+03:16:43.622 [XNIO-27 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [19288d48] HTTP GET "/message-stream"
+03:16:43.623 [XNIO-27 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [19288d48] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#messageStream()
+03:16:43.623 [XNIO-27 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf;delimited=true' given [*/*] and supported [application/x-protobuf;delimited=true]
+03:16:43.623 [XNIO-27 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [19288d48] 0..N [org.springframework.web.reactive.protobuf.Msg]
+03:16:43.683 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7942eef2] Response 200 OK
+03:16:43.730 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [7942eef2] Cancel signal (to close connection)
+03:16:43.731 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:43.731 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:43.734 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:43.782 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:43.806 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:43.827 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:43.827 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:43.827 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@58e5681d{/,null,AVAILABLE}
+03:16:43.828 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:43.828 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:16:43.832 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@79c9f6cc{HTTP/1.1, (http/1.1)}{0.0.0.0:65155}
+03:16:43.833 [Test worker] INFO  o.e.j.s.Server - Started @105055ms
+03:16:43.833 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65155(0 millis).
+03:16:43.833 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [643ee9e9] HTTP GET http://localhost:65155/empty
+03:16:43.837 [qtp2137544961-1955] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [592f192a] HTTP GET "/empty"
+03:16:43.837 [qtp2137544961-1955] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [592f192a] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#empty()
+03:16:43.855 [qtp2137544961-1955] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:43.855 [qtp2137544961-1955] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [592f192a] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:43.856 [qtp2137544961-1955] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [592f192a] Completed 200 OK
+03:16:43.856 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [643ee9e9] Response 200 OK
+03:16:43.858 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:43.858 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@58e5681d{/,null,UNAVAILABLE}
+03:16:43.861 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@79c9f6cc{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:43.862 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:43.954 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:43.978 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:43.995 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:43.995 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:43.996 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65161(0 millis).
+03:16:43.998 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d2ed331] HTTP GET http://localhost:65161/empty
+03:16:44.002 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d68d8fad-31] HTTP GET "/empty"
+03:16:44.003 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [d68d8fad-31] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#empty()
+03:16:44.013 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:44.014 [reactor-http-nio-2] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [d68d8fad-31] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:44.014 [reactor-http-nio-2] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [d68d8fad-31] Completed 200 OK
+03:16:44.015 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [1d2ed331] Response 200 OK
+03:16:44.016 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:44.017 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:44.069 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:44.090 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:44.108 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:44.109 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:44.119 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65163(0 millis).
+03:16:44.119 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4b5d456c] HTTP GET http://localhost:65163/empty
+03:16:44.128 [http-nio-auto-30-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [167f304c] HTTP GET "/empty"
+03:16:44.128 [http-nio-auto-30-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [167f304c] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#empty()
+03:16:44.144 [http-nio-auto-30-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:44.144 [http-nio-auto-30-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [167f304c] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:44.144 [http-nio-auto-30-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [167f304c] Completed 200 OK
+03:16:44.145 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [4b5d456c] Response 200 OK
+03:16:44.146 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:44.323 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:44.364 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:44.399 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:44.416 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:44.416 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:44.416 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:44.424 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65180(0 millis).
+03:16:44.425 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [f281e6e] HTTP GET http://localhost:65180/empty
+03:16:44.431 [XNIO-28 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43a75d82] HTTP GET "/empty"
+03:16:44.432 [XNIO-28 I/O-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [43a75d82] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#empty()
+03:16:44.443 [XNIO-28 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:44.443 [XNIO-28 I/O-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [43a75d82] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:44.443 [XNIO-28 I/O-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [43a75d82] Completed 200 OK
+03:16:44.443 [reactor-http-nio-4] DEBUG o.s.w.r.f.c.ExchangeFunctions - [f281e6e] Response 200 OK
+03:16:44.443 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:44.443 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:44.443 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+03:16:44.568 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:44.685 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:44.765 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:44.766 [Test worker] WARN  o.e.j.s.h.ContextHandler - Empty contextPath
+03:16:44.767 [Test worker] INFO  o.e.j.s.h.ContextHandler - Started o.e.j.s.ServletContextHandler@364c728d{/,null,AVAILABLE}
+03:16:44.767 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Starting JettyHttpServer...
+03:16:44.767 [Test worker] INFO  o.e.j.s.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_261-b12
+03:16:44.772 [Test worker] INFO  o.e.j.s.AbstractConnector - Started ServerConnector@682ed524{HTTP/1.1, (http/1.1)}{0.0.0.0:65182}
+03:16:44.772 [Test worker] INFO  o.e.j.s.Server - Started @105995ms
+03:16:44.772 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server started on port 65182(0 millis).
+03:16:44.774 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [45a6c49a] HTTP GET http://localhost:65182/message
+03:16:44.782 [qtp749930164-1996] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [701e5fc7] HTTP GET "/message"
+03:16:44.782 [qtp749930164-1996] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [701e5fc7] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#message()
+03:16:44.794 [qtp749930164-1996] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:44.794 [qtp749930164-1996] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [701e5fc7] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:44.795 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [45a6c49a] Response 200 OK
+03:16:44.797 [qtp749930164-1996] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [701e5fc7] Completed 200 OK
+03:16:44.797 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Stopping JettyHttpServer...
+03:16:44.798 [Test worker] INFO  o.e.j.s.h.ContextHandler - Stopped o.e.j.s.ServletContextHandler@364c728d{/,null,UNAVAILABLE}
+03:16:44.801 [Test worker] INFO  o.e.j.s.AbstractConnector - Stopped ServerConnector@682ed524{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+03:16:44.801 [Test worker] DEBUG o.s.w.t.h.s.r.b.JettyHttpServer - Server stopped (0 millis).
+03:16:44.868 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:44.905 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:44.930 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:44.930 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Starting ReactorHttpServer...
+03:16:44.931 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server started on port 65188(0 millis).
+03:16:44.932 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [79c2563e] HTTP GET http://localhost:65188/message
+03:16:44.936 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b69805a7-32] HTTP GET "/message"
+03:16:44.937 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [b69805a7-32] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#message()
+03:16:44.945 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:44.945 [reactor-http-nio-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [b69805a7-32] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:44.947 [reactor-http-nio-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [b69805a7-32] Completed 200 OK
+03:16:44.949 [reactor-http-nio-3] DEBUG o.s.w.r.f.c.ExchangeFunctions - [79c2563e] Response 200 OK
+03:16:44.950 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Stopping ReactorHttpServer...
+03:16:44.951 [Test worker] DEBUG o.s.w.t.h.s.r.b.ReactorHttpServer - Server stopped (0 millis).
+03:16:45.310 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:45.327 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:45.341 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:45.342 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Starting TomcatHttpServer...
+03:16:45.350 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server started on port 65190(0 millis).
+03:16:45.351 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [71448f11] HTTP GET http://localhost:65190/message
+03:16:45.357 [http-nio-auto-31-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [311026f6] HTTP GET "/message"
+03:16:45.358 [http-nio-auto-31-exec-1] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [311026f6] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#message()
+03:16:45.365 [http-nio-auto-31-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:45.365 [http-nio-auto-31-exec-1] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [311026f6] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:45.366 [reactor-http-nio-1] DEBUG o.s.w.r.f.c.ExchangeFunctions - [71448f11] Response 200 OK
+03:16:45.367 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Stopping TomcatHttpServer...
+03:16:45.368 [http-nio-auto-31-exec-1] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [311026f6] Completed 200 OK
+03:16:45.592 [Test worker] DEBUG o.s.w.t.h.s.r.b.TomcatHttpServer - Server stopped (0 millis).
+03:16:45.705 [Test worker] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+03:16:45.722 [Test worker] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+03:16:45.733 [Test worker] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:16:45.733 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Starting UndertowHttpServer...
+03:16:45.733 [Test worker] INFO  i.undertow - starting server: Undertow - 2.1.3.Final
+03:16:45.739 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server started on port 65207(0 millis).
+03:16:45.740 [Test worker] DEBUG o.s.w.r.f.c.ExchangeFunctions - [b7c5ba0] HTTP GET http://localhost:65207/message
+03:16:45.744 [XNIO-29 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1674fa6e] HTTP GET "/message"
+03:16:45.745 [XNIO-29 I/O-4] DEBUG o.s.w.r.r.m.a.RequestMappingHandlerMapping - [1674fa6e] Mapped to org.springframework.web.reactive.result.method.annotation.ProtobufIntegrationTests$ProtobufController#message()
+03:16:45.752 [XNIO-29 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - Using 'application/x-protobuf' given [*/*] and supported [application/x-protobuf, application/octet-stream, application/json, application/*+json, application/x-ndjson, application/x-jackson-smile, application/*+x-jackson-smile, text/event-stream]
+03:16:45.752 [XNIO-29 I/O-4] DEBUG o.s.w.r.r.m.a.ResponseBodyResultHandler - [1674fa6e] 0..1 [org.springframework.web.reactive.protobuf.Msg]
+03:16:45.753 [XNIO-29 I/O-4] DEBUG o.s.w.s.a.HttpWebHandlerAdapter - [1674fa6e] Completed 200 OK
+03:16:45.753 [reactor-http-nio-2] DEBUG o.s.w.r.f.c.ExchangeFunctions - [b7c5ba0] Response 200 OK
+03:16:45.754 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Stopping UndertowHttpServer...
+03:16:45.754 [Test worker] INFO  i.undertow - stopping server: Undertow - 2.1.3.Final
+03:16:45.755 [Test worker] DEBUG o.s.w.t.h.s.r.b.UndertowHttpServer - Server stopped (0 millis).
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

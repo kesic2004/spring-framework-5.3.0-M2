@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:10:19" hostname="DESKTOP-VGJP1PJ" time="0.067">
+  <properties/>
+  <testcase name="addFilterPatternsNull()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.0"/>
+  <testcase name="springHandlerInstantiator()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.015"/>
+  <testcase name="addFilterPatternContainsNull()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.001"/>
+  <testcase name="placeHoldersInRequestMapping()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.014"/>
+  <testcase name="applicationContextAttribute()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.017"/>
+  <testcase name="addFiltersFiltersNull()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.0"/>
+  <testcase name="suffixPatternMatch()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.018"/>
+  <testcase name="addFiltersFiltersContainsNull()" classname="org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilderTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

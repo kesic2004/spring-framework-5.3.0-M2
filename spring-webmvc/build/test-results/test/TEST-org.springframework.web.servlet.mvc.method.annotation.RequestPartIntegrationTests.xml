@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.servlet.mvc.method.annotation.RequestPartIntegrationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:14:39" hostname="DESKTOP-VGJP1PJ" time="2.652">
+  <properties/>
+  <testcase name="standardMultipartResolver()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartIntegrationTests" time="2.29"/>
+  <testcase name="standardMultipartResolverWithEncodedFileName()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartIntegrationTests" time="0.109"/>
+  <testcase name="commonsMultipartResolver()" classname="org.springframework.web.servlet.mvc.method.annotation.RequestPartIntegrationTests" time="0.252"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

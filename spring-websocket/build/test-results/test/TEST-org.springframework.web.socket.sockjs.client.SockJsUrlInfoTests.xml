@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:11:30" hostname="DESKTOP-VGJP1PJ" time="0.021">
+  <properties/>
+  <testcase name="transportUrl(String, String, TransportType)[1]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[2]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[3]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[4]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[5]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[6]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="transportUrl(String, String, TransportType)[7]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.0"/>
+  <testcase name="transportUrl(String, String, TransportType)[8]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="sessionId()" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="serverId()" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.003"/>
+  <testcase name="infoUrl(String, String)[1]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="infoUrl(String, String)[2]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <testcase name="infoUrl(String, String)[3]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.0"/>
+  <testcase name="infoUrl(String, String)[4]" classname="org.springframework.web.socket.sockjs.client.SockJsUrlInfoTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

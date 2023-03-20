@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T08:18:33" hostname="DESKTOP-VGJP1PJ" time="24.164">
+  <properties/>
+  <testcase name="bodyToMono with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="15.901"/>
+  <testcase name="bodyToFlow with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="3.992"/>
+  <testcase name="awaitEntityList()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="2.699"/>
+  <testcase name="bodyToFlux with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.148"/>
+  <testcase name="awaitEntity()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.399"/>
+  <testcase name="awaitBody()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.277"/>
+  <testcase name="ResponseSpec#toEntityList with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.107"/>
+  <testcase name="toEntity with reified type parameters()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.181"/>
+  <testcase name="awaitBodyOrNull()" classname="org.springframework.web.reactive.function.client.ClientResponseExtensionsTests" time="0.085"/>
+  <system-out><![CDATA[03:18:45.377 [reactor-http-nio-3] ERROR i.n.u.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:285)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.forEachByte(AdvancedLeakAwareByteBuf.java:670)
+	io.netty.handler.codec.http.HttpObjectDecoder$HeaderParser.parse(HttpObjectDecoder.java:940)
+	io.netty.handler.codec.http.HttpObjectDecoder.readHeaders(HttpObjectDecoder.java:616)
+	io.netty.handler.codec.http.HttpObjectDecoder.decode(HttpObjectDecoder.java:258)
+	io.netty.handler.codec.http.HttpClientCodec$Decoder.decode(HttpClientCodec.java:225)
+	io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#3:
+	Hint: 'reactor.left.httpCodec' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#4:
+	Hint: 'DefaultChannelPipeline$HeadContext#0' will handle the message from this point.
+	io.netty.channel.DefaultChannelPipeline.touch(DefaultChannelPipeline.java:116)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+#5:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:634)
+	io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:363)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:178)
+	io.netty.buffer.AbstractByteBufAllocator.ioBuffer(AbstractByteBufAllocator.java:139)
+	io.netty.channel.DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle.allocate(DefaultMaxMessagesRecvByteBufAllocator.java:114)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:147)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Thread.java:748)
+: 4 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

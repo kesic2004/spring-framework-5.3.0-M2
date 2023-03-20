@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-20T07:58:39" hostname="DESKTOP-VGJP1PJ" time="0.037">
+  <properties/>
+  <testcase name="transferTo()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.009"/>
+  <testcase name="readPartsWithoutDemand()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.004"/>
+  <testcase name="readPartHeadersTooBig()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.004"/>
+  <testcase name="readFilePartTooBig()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.004"/>
+  <testcase name="gh23768()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="resolveParts()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.006"/>
+  <testcase name="canRead()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.0"/>
+  <testcase name="readTooManyParts()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.003"/>
+  <testcase name="bodyError()" classname="org.springframework.http.codec.multipart.SynchronossPartHttpMessageReaderTests" time="0.001"/>
+  <system-out><![CDATA[02:58:39.105 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+02:58:39.110 [Test worker] DEBUG o.s.w.HttpLogging - Parsed parts [filePart, textPart] (content masked)
+02:58:39.112 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+02:58:39.118 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+02:58:39.123 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+02:58:39.128 [Test worker] DEBUG o.s.w.HttpLogging - Parsed parts [] (content masked)
+02:58:39.129 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+02:58:39.133 [Test worker] DEBUG o.s.w.HttpLogging - Parsed parts [filePart, textPart] (content masked)
+02:58:39.136 [Test worker] DEBUG o.s.w.HttpLogging - Encoding parts [filePart, textPart] (content masked)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
